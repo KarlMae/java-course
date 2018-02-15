@@ -21,6 +21,13 @@ public class Person {
     }
 
     public String isSauron() {
+
+        if (this.ring == null && this.name.equals("Sauron")) {
+            return "No, but he's claiming to be";
+        } else if (this.ring == null) {
+            return "No";
+        }
+
         if (this.name.equals("Sauron") && this.ring.getType().equals("The one") && this.ring.getMaterial().equals("gold")) {
             return "Affirmative";
         } else if (this.name.equals("Sauron") && this.ring.getType().equals("The one") && !this.ring.getMaterial().equals("gold")) {
