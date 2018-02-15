@@ -28,9 +28,11 @@ public class Person {
             return "No";
         }
 
-        if (this.name.equals("Sauron") && this.ring.getType().equals("The one") && this.ring.getMaterial().equals("gold")) {
+        if (this.name.equals("Sauron") && this.ring.getType().equals("The one") &&
+                this.ring.getMaterial().equals("gold")) {
             return "Affirmative";
-        } else if (this.name.equals("Sauron") && this.ring.getType().equals("The one") && !this.ring.getMaterial().equals("gold")) {
+        } else if (this.name.equals("Sauron") && this.ring.getType().equals("The one") &&
+                !this.ring.getMaterial().equals("gold")) {
             return "No, the ring is fake!";
         } else if (this.ring.getType().equals("The one") && this.ring.getMaterial().equals("gold")) {
             return "No, he just stole the ring";
