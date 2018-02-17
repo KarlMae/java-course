@@ -147,7 +147,11 @@ public class Book {
     }
 
     public static List<Book> getBooksByAuthor(String author) {
-        return booksByAuthor.get(author);
+        if (booksByAuthor.containsKey(author)) {
+            return booksByAuthor.get(author);
+        } else {
+            return Collections.emptyList();
+        }
     }
 
 
