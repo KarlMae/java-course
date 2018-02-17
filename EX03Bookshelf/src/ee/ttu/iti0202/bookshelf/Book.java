@@ -11,6 +11,7 @@ public class Book {
     private Person owner;
     private static int staticId = 0;
     private static ArrayList<Book> books = new ArrayList<>();
+    private static HashMap<String, ArrayList<Book>> booksByAuthor = new HashMap<>();
     private int id;
 
     public Book(String title, String author, int yearOfPublishing, int price) {
@@ -79,20 +80,37 @@ public class Book {
         this.owner = owner;
     }
 
-    public static Book of(String title, String author, int yearOfPublishing, int price) {
+    private static void addBook(String title, String author, int yearOfPublishing, int price){
+        Book bookToAdd = new Book(title, author, yearOfPublishing, price);
+        books.add(bookToAdd);
 
-        if (books.size() == 0){
-            books.add(new Book(title, author, yearOfPublishing, price));
-            return books.get(books.size() - 1);
+        ArrayList<Book> bookList = booksByAuthor.get(author);
+
+        // if listing of author does not exist create it
+        if(bookList == null) {
+            bookList = new ArrayList<Book>();
+            bookList.add(bookToAdd);
+            booksByAuthor.put(author, bookList);
+        } else {
+            // add if book is not already in list
+            if(!bookList.contains(bookToAdd)) bookList.add(bookToAdd);
         }
+    }
 
+    private static void removeBook(String title, String author, int yearOfPublishing, int price){
+        Book bookToRemove = new Book(title, author, yearOfPublishing, price);
+        books.remove(bookToRemove);
+        booksByAuthor.remove(author, bookToRemove);
+    }
+
+    public static Book of(String title, String author, int yearOfPublishing, int price) {
         for (Book book : books) {
             if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
                 return book;
             }
         }
 
-        books.add(new Book(title, author, yearOfPublishing, price));
+        addBook(title, author, yearOfPublishing, price);
         return books.get(books.size() - 1);
     }
 
@@ -103,7 +121,7 @@ public class Book {
 
         Book lastBook = books.get(books.size() - 1);
 
-        books.add(new Book(title, lastBook.getAuthor(), lastBook.getYearOfPublishing(), price));
+        addBook(title, lastBook.getAuthor(), lastBook.getYearOfPublishing(), price);
         return books.get(books.size() - 1);
     }
 
@@ -121,6 +139,7 @@ public class Book {
                 book.getOwner().sellBook(book);
             }
             books.remove(book);
+            booksByAuthor.remove(book.getAuthor(), book);
             return true;
         } else {
             return false;
@@ -128,13 +147,7 @@ public class Book {
     }
 
     public static List<Book> getBooksByAuthor(String author) {
-        ArrayList<Book> authorBooks = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getAuthor().toLowerCase().equals(author.toLowerCase())) {
-                authorBooks.add(book);
-            }
-        }
-        return authorBooks;
+        return booksByAuthor.get(author);
     }
 
 
