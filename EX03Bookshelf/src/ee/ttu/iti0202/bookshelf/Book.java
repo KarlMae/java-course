@@ -102,13 +102,7 @@ public class Book {
     }
 
     public static List<Book> getBooksByOwner(Person owner) {
-        ArrayList<Book> ownerBooks = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getOwner() == owner) {
-                ownerBooks.add(book);
-            }
-        }
-        return ownerBooks;
+        return owner.getBooks();
     }
 
     public static boolean removeBook(Book book) {
