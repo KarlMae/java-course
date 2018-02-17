@@ -130,7 +130,7 @@ public class Book {
     public static List<Book> getBooksByAuthor(String author) {
         ArrayList<Book> authorBooks = new ArrayList<>();
         for (Book book : books) {
-            if (book.getAuthor().equals(author)) {
+            if (book.getAuthor().toLowerCase().equals(author.toLowerCase())) {
                 authorBooks.add(book);
             }
         }
