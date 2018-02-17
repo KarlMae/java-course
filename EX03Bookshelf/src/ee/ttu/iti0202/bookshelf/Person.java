@@ -38,6 +38,7 @@ public class Person {
         if (book != null && book.getOwner() == this) {
             this.money += book.getPrice();
             book.setOwner(null);
+            books.remove(book);
             return true;
         }
         return false;

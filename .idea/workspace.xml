@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Book.java" afterPath="$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Book.java" />
       <change beforePath="$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Person.java" afterPath="$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Person.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,13 +62,13 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="595">
+              <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding>
                 <element signature="e#387#388#0" expanded="true" />
                 <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -447,14 +446,7 @@
       <workItem from="1518683112123" duration="1620000" />
       <workItem from="1518685485150" duration="1311000" />
       <workItem from="1518711775442" duration="2650000" />
-      <workItem from="1518796623142" duration="5974000" />
-    </task>
-    <task id="LOCAL-00006" summary="Exercise">
-      <created>1517569789306</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1517569789306</updated>
+      <workItem from="1518796623142" duration="6002000" />
     </task>
     <task id="LOCAL-00007" summary="Exercise">
       <created>1517571423754</created>
@@ -792,11 +784,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518712055451</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Exercise">
+      <created>1518888529569</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1518888529570</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83140000" />
+    <option name="totallyTimeSpent" value="83168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -973,8 +972,8 @@
           <folding>
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1007,8 +1006,8 @@
           <folding>
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1041,8 +1040,8 @@
           <folding>
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1359,13 +1358,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="595">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           <folding>
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
           </folding>
         </state>
       </provider>
