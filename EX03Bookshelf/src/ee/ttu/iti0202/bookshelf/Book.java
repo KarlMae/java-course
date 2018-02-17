@@ -1,5 +1,6 @@
-
 package ee.ttu.iti0202.bookshelf;
+
+import java.util.*;
 
 public class Book {
 
@@ -9,6 +10,7 @@ public class Book {
     private int price;
     private Person owner;
     private static int staticId = 0;
+    private static ArrayList<Book> books = new ArrayList<>();
     private int id;
 
     public Book(String title, String author, int yearOfPublishing, int price) {
@@ -76,5 +78,64 @@ public class Book {
     public void setOwner(Person owner) {
         this.owner = owner;
     }
+
+    public static Book of(String title, String author, int yearOfPublishing, int price) {
+        for (Book book : books) {
+            if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
+                return book;
+            }
+        }
+
+        books.add(new Book(title, author, yearOfPublishing, price));
+        return books.get(books.size() - 1);
+    }
+
+    public static Book of(String title, int price) {
+        if (books.size() == 0) {
+            return null;
+        }
+
+        Book lastBook = books.get(books.size() - 1);
+
+        books.add(new Book(title, lastBook.getAuthor(), lastBook.getYearOfPublishing(), price));
+        return books.get(books.size() - 1);
+    }
+
+    public static List<Book> getBooksByOwner(Person owner) {
+        ArrayList<Book> ownerBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getOwner() == owner) {
+                ownerBooks.add(book);
+            }
+        }
+        return ownerBooks;
+    }
+
+    public static boolean removeBook(Book book) {
+        if (book == null) {
+            return false;
+        }
+
+        if (books.contains(book)) {
+            if (book.getOwner() != null) {
+                book.getOwner().sellBook(book);
+            }
+            books.remove(book);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static List<Book> getBooksByAuthor(String author) {
+        ArrayList<Book> authorBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getAuthor().equals(author)) {
+                authorBooks.add(book);
+            }
+        }
+        return authorBooks;
+    }
+
 
 }

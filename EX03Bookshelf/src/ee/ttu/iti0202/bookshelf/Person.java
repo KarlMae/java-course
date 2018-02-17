@@ -1,9 +1,11 @@
 package ee.ttu.iti0202.bookshelf;
 
+import java.util.*;
 
 public class Person {
     private int money;
     private String name;
+    private ArrayList<Book> books = new ArrayList<>();
 
     public Person(String name, int money) {
         this.name = name;
@@ -26,6 +28,7 @@ public class Person {
         if (book != null && this.money >= book.getPrice() && book.getOwner() != this) {
             this.money -= book.getPrice();
             book.setOwner(this);
+            books.add(book);
             return true;
         }
         return false;
@@ -38,5 +41,9 @@ public class Person {
             return true;
         }
         return false;
+    }
+
+    public List<Book> getBooks() {
+        return books;
     }
 }
