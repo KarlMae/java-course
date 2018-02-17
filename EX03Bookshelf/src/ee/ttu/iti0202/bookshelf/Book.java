@@ -80,6 +80,12 @@ public class Book {
     }
 
     public static Book of(String title, String author, int yearOfPublishing, int price) {
+
+        if (books.size() == 0){
+            books.add(new Book(title, author, yearOfPublishing, price));
+            return books.get(books.size() - 1);
+        }
+
         for (Book book : books) {
             if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
                 return book;
