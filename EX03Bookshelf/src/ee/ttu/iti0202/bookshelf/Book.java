@@ -91,18 +91,20 @@ public class Book {
      */
     private static void addBook(String title, String author, int yearOfPublishing, int price) {
         Book bookToAdd = new Book(title, author, yearOfPublishing, price);
-        lastBookAdded = bookToAdd;
+
+        //Add book to list
         books.add(bookToAdd);
 
+        //Get list of books corresponding to the author from hash.
         ArrayList<Book> bookList = booksByAuthor.get(author.toLowerCase());
 
-        // if listing of author does not exist create it
+        //If listing of author does not exist create it
         if (bookList == null) {
-            bookList = new ArrayList<Book>();
+            bookList = new ArrayList<>();
             bookList.add(bookToAdd);
             booksByAuthor.put(author.toLowerCase(), bookList);
         } else {
-            // add if book is not already in list
+            //If book is not already in list, add it
             if (!bookList.contains(bookToAdd)) bookList.add(bookToAdd);
         }
     }
@@ -117,7 +119,8 @@ public class Book {
         }
 
         addBook(title, author, yearOfPublishing, price);
-        return books.get(books.size() - 1);
+        lastBookAdded = books.get(books.size() - 1);
+        return lastBookAdded;
     }
 
     /**
@@ -129,10 +132,8 @@ public class Book {
             return null;
         }
 
-        Book lastBook = lastBookAdded;
-
-        addBook(title, lastBook.getAuthor(), lastBook.getYearOfPublishing(), price);
-        return lastBook;
+        addBook(title, lastBookAdded.getAuthor(), lastBookAdded.getYearOfPublishing(), price);
+        return books.get(books.size() - 1);
     }
 
     public static List<Book> getBooksByOwner(Person owner) {
