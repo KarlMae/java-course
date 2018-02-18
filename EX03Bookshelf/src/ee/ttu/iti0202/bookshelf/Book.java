@@ -147,7 +147,7 @@ public class Book {
 
     public static List<Book> getBooksByAuthor(String author) {
         if (booksByAuthor.containsKey(author.toLowerCase())) {
-            return booksByAuthor.get(author);
+            return booksByAuthor.get(author.toLowerCase());
         } else {
             return Collections.emptyList();
         }
