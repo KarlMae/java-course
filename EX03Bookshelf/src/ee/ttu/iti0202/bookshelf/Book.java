@@ -97,12 +97,6 @@ public class Book {
         }
     }
 
-    private static void removeBook(String title, String author, int yearOfPublishing, int price){
-        Book bookToRemove = new Book(title, author, yearOfPublishing, price);
-        books.remove(bookToRemove);
-        booksByAuthor.remove(author, bookToRemove);
-    }
-
     public static Book of(String title, String author, int yearOfPublishing, int price) {
         for (Book book : books) {
             if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
