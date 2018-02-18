@@ -84,13 +84,13 @@ public class Book {
         Book bookToAdd = new Book(title, author, yearOfPublishing, price);
         books.add(bookToAdd);
 
-        ArrayList<Book> bookList = booksByAuthor.get(author);
+        ArrayList<Book> bookList = booksByAuthor.get(author.toLowerCase());
 
         // if listing of author does not exist create it
         if(bookList == null) {
             bookList = new ArrayList<Book>();
             bookList.add(bookToAdd);
-            booksByAuthor.put(author, bookList);
+            booksByAuthor.put(author.toLowerCase(), bookList);
         } else {
             // add if book is not already in list
             if(!bookList.contains(bookToAdd)) bookList.add(bookToAdd);
