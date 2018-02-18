@@ -60,7 +60,6 @@ public class Book {
             return false;
         }
 
-
         if (buyer == null) {
             this.owner.sellBook(this);
             return true;
@@ -112,7 +111,8 @@ public class Book {
     public static Book of(String title, String author, int yearOfPublishing, int price) {
         if (booksByAuthor.containsKey(author.toLowerCase())) {
             for (Book book : booksByAuthor.get(author.toLowerCase())) {
-                if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
+                if (book.getTitle().equals(title) && book.getAuthor().equals(author)
+                        && book.getYearOfPublishing() == yearOfPublishing) {
                     return book;
                 }
             }
@@ -181,6 +181,4 @@ public class Book {
             return Collections.emptyList();
         }
     }
-
-
 }
