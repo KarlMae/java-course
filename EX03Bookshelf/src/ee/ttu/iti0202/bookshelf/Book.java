@@ -80,20 +80,20 @@ public class Book {
         this.owner = owner;
     }
 
-    private static void addBook(String title, String author, int yearOfPublishing, int price){
+    private static void addBook(String title, String author, int yearOfPublishing, int price) {
         Book bookToAdd = new Book(title, author, yearOfPublishing, price);
         books.add(bookToAdd);
 
         ArrayList<Book> bookList = booksByAuthor.get(author.toLowerCase());
 
         // if listing of author does not exist create it
-        if(bookList == null) {
+        if (bookList == null) {
             bookList = new ArrayList<Book>();
             bookList.add(bookToAdd);
             booksByAuthor.put(author.toLowerCase(), bookList);
         } else {
             // add if book is not already in list
-            if(!bookList.contains(bookToAdd)) bookList.add(bookToAdd);
+            if (!bookList.contains(bookToAdd)) bookList.add(bookToAdd);
         }
     }
 
@@ -129,15 +129,20 @@ public class Book {
         }
 
         if (books.contains(book)) {
+
+            //Sell book
             if (book.getOwner() != null) {
                 book.getOwner().sellBook(book);
             }
+
+            //Remove book from list
             books.remove(book);
-            if (booksByAuthor.containsKey(book.getAuthor())) {
+
+            //Remove book from hash
+            if (booksByAuthor.containsKey(book.getAuthor().toLowerCase())) {
                 ArrayList<Book> bookList = booksByAuthor.get(book.getAuthor().toLowerCase());
                 bookList.remove(book);
                 booksByAuthor.put(book.getAuthor().toLowerCase(), bookList);
-
             }
             return true;
         } else {
