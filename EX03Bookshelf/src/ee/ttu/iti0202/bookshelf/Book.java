@@ -17,6 +17,7 @@ public class Book {
     private static ArrayList<Book> books = new ArrayList<>();
     private static HashMap<String, ArrayList<Book>> booksByAuthor = new HashMap<>();
     private int id;
+    private static Book lastBookAdded = null;
 
     public Book(String title, String author, int yearOfPublishing, int price) {
         this.title = title;
@@ -90,6 +91,7 @@ public class Book {
      */
     private static void addBook(String title, String author, int yearOfPublishing, int price) {
         Book bookToAdd = new Book(title, author, yearOfPublishing, price);
+        lastBookAdded = bookToAdd;
         books.add(bookToAdd);
 
         ArrayList<Book> bookList = booksByAuthor.get(author.toLowerCase());
@@ -118,21 +120,28 @@ public class Book {
         return books.get(books.size() - 1);
     }
 
+    /**
+     *Create new book with the author and date of last book added.
+     */
     public static Book of(String title, int price) {
-        if (books.size() == 0) {
+        //If there is no book added, before this one
+        if (lastBookAdded == null) {
             return null;
         }
 
-        Book lastBook = books.get(books.size() - 1);
+        Book lastBook = lastBookAdded;
 
         addBook(title, lastBook.getAuthor(), lastBook.getYearOfPublishing(), price);
-        return books.get(books.size() - 1);
+        return lastBook;
     }
 
     public static List<Book> getBooksByOwner(Person owner) {
         return owner.getBooks();
     }
 
+    /**
+     * Remove book from list(books) and hash(booksByAuthor).
+     */
     public static boolean removeBook(Book book) {
         if (book == null) {
             return false;
@@ -160,6 +169,10 @@ public class Book {
         }
     }
 
+    /**
+     * Return list containing books with given author.
+     * If author has no books, returns empty list.
+     */
     public static List<Book> getBooksByAuthor(String author) {
         if (booksByAuthor.containsKey(author.toLowerCase())) {
             return booksByAuthor.get(author.toLowerCase());
