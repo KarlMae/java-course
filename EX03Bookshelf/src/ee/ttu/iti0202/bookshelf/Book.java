@@ -133,7 +133,12 @@ public class Book {
                 book.getOwner().sellBook(book);
             }
             books.remove(book);
-            booksByAuthor.remove(book.getAuthor(), book);
+            if (booksByAuthor.containsKey(book.getAuthor())) {
+                ArrayList<Book> bookList = booksByAuthor.get(book.getAuthor().toLowerCase());
+                bookList.remove(book);
+                booksByAuthor.put(book.getAuthor().toLowerCase(), bookList);
+
+            }
             return true;
         } else {
             return false;
