@@ -106,9 +106,11 @@ public class Book {
     }
 
     public static Book of(String title, String author, int yearOfPublishing, int price) {
-        for (Book book : books) {
-            if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
-                return book;
+        if (booksByAuthor.containsKey(author.toLowerCase())) {
+            for (Book book : books) {
+                if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
+                    return book;
+                }
             }
         }
 
