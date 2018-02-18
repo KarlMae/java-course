@@ -1,6 +1,10 @@
 package ee.ttu.iti0202.bookshelf;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+
 
 public class Book {
 
@@ -80,6 +84,10 @@ public class Book {
         this.owner = owner;
     }
 
+    /**
+     * Add book to list(books) and to hashmap(booksByAuthor).
+     * It has already been checked, that this book does not exist yet.
+     */
     private static void addBook(String title, String author, int yearOfPublishing, int price) {
         Book bookToAdd = new Book(title, author, yearOfPublishing, price);
         books.add(bookToAdd);
@@ -98,9 +106,11 @@ public class Book {
     }
 
     public static Book of(String title, String author, int yearOfPublishing, int price) {
-        for (Book book : books) {
-            if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
-                return book;
+        if (booksByAuthor.containsKey(author)) {
+            for (Book book : books) {
+                if (book.getTitle().equals(title) && book.getAuthor().equals(author) && book.getYearOfPublishing() == yearOfPublishing) {
+                    return book;
+                }
             }
         }
 
