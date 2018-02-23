@@ -9,7 +9,7 @@ public class Tavern {
     private static Map<String, Price> foods = new HashMap<>();
 
 
-    public void addFood(String name, Price price){
+    public void addFood(String name, Price price) {
         foods.put(name, price);
     }
 

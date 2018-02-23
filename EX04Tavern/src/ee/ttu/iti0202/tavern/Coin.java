@@ -5,12 +5,12 @@ public class Coin {
     private int amount;
     private Currency currency;
 
-    public Coin(int amount, Currency currency){
+    public Coin(int amount, Currency currency) {
         this.amount = amount;
         this.currency = currency;
     }
 
-    public Coin(Currency currency){
+    public Coin(Currency currency) {
         this.amount = 1;
         this.currency = currency;
     }
@@ -25,7 +25,7 @@ public class Coin {
 
 
     @Override
-    public String toString(){
+    public String toString() {
         return String.format("%s %s", amount, currency);
     }
 

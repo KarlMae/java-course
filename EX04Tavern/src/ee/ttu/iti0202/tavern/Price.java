@@ -14,7 +14,7 @@ public class Price {
     }
 
     public Price add(Currency currency, int amount) {
-        if(priceInCoins.containsKey(currency)){
+        if (priceInCoins.containsKey(currency)) {
             priceInCoins.put(currency, priceInCoins.get(currency) + amount);
         } else {
             priceInCoins.put(currency, amount);
@@ -63,17 +63,17 @@ public class Price {
     }
 
 
-    public int getPriceInBaseValue(){
+    public int getPriceInBaseValue() {
         return this.priceInBaseValue;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder output = new StringBuilder();
         Map<Currency, Integer> currencies = this.getPrice();
         for (Currency c : currencies.keySet())
             output.append(currencies.get(c));
-            output.append(getClass().getName());
+        output.append(getClass().getName());
         return output.toString();
     }
 

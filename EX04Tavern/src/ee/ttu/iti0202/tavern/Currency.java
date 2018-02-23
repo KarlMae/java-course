@@ -72,7 +72,7 @@ public class Currency {
      * If the currency by the name already exists, does nothing.
      * Otherwise instantiates a new Currency object and stores it in the map.
      *
-     * @param currency Name of the currency.
+     * @param currency           Name of the currency.
      * @param rateToBaseCurrency Rate to base currency.
      */
     public static void add(String currency, int rateToBaseCurrency) {

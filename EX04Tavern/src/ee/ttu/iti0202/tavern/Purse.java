@@ -30,7 +30,9 @@ public class Purse {
 
         for (Coin c : coins) {
             if (c.getAmount() * c.getCurrency().getRate() < priceToPay) {
-                if (smallestCoin == null) { smallestCoin = c; }
+                if (smallestCoin == null) {
+                    smallestCoin = c;
+                }
 
                 // If new coin is higher in value
                 if (c.getAmount() * c.getCurrency().getRate() > smallestCoin.getAmount() * smallestCoin.getCurrency().getRate()) {
@@ -51,7 +53,7 @@ public class Purse {
 
         if (priceToPay <= 0) return null;
 
-        while(priceToPay > 0){
+        while (priceToPay > 0) {
             Coin coinToPay = tryEveryCoin(priceToPay);
             if (coinToPay == null) return null;
             priceToPay -= coinToPay.getAmount() * coinToPay.getCurrency().getRate();
