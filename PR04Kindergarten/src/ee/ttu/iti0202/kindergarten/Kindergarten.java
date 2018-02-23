@@ -13,26 +13,26 @@ public class Kindergarten {
 
     }
 
-    private void addChild(String name) {
+    public void addChild(String name) {
         this.children.add(name);
     }
 
-    private List getChildrenList() {
+    public List getChildrenList() {
         return this.children;
     }
 
-    private String returnChild(int index) {
+    public String returnChild(int index) {
         if (index + 1 > children.size()) {
             return "";
         }
         return this.children.remove(index);
     }
 
-    private void summerBreak() {
+    public void summerBreak() {
         this.children.clear();
     }
 
-    private HashMap<String, Integer> getAllFirstNameAmounts() {
+    public HashMap<String, Integer> getAllFirstNameAmounts() {
         HashMap<String, Integer> nameAmounts = new HashMap<>();
 
         for (String child : this.children) {
@@ -46,7 +46,7 @@ public class Kindergarten {
         return nameAmounts;
     }
 
-    private int getChildrenWithFirstName(String name) {
+    public int getChildrenWithFirstName(String name) {
         int count = 0;
 
         for (String child : this.children){
@@ -57,7 +57,7 @@ public class Kindergarten {
         return count;
     }
 
-    private long getMatchingLastNameAmount() {
+    public long getMatchingLastNameAmount() {
         long count = 0L;
         HashMap<String, Boolean> recurringName = new HashMap<>();
 
