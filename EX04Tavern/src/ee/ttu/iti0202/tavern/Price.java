@@ -1,23 +1,30 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Price {
 
-    private static Map<Price, String> prices = new HashMap<>();
     private Map<Currency, Integer> priceInCoins = new HashMap<>();
     private int priceInBaseValue;
+    private int amount;
+    private Currency currency;
 
     public Price(Currency currency, int amount) {
-        this.priceInCoins = new HashMap<>();
-        this.priceInCoins.put(currency, amount);
+        priceInCoins.put(currency, amount);
+        this.amount = amount;
+        this.currency = currency;
+        this.priceInBaseValue = amount * currency.getRate();
     }
 
     public Price add(Currency currency, int amount) {
-        if (priceInCoins.containsKey(currency)) {
-            priceInCoins.put(currency, priceInCoins.get(currency) + amount);
+        if (this.priceInCoins.containsKey(currency)) {
+            this.priceInCoins.put(currency, this.priceInCoins.get(currency) + amount);
         } else {
-            priceInCoins.put(currency, amount);
+            this.priceInCoins.put(currency, amount);
         }
         return this;
     }
@@ -28,9 +35,9 @@ public class Price {
 
 
         //Sort currencies by value
-        for (Currency currency : priceInCoins.keySet()) {
+        for (Currency currency : this.priceInCoins.keySet()) {
             values.add(Currency.getRate(currency));
-            priceInBaseValue += values.get(values.size());
+            this.priceInBaseValue += values.get(values.size());
         }
         Collections.sort(values);
 
@@ -50,7 +57,8 @@ public class Price {
     }
 
     public static Price of(int gold, int silver, int copper) {
-        Price newPrice = new Price(Currency.get("gold"), gold);
+        Currency g = Currency.get("gold");
+        Price newPrice = new Price(g, gold);
         newPrice.add(Currency.get("silver"), silver);
         newPrice.add(Currency.get("copper"), copper);
 
@@ -71,6 +79,7 @@ public class Price {
     public String toString() {
         StringBuilder output = new StringBuilder();
         Map<Currency, Integer> currencies = this.getPrice();
+        if (currencies == null) return "";
         for (Currency c : currencies.keySet())
             output.append(currencies.get(c));
         output.append(getClass().getName());
