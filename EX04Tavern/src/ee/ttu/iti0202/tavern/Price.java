@@ -88,6 +88,6 @@ public class Price {
 
     @Override
     public boolean equals(Object obj) {
-        return (((Price) obj).priceInBaseValue == this.priceInBaseValue);
+        return obj == this || (((Price) obj).priceInBaseValue == this.priceInBaseValue);
     }
 }
