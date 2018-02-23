@@ -21,7 +21,7 @@ public class Kindergarten {
     }
 
     public String returnChild(int index) {
-        if (index >= children.size() || index < 1) {
+        if (index >= children.size()) {
             return "";
         }
         return this.children.remove(index);
@@ -92,7 +92,6 @@ public class Kindergarten {
             } else {
                 recurringName.put(lastName, false);
             }
-
         }
         return count;
     }
