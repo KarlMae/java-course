@@ -34,6 +34,8 @@ public class Kindergarten {
     public HashMap<String, Integer> getAllFirstNameAmounts() {
         HashMap<String, Integer> nameAmounts = new HashMap<>();
 
+        if (children.size() < 1)  {return nameAmounts;}
+
         for (String child : this.children) {
             String name = child.split("\\s+")[0];
 
@@ -50,6 +52,8 @@ public class Kindergarten {
     public int getChildrenWithFirstName(String name) {
         int count = 0;
 
+        if (children.size() < 1)  {return -1;}
+
         for (String child : this.children) {
             if (child.split("\\s+")[0].equals(name)) count++;
         }
@@ -62,7 +66,11 @@ public class Kindergarten {
         long count = 0L;
         HashMap<String, Boolean> recurringName = new HashMap<>();
 
+        if (children.size() < 1)  {return 0L;}
+
         for (String child : children) {
+
+            //Skip children who don't have 2 names
             String[] names = child.split("\\s+");
             if (names.length != 2) { continue; }
 
