@@ -35,10 +35,12 @@ public class Kindergarten {
         HashMap<String, Integer> nameAmounts = new HashMap<>();
 
         for (String child : this.children) {
-            if (nameAmounts.containsKey(child)) {
-                nameAmounts.put(child, nameAmounts.get(child) + 1);
+            String name = child.split("\\s+")[0];
+
+            if (nameAmounts.containsKey(name)) {
+                nameAmounts.put(name, nameAmounts.get(child) + 1);
             } else {
-                nameAmounts.put(child, 1);
+                nameAmounts.put(name, 1);
             }
         }
 

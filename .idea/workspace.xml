@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" />
       <change beforePath="$PROJECT_DIR$/PR04Kindergarten/src/ee/ttu/iti0202/kindergarten/Kindergarten.java" afterPath="$PROJECT_DIR$/PR04Kindergarten/src/ee/ttu/iti0202/kindergarten/Kindergarten.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,8 +138,8 @@
       <file leaf-file-name="Kindergarten.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PR04Kindergarten/src/ee/ttu/iti0202/kindergarten/Kindergarten.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="97" column="123" lean-forward="false" selection-start-line="97" selection-start-column="123" selection-end-line="97" selection-end-column="123" />
+            <state relative-caret-position="168">
+              <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
@@ -582,14 +581,7 @@
       <workItem from="1518980816188" duration="5072000" />
       <workItem from="1519118801428" duration="11000" />
       <workItem from="1519197701935" duration="12438000" />
-      <workItem from="1519287580993" duration="27785000" />
-    </task>
-    <task id="LOCAL-00031" summary="Exercise">
-      <created>1518012931901</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1518012931901</updated>
+      <workItem from="1519287580993" duration="28135000" />
     </task>
     <task id="LOCAL-00032" summary="Exercise">
       <created>1518012997404</created>
@@ -927,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519424673730</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Exercise">
+      <created>1519425358506</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1519425358506</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134761000" />
+    <option name="totallyTimeSpent" value="135111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1520,8 +1519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PR04Kindergarten/src/ee/ttu/iti0202/kindergarten/Kindergarten.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="97" column="123" lean-forward="false" selection-start-line="97" selection-start-column="123" selection-end-line="97" selection-end-column="123" />
+        <state relative-caret-position="168">
+          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
