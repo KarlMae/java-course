@@ -21,6 +21,10 @@ public class Kindergarten {
     }
 
     public String returnChild(int index) {
+        if (children.size() <= 0) {
+            return "";
+        }
+
         if (index > children.size() || index < 0) {
             return "";
         }
