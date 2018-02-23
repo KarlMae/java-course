@@ -22,7 +22,7 @@ public class Kindergarten {
     }
 
     public String returnChild(int index) {
-        if (index + 1 > children.size()) {
+        if (index > children.size()) {
             return "";
         }
         return this.children.remove(index);
