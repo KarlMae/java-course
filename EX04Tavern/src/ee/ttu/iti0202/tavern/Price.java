@@ -13,14 +13,14 @@ public class Price {
     private int amount;
     private Currency currency;
 
-    public Price(Currency currency, int amount) {
+    public Price(int amount, Currency currency) {
         priceInCoins.put(currency, amount);
         this.amount = amount;
         this.currency = currency;
         this.priceInBaseValue = amount * currency.getRate();
     }
 
-    public Price add(Currency currency, int amount) {
+    public Price add(int amount, Currency currency) {
         if (this.priceInCoins.containsKey(currency)) {
             this.priceInCoins.put(currency, this.priceInCoins.get(currency) + amount);
         } else {
@@ -58,16 +58,16 @@ public class Price {
 
     public static Price of(int gold, int silver, int copper) {
         Currency g = Currency.get("gold");
-        Price newPrice = new Price(g, gold);
-        newPrice.add(Currency.get("silver"), silver);
-        newPrice.add(Currency.get("copper"), copper);
+        Price newPrice = new Price(gold, g);
+        newPrice.add(silver, Currency.get("silver"));
+        newPrice.add(copper, Currency.get("copper"));
 
         return newPrice;
     }
 
 
     public static Price of(int copper) {
-        return new Price(Currency.get("copper"), copper);
+        return new Price(copper, Currency.get("copper"));
     }
 
 

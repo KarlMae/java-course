@@ -3,7 +3,6 @@ package ee.ttu.iti0202.kindergarten;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Kindergarten {
 
@@ -22,7 +21,7 @@ public class Kindergarten {
     }
 
     public String returnChild(int index) {
-        if (index > children.size()) {
+        if (index + 1 > children.size()) {
             return "";
         }
         return this.children.remove(index);
@@ -49,8 +48,8 @@ public class Kindergarten {
     public int getChildrenWithFirstName(String name) {
         int count = 0;
 
-        for (String child : this.children){
-            if (child.split("\\s+")[0].equals(name)) count ++;
+        for (String child : this.children) {
+            if (child.split("\\s+")[0].equals(name)) count++;
         }
 
         if (count == 0) return -1;
@@ -66,7 +65,7 @@ public class Kindergarten {
             if (recurringName.containsKey(lastName)) {
                 if (!recurringName.get(lastName)) {
                     recurringName.put(lastName, true);
-                    count ++;
+                    count++;
                 }
             } else {
                 recurringName.put(lastName, false);
@@ -74,6 +73,30 @@ public class Kindergarten {
 
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+
+        Kindergarten kindergarten = new Kindergarten();
+        for (int i = 0; i < 10; i++) {
+            kindergarten.addChild("Jon Snow");
+        }
+        for (int i = 0; i < 13; i++) {
+            kindergarten.addChild("Arya Stark");
+        }
+
+        System.out.println("Children list contains " + kindergarten.getChildrenList().size() + " children."); // Children list contains 20 children.
+        System.out.println("First names " + kindergarten.getAllFirstNameAmounts() + "."); // First names {Arya=10, Jon=10}.
+        System.out.println("With name Jon amount " + kindergarten.getChildrenWithFirstName("Jon") + "."); // With name Jon amount 10.
+        System.out.println("Pairs with matching last names " + kindergarten.getMatchingLastNameAmount() + "."); // Pairs with matching last names 2.
+        System.out.println("Return the fifth child " + kindergarten.returnChild(5) + ".");  // Return the fifth child Jon Snow.
+        System.out.println("List amount has decreased to " + kindergarten.getChildrenList().size() + "."); // List amount has decreased to 19.
+        kindergarten.summerBreak(); // void
+        System.out.println("No more children " + kindergarten.getChildrenList() + "."); // No more children [].
+        System.out.println("Nobody with the name so return " + kindergarten.getChildrenWithFirstName("Arya") + "."); // Nobody with the name so return -1.
+        System.out.println("Pairs with matching last names " + kindergarten.getMatchingLastNameAmount() + "."); // Pairs with matching last names 2.
+        System.out.println("First names " + kindergarten.getAllFirstNameAmounts() + "."); // First names {Arya=10, Jon=10}.
+        System.out.println("Return the fifth child " + kindergarten.returnChild(0) + ".");
     }
 }
 
