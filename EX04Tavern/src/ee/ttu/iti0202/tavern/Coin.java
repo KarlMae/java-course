@@ -1,7 +1,5 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.Collection;
-
 public class Coin implements Comparable<Coin> {
 
     private int amount;

@@ -91,7 +91,7 @@ public class Price {
         if (currencies == null) return "";
 
         for (Currency c : currencyList) {
-            if(currencies.get(c) == 0) continue;
+            if (currencies.get(c) == 0) continue;
             output.append(currencies.get(c));
             output.append(" ");
             output.append(c.getName());
