@@ -14,10 +14,10 @@ public class Price {
     private Currency currency;
 
     public Price(int amount, Currency currency) {
-        priceInCoins.put(currency, amount);
         this.amount = amount;
         this.currency = currency;
         this.priceInBaseValue = amount * currency.getRate();
+        this.priceInCoins.put(currency, amount);
     }
 
     public Price add(int amount, Currency currency) {
@@ -35,16 +35,16 @@ public class Price {
 
 
         //Sort currencies by value
-        for (Currency currency : this.priceInCoins.keySet()) {
+        for (Currency currency : Currency.getCurrencies()) {
             values.add(Currency.getRate(currency));
-            this.priceInBaseValue += values.get(values.size());
+            this.priceInBaseValue += values.get(values.size() - 1);
         }
         Collections.sort(values);
 
 
         //Use sorted list and divide price in base value into the currencies
         for (Integer value : values) {
-            for (Currency currency : priceInCoins.keySet()) {
+            for (Currency currency : Currency.getCurrencies()) {
                 if (Currency.getRate(currency) == value) {
                     int amountOfCoinsToAdd = priceInBaseValue / Currency.getRate(currency);
                     priceInBaseValue -= amountOfCoinsToAdd * Currency.getRate(currency);
@@ -57,8 +57,7 @@ public class Price {
     }
 
     public static Price of(int gold, int silver, int copper) {
-        Currency g = Currency.get("gold");
-        Price newPrice = new Price(gold, g);
+        Price newPrice = new Price(gold, Currency.get("copper"));
         newPrice.add(silver, Currency.get("silver"));
         newPrice.add(copper, Currency.get("copper"));
 
@@ -79,10 +78,15 @@ public class Price {
     public String toString() {
         StringBuilder output = new StringBuilder();
         Map<Currency, Integer> currencies = this.getPrice();
+
         if (currencies == null) return "";
+
         for (Currency c : currencies.keySet())
             output.append(currencies.get(c));
-        output.append(getClass().getName());
+            output.append(" ");
+            output.append(currency.getName());
+        output.append(" ");
+
         return output.toString();
     }
 

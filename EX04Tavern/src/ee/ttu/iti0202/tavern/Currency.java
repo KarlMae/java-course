@@ -80,6 +80,7 @@ public class Currency {
         currencies.put(currency, new Currency(currency));
         if (rateToBaseCurrency == 1) {
             baseCurrency = currencies.get(currency);
+            currencyValues.put(currencies.get(currency), rateToBaseCurrency);
         } else {
             currencyValues.put(currencies.get(currency), rateToBaseCurrency);
         }
@@ -135,7 +136,6 @@ public class Currency {
     }
 
     public static int getRate(Currency fromCurrency, Currency toCurrency) {
-        // TODO: compare currencies and return proper rate.
         // use the rate stored in add method
         // for example: gold -> silver should return 10
         // silver -> gold will return 0 (as the method returns int
@@ -153,8 +153,8 @@ public class Currency {
         baseCurrency = null;
     }
 
-    //@Override
-    //public String toString() {
-    //    return name;
-    //}
+    @Override
+    public String toString() {
+        return name;
+    }
 }

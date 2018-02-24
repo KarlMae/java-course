@@ -5,12 +5,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        // let's register currencies
+
+// let's register currencies
         Currency.add("copper");
         Currency.add("silver", 10);
         Currency.add("gold", 100);
 
-        // use "variables" to shorten currency usage
+// use "variables" to shorten currency usage
         Currency c = Currency.get("copper");
         Currency s = Currency.get("silver");
         Currency g = Currency.get("gold");
@@ -21,8 +22,8 @@ public class Main {
 
         Coin c2 = new Coin(s);
         Coin c3 = new Coin(g);
-        // this won't be used in purse in main part
-        // but this should work
+// this won't be used in purse in main part
+// but this should work
         Coin c4 = new Coin(10, g);
 
         System.out.println(c4.getAmount());    // 10
@@ -56,7 +57,7 @@ public class Main {
         System.out.println(tavern.getPriceForFood("pasta")); // null, no more this food
 
         tavern.addFood("pasta", Price.of(20));
-        // let's add 2 silver coins
+// let's add 2 silver coins
         purse.addCoin(new Coin(s));
         purse.addCoin(new Coin(s));
         System.out.println(purse.getCoins()); // [1 silver, 1 silver, 1 silver]
