@@ -5,7 +5,9 @@ import java.util.*;
 /**
  * Keeps track of currencies.
  */
-public class Currency {
+public class Currency implements Comparable<Currency> {
+
+
     private static Map<Currency, Integer> currencyValues = new HashMap<>();
 
     /**
@@ -77,7 +79,7 @@ public class Currency {
      */
     public static void add(String currency, int rateToBaseCurrency) {
         if (currencies.get(currency) != null) return; // cannot add if already exists, should throw exception?
-        currencies.put(currency, new Currency(currency));
+        currencies.put(currency, new Currency(currency, rateToBaseCurrency));
         if (rateToBaseCurrency == 1) {
             baseCurrency = currencies.get(currency);
             currencyValues.put(currencies.get(currency), rateToBaseCurrency);
@@ -156,5 +158,12 @@ public class Currency {
     @Override
     public String toString() {
         return name;
+    }
+
+    @Override
+    public int compareTo(Currency c) {
+        int compareValue = (c.getRate());
+        //For descending order
+        return compareValue - this.getRate();
     }
 }

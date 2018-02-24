@@ -27,7 +27,9 @@ public class Tavern {
 
 
         if (foods.containsKey(name)) {
-            if (money > foods.get(name).getPriceInBaseValue()) {
+            Price foodCost = foods.get(name);
+            if (money > foodCost.getPriceInBaseValue()) {
+                purse.pay(foodCost);
                 foods.remove(name);
                 return true;
             }

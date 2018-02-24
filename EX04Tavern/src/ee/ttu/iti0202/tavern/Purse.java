@@ -1,9 +1,6 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Purse {
 
@@ -26,22 +23,22 @@ public class Purse {
     }
 
     private Coin tryEveryCoin(int priceToPay) {
-        Coin smallestCoin = null;
+        Coin bestCoin = null;
+        Collections.sort(coins);
 
         for (Coin c : coins) {
-            if (c.getAmount() * c.getCurrency().getRate() < priceToPay) {
-                if (smallestCoin == null) {
-                    smallestCoin = c;
-                }
-
-                // If new coin is higher in value
-                if (c.getAmount() * c.getCurrency().getRate() > smallestCoin.getAmount() * smallestCoin.getCurrency().getRate()) {
-                    smallestCoin = c;
-                }
+            if (bestCoin == null) {
+                bestCoin = c;
+                continue;
             }
+
+            // If new coin suits better
+            int newCoinValue = c.getAmount() * c.getCurrency().getRate();
+            if (newCoinValue >= priceToPay) bestCoin = c;
         }
-        if (smallestCoin != null) {
-            return smallestCoin;
+
+        if (bestCoin != null) {
+            return bestCoin;
         } else {
             return null;
         }
@@ -55,9 +52,10 @@ public class Purse {
 
         while (priceToPay > 0) {
             Coin coinToPay = tryEveryCoin(priceToPay);
-            if (coinToPay == null) return null;
+            if (coinToPay == null) return coinsToPay;
             priceToPay -= coinToPay.getAmount() * coinToPay.getCurrency().getRate();
 
+            coins.remove(coinToPay);
             coinsToPay.add(coinToPay);
         }
 

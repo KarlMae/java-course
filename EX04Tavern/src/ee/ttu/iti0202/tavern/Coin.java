@@ -1,6 +1,8 @@
 package ee.ttu.iti0202.tavern;
 
-public class Coin {
+import java.util.Collection;
+
+public class Coin implements Comparable<Coin> {
 
     private int amount;
     private Currency currency;
@@ -23,6 +25,10 @@ public class Coin {
         return this.currency;
     }
 
+    public int getValue() {
+        return this.amount * Currency.getRate(this.currency);
+    }
+
 
     @Override
     public String toString() {
@@ -34,5 +40,10 @@ public class Coin {
         return (((Coin) obj).amount == this.amount && ((Coin) obj).currency == this.currency);
     }
 
-
+    @Override
+    public int compareTo(Coin c) {
+        int compareValue = (c.getValue());
+        //For descending order
+        return compareValue - this.getValue();
+    }
 }
