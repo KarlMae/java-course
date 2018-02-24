@@ -88,7 +88,7 @@ public class Price {
         List<Currency> currencyList = new ArrayList<>(currencies.keySet());
         Collections.sort(currencyList);
 
-        if (currencies == null) return "";
+        if (currencies.size() == 0) return "";
 
         for (Currency c : currencyList) {
             if (currencies.get(c) == 0) continue;

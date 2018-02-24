@@ -9,7 +9,6 @@ public class Purse {
 
 
     private static ArrayList<Coin> coins = new ArrayList<>();
-    private int balance = 0;
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
