@@ -69,6 +69,10 @@ public class Currency implements Comparable<Currency> {
         return rate;
     }
 
+    public static void add(String currency, boolean isBaseCurrency, int rateToBaseCurrency) {
+
+    }
+
     /**
      * Adds a currency with the given name and rate to base currency.
      * If the currency by the name already exists, does nothing.

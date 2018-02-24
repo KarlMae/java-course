@@ -22,6 +22,7 @@ public class Purse {
     }
 
     public List<Coin> getCoins() {
+        Collections.sort(coins);
         return coins;
     }
 

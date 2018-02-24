@@ -48,6 +48,7 @@ public class Main {
         tavern.addFood("pasta", Price.of(11));
 
         System.out.println(tavern.getPriceForFood("pasta")); // 1 silver, 1 copper
+        purse.addCoin(new Coin(g));
 
         System.out.println(tavern.buy("pasta", purse)); // false, not enough money
         purse.addCoin(new Coin(g));
