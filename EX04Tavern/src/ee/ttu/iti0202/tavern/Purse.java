@@ -5,7 +5,7 @@ import java.util.*;
 public class Purse {
 
     private static ArrayList<Coin> coins = new ArrayList<>();
-    private static Map<Integer, ArrayList> priceOptimums = new HashMap<>();
+    private static Map<Integer, ArrayList<Coin>> priceOptimums = new HashMap<>();
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
