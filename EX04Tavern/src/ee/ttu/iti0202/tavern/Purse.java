@@ -62,7 +62,6 @@ public class Purse {
 
     private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft) {
 
-
         ArrayList<Coin> tempCoins = new ArrayList<>();
         ArrayList<Coin> optimalCoins = new ArrayList<>();
         int optimalSize = Integer.MAX_VALUE;
@@ -87,7 +86,17 @@ public class Purse {
             }
 
             // This tree doesn't yield a result
-            if (price < 0 || availableCoins.size() == 0 && optimalSize == Integer.MAX_VALUE) {
+            if (availableCoins.size() == 0 && optimalSize == Integer.MAX_VALUE) {
+                return null;
+            }
+
+            if (price < 0) {
+                ArrayList<Coin> returnCoin = new ArrayList<>();
+                returnCoin.add(coin);
+                return returnCoin;
+            }
+
+            if (availableCoins.size() == 0) {
                 return null;
             }
 
