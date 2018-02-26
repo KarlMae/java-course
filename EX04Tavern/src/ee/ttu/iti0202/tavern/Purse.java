@@ -1,13 +1,11 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Purse {
 
     private static ArrayList<Coin> coins = new ArrayList<>();
+    private static Map<Integer, ArrayList> priceOptimums = new HashMap<>();
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
@@ -63,6 +61,10 @@ public class Purse {
 
     private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft) {
 
+        if (priceOptimums.containsKey(priceLeft)){
+            return priceOptimums.get(priceLeft);
+        }
+
         ArrayList<Coin> tempCoins = new ArrayList<>();
         ArrayList<Coin> optimalCoins = new ArrayList<>();
         int optimalSize = Integer.MAX_VALUE;
@@ -111,6 +113,7 @@ public class Purse {
                 optimalSize = tempCoins.size();
             }
         }
+        priceOptimums.put(priceLeft, optimalCoins);
         return optimalCoins;
     }
 
