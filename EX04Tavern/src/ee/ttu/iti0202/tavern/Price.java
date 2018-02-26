@@ -105,4 +105,10 @@ public class Price {
     public boolean equals(Object obj) {
         return obj == this || (((Price) obj).priceInBaseValue) == this.priceInBaseValue;
     }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(priceInBaseValue);
+    }
 }

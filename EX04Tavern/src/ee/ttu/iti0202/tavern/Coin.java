@@ -1,5 +1,7 @@
 package ee.ttu.iti0202.tavern;
 
+import java.util.Objects;
+
 public class Coin implements Comparable<Coin> {
 
     private int amount;
@@ -36,6 +38,11 @@ public class Coin implements Comparable<Coin> {
     @Override
     public boolean equals(Object obj) {
         return (((Coin) obj).amount == this.amount && ((Coin) obj).currency == this.currency);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(amount, currency);
     }
 
     @Override
