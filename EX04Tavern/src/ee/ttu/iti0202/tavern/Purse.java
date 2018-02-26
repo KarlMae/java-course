@@ -67,6 +67,7 @@ public class Purse {
 
         ArrayList<Coin> optimalCoins = new ArrayList<>();
         int optimalSize = Integer.MAX_VALUE;
+        int optimalIndexMarker = 0;
 
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
@@ -90,7 +91,8 @@ public class Purse {
             ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(passingCoins, priceLeft - coin.getValue(), index + 1);
 
             if (nextLevelCoins != null) {
-                if (nextLevelCoins.size() + 1 < optimalSize) {
+                if (nextLevelCoins.size() + 1 < optimalSize && optimalIndexMarker == index) {
+                    optimalIndexMarker = index;
                     optimalCoins.addAll(nextLevelCoins);
                     optimalCoins.add(coin);
                 }
