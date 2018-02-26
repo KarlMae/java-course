@@ -1,12 +1,10 @@
 package ee.ttu.iti0202.tavern;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Purse {
-
 
     private static ArrayList<Coin> coins = new ArrayList<>();
 
@@ -49,20 +47,61 @@ public class Purse {
 
     public List<Coin> pay(Price price) {
         int priceToPay = price.getPriceInBaseValue();
-        List<Coin> coinsToPay = new ArrayList<>();
+        List<Coin> coinsToPay;
 
-        if (priceToPay <= 0) return null;
+        coinsToPay = recursiveCoinFinder(coins, priceToPay);
 
-        while (priceToPay > 0) {
-            Coin coinToPay = tryEveryCoin(priceToPay);
-            if (coinToPay == null) return coinsToPay;
-            priceToPay -= coinToPay.getAmount() * coinToPay.getCurrency().getRate();
-
-            coins.remove(coinToPay);
-            coinsToPay.add(coinToPay);
+        if (coinsToPay != null) {
+            for (Coin coin : coinsToPay) {
+                coins.remove(coin);
+            }
         }
 
         return coinsToPay;
+    }
+
+    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft) {
+
+
+        ArrayList<Coin> tempCoins = new ArrayList<>();
+        ArrayList<Coin> optimalCoins = new ArrayList<>();
+        int optimalSize = Integer.MAX_VALUE;
+
+        // Try every coin
+        for (int i = 0; i < availableCoins.size(); i++) {
+
+            // New loop, reset values
+            int price = priceLeft;
+            tempCoins.clear();
+
+            // Select a coin from the arraylist
+            Coin coin = availableCoins.get(i);
+            tempCoins.add(coin);
+            price = price - coin.getValue();
+
+            // Base case
+            if (price == 0) {
+                ArrayList<Coin> returnCoin = new ArrayList<>();
+                returnCoin.add(coin);
+                return returnCoin;
+            }
+
+            // This tree doesn't yield a result
+            if (price < 0 || availableCoins.size() == 0 && optimalSize == Integer.MAX_VALUE) {
+                return null;
+            }
+
+            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(availableCoins, price);
+            if (nextLevelCoins != null) {
+                tempCoins.addAll(nextLevelCoins);
+            }
+
+            if (tempCoins.size() < optimalSize) {
+                optimalCoins = tempCoins;
+                optimalSize = tempCoins.size();
+            }
+        }
+        return optimalCoins;
     }
 
 
