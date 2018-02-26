@@ -48,7 +48,7 @@ public class Purse {
         int priceToPay = price.getPriceInBaseValue();
         List<Coin> coinsToPay;
 
-        coinsToPay = recursiveCoinFinder(coins, priceToPay);
+        coinsToPay = recursiveCoinFinder(coins, priceToPay, 0);
 
         if (coinsToPay != null) {
             for (Coin coin : coinsToPay) {
@@ -59,29 +59,22 @@ public class Purse {
         return coinsToPay;
     }
 
-    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft) {
+    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft, int index) {
 
-        if (priceOptimums.containsKey(priceLeft)){
+        if (priceOptimums.containsKey(priceLeft)) {
             return priceOptimums.get(priceLeft);
         }
 
-        ArrayList<Coin> tempCoins = new ArrayList<>();
         ArrayList<Coin> optimalCoins = new ArrayList<>();
         int optimalSize = Integer.MAX_VALUE;
 
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
-
-            // New loop, reset values
-            tempCoins.clear();
-
             // Select a coin from the arraylist
             Coin coin = availableCoins.get(i);
-            tempCoins.add(coin);
-            int price = priceLeft - coin.getValue();
 
             // Base case
-            if (price == 0) {
+            if (priceLeft - coin.getValue() <= 0) {
                 ArrayList<Coin> returnCoin = new ArrayList<>();
                 returnCoin.add(coin);
                 return returnCoin;
@@ -92,30 +85,19 @@ public class Purse {
                 return null;
             }
 
-            if (price < 0) {
-                ArrayList<Coin> returnCoin = new ArrayList<>();
-                returnCoin.add(coin);
-                return returnCoin;
-            }
-
-            if (availableCoins.size() == 0) {
-                return null;
-            }
-
-            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(availableCoins, price);
+            ArrayList<Coin> passingCoins = new ArrayList<>(availableCoins);
+            passingCoins.remove(coin);
+            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(passingCoins, priceLeft - coin.getValue(), index + 1);
 
             if (nextLevelCoins != null) {
-                tempCoins.addAll(nextLevelCoins);
-            }
-
-            if (tempCoins.size() < optimalSize) {
-                optimalCoins = tempCoins;
-                optimalSize = tempCoins.size();
+                if (nextLevelCoins.size() + 1 < optimalSize) {
+                    optimalCoins.addAll(nextLevelCoins);
+                    optimalCoins.add(coin);
+                }
             }
         }
+
         priceOptimums.put(priceLeft, optimalCoins);
         return optimalCoins;
     }
-
-
 }
