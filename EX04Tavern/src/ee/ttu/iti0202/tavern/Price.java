@@ -95,10 +95,10 @@ public class Price {
             output.append(currencies.get(c));
             output.append(" ");
             output.append(c.getName());
-            output.append(" ");
+            output.append(", ");
         }
 
-        return output.toString();
+        return output.toString().substring(0, output.length() - 2);
     }
 
     @Override
