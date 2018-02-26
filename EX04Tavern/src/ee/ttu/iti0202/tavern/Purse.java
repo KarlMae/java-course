@@ -1,6 +1,7 @@
 package ee.ttu.iti0202.tavern;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -70,13 +71,12 @@ public class Purse {
         for (int i = 0; i < availableCoins.size(); i++) {
 
             // New loop, reset values
-            int price = priceLeft;
             tempCoins.clear();
 
             // Select a coin from the arraylist
             Coin coin = availableCoins.get(i);
             tempCoins.add(coin);
-            price = price - coin.getValue();
+            int price = priceLeft - coin.getValue();
 
             // Base case
             if (price == 0) {
@@ -101,6 +101,7 @@ public class Purse {
             }
 
             ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(availableCoins, price);
+
             if (nextLevelCoins != null) {
                 tempCoins.addAll(nextLevelCoins);
             }
