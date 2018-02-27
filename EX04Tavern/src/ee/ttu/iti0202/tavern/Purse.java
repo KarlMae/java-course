@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Purse {
 
-    private static ArrayList<Coin> coins = new ArrayList<>();
-    private static ArrayList<Coin> bestSolution = new ArrayList<>();
-    private static ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
-    private static Boolean bestSolutionExact = false;
+    private ArrayList<Coin> coins = new ArrayList<>();
+    private ArrayList<Coin> bestSolution = new ArrayList<>();
+    private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
+    private Boolean bestSolutionExact = false;
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
