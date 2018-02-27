@@ -5,8 +5,8 @@ import java.util.*;
 public class Purse {
 
     private static ArrayList<Coin> coins = new ArrayList<>();
-    private static Map<Integer, ArrayList<Coin>> priceOptimums = new HashMap<>();
     private static ArrayList<Coin> bestSolution = new ArrayList<>();
+    private static Boolean bestSolutionExact = false;
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
@@ -47,63 +47,42 @@ public class Purse {
 
     public List<Coin> pay(Price price) {
         int priceToPay = price.getPriceInBaseValue();
-        ArrayList<Coin> coinsToPay = new ArrayList<Coin>();
+        ArrayList<Coin> coinsToPay = new ArrayList<>();
+        bestSolution.clear();
+        bestSolutionExact = false;
+        recursiveCoinFinder(coins, coinsToPay, priceToPay);
 
-        coinsToPay = recursiveCoinFinder(coins, coinsToPay, priceToPay, 0);
-
-        if (coinsToPay != null) {
-            for (Coin coin : coinsToPay) {
-                coins.remove(coin);
-            }
-        }
-
-        return coinsToPay;
+        return bestSolution;
     }
 
-    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft, int index) {
-
-        if (priceOptimums.containsKey(priceLeft)) {
-            return priceOptimums.get(priceLeft);
+    private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
+        // Base case
+        if (priceLeft  <= 0) {
+            if ((usedCoins.size() < bestSolution.size() && priceLeft == 0) || bestSolution.size() == 0) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionExact = true;
+                return;
+            }
+            if (bestSolutionExact) {
+                return;
+            }
+            if (priceLeft < 0 && usedCoins.size() < bestSolution.size()) {
+                bestSolution = new ArrayList<>(usedCoins);
+            }
+            return;
         }
-
-        ArrayList<Coin> optimalCoins = new ArrayList<>();
-        int optimalSize = Integer.MAX_VALUE;
-        int optimalIndexMarker = 0;
 
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
             // Select a coin from the arraylist
             Coin coin = availableCoins.get(i);
-
-            // Base case
-            if (priceLeft - coin.getValue() <= 0) {
-                ArrayList<Coin> returnCoin = new ArrayList<>();
-                returnCoin.add(coin);
-                return returnCoin;
-            }
-
-            // This tree doesn't yield a result
-            if (availableCoins.size() == 0 && optimalSize == Integer.MAX_VALUE) {
-                return null;
-            }
-
-            ArrayList<Coin> passingCoins = new ArrayList<>(availableCoins);
-            passingCoins.remove(coin);
             usedCoins.add(coin);
-            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(passingCoins, usedCoins, priceLeft - coin.getValue(), index + 1);
-            usedCoins.remove(coin);
+            availableCoins.remove(i);
 
+            recursiveCoinFinder(availableCoins, usedCoins, priceLeft - coin.getValue());
 
-            if (nextLevelCoins != null) {
-                if (nextLevelCoins.size() + 1 < optimalSize && optimalIndexMarker == index) {
-                    optimalIndexMarker = index;
-                    optimalCoins.addAll(nextLevelCoins);
-                    optimalCoins.add(coin);
-                }
-            }
+            usedCoins.remove(usedCoins.size() - 1);
+            availableCoins.add(i, coin);
         }
-
-        priceOptimums.put(priceLeft, optimalCoins);
-        return optimalCoins;
     }
 }
