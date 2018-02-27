@@ -6,6 +6,7 @@ public class Purse {
 
     private static ArrayList<Coin> coins = new ArrayList<>();
     private static Map<Integer, ArrayList<Coin>> priceOptimums = new HashMap<>();
+    private static ArrayList<Coin> bestSolution = new ArrayList<>();
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
@@ -46,9 +47,9 @@ public class Purse {
 
     public List<Coin> pay(Price price) {
         int priceToPay = price.getPriceInBaseValue();
-        List<Coin> coinsToPay;
+        ArrayList<Coin> coinsToPay = new ArrayList<Coin>();
 
-        coinsToPay = recursiveCoinFinder(coins, priceToPay, 0);
+        coinsToPay = recursiveCoinFinder(coins, coinsToPay, priceToPay, 0);
 
         if (coinsToPay != null) {
             for (Coin coin : coinsToPay) {
@@ -59,7 +60,7 @@ public class Purse {
         return coinsToPay;
     }
 
-    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, int priceLeft, int index) {
+    private ArrayList<Coin> recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft, int index) {
 
         if (priceOptimums.containsKey(priceLeft)) {
             return priceOptimums.get(priceLeft);
@@ -88,7 +89,10 @@ public class Purse {
 
             ArrayList<Coin> passingCoins = new ArrayList<>(availableCoins);
             passingCoins.remove(coin);
-            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(passingCoins, priceLeft - coin.getValue(), index + 1);
+            usedCoins.add(coin);
+            ArrayList<Coin> nextLevelCoins = recursiveCoinFinder(passingCoins, usedCoins, priceLeft - coin.getValue(), index + 1);
+            usedCoins.remove(coin);
+
 
             if (nextLevelCoins != null) {
                 if (nextLevelCoins.size() + 1 < optimalSize && optimalIndexMarker == index) {
