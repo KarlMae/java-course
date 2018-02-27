@@ -21,7 +21,7 @@ public class Tavern {
 
     public Price getPriceForFood(String name) {
         List<Price> prices = foods.getOrDefault(name, null);
-        if (prices != null){
+        if (prices != null) {
             if (prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
                 return prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).get();
             }
@@ -29,10 +29,24 @@ public class Tavern {
         return null;
     }
 
-    public void returnChange(List<Coin> paidCoins){
+    public void returnChange(List<Coin> paidCoins, Purse purse) {
         int returnamount = 0;
         for (Coin coin : paidCoins) {
             returnamount += coin.getValue();
+        }
+        paidCoins.sort(Collections.reverseOrder());
+
+        for (Coin coin : paidCoins) {
+            int coinValue = coin.getValue();
+            if (coinValue > returnamount) {
+                continue;
+            }
+            int coinUseAmount = returnamount / coinValue;
+
+            for (int i = 0; i < coinUseAmount; i++) {
+                returnamount -= coinValue;
+                purse.addCoin(coin);
+            }
         }
     }
 
@@ -53,10 +67,10 @@ public class Tavern {
 
             if (money > foodCost.getPriceInBaseValue()) {
                 List<Coin> paidCoins = purse.pay(foodCost);
-                returnChange(paidCoins);
+                returnChange(paidCoins, purse);
 
                 List<Price> prices = foods.get(name);
-                if(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()){
+                if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
                     prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
                 }
                 return x;
@@ -82,7 +96,7 @@ public class Tavern {
                 purse.pay(foodCost);
 
                 List<Price> prices = foods.get(name);
-                if(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()){
+                if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
                     prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
                 }
                 return true;
