@@ -36,8 +36,12 @@ public class Coin implements Comparable<Coin> {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return (((Coin) obj).amount == this.amount && ((Coin) obj).currency == this.currency);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Coin coin = (Coin) o;
+        return amount == coin.amount &&
+                Objects.equals(currency, coin.currency);
     }
 
     @Override
