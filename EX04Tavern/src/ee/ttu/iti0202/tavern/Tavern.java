@@ -1,20 +1,32 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Tavern {
 
-    private static Map<String, Price> foods = new HashMap<>();
+    private static Map<String, List<Price>> foods = new HashMap<>();
 
 
     public void addFood(String name, Price price) {
-        foods.put(name, price);
+        if (foods.containsKey(name)) {
+            List<Price> updatedFood = foods.get(name);
+            updatedFood.add(price);
+            foods.put(name, updatedFood);
+        } else {
+            List<Price> updatedFood = new ArrayList<>();
+            updatedFood.add(price);
+            foods.put(name, updatedFood);
+        }
     }
 
     public Price getPriceForFood(String name) {
-        return foods.getOrDefault(name, null);
+        List<Price> prices = foods.getOrDefault(name, null);
+        if (prices != null){
+            if (prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
+                return prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).get();
+            }
+        }
+        return null;
     }
 
     public boolean buy(String name, Purse purse) {
@@ -25,12 +37,18 @@ public class Tavern {
             money += coin.getCurrency().getRate() * coin.getAmount();
         }
 
-
         if (foods.containsKey(name)) {
-            Price foodCost = foods.get(name);
+            Price foodCost = getPriceForFood(name);
+
+            if (foodCost == null) return false;
+
             if (money > foodCost.getPriceInBaseValue()) {
                 purse.pay(foodCost);
-                foods.remove(name);
+
+                List<Price> prices = foods.get(name);
+                if(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()){
+                    prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
+                }
                 return true;
             }
         }
