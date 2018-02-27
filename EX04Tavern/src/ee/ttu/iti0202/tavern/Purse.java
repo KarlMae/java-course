@@ -54,7 +54,11 @@ public class Purse {
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
-        return bestSolution;
+        if (bestSolution != null) {
+            return bestSolution;
+        } else {
+            return null;
+        }
     }
 
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
