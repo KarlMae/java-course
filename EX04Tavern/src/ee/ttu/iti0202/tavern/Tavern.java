@@ -29,24 +29,25 @@ public class Tavern {
         return null;
     }
 
-    public List<Coin> returnChange(List<Coin> paidCoins, Purse purse) {
-        int returnamount = 0;
+    public List<Coin> returnChange(List<Coin> paidCoins, int foodcost, Purse purse) {
         List<Coin> coinsToReturn = new ArrayList<>();
-        for (Coin coin : paidCoins) {
-            returnamount += coin.getValue();
-        }
-        paidCoins.sort(Collections.reverseOrder());
+        List<Currency> availableCurrencies = Currency.getCurrencies();
+        availableCurrencies.sort(Collections.reverseOrder());
+        int amountPaid = 0;
 
-        for (Coin coin : paidCoins) {
-            int coinValue = coin.getValue();
-            if (coinValue > returnamount) {
+        for (Coin coin : paidCoins) amountPaid += coin.getValue();
+        int payBackAmount = amountPaid - foodcost;
+
+        for (Currency currency : availableCurrencies) {
+            int currencyValue = currency.getRate();
+            if (currencyValue > payBackAmount) {
                 continue;
             }
-            int coinUseAmount = returnamount / coinValue;
+            int coinUseAmount = payBackAmount / currencyValue;
 
             for (int i = 0; i < coinUseAmount; i++) {
-                returnamount -= coinValue;
-                purse.addCoin(coin);
+                payBackAmount -= currencyValue;
+                purse.addCoin(new Coin(currency));
             }
         }
         return coinsToReturn;
@@ -67,7 +68,7 @@ public class Tavern {
 
             if (money > foodCost.getPriceInBaseValue()) {
                 List<Coin> paidCoins = purse.pay(foodCost);
-                List<Coin> coinsToReturn = returnChange(paidCoins, purse);
+                List<Coin> coinsToReturn = returnChange(paidCoins, foodCost.getPriceInBaseValue(), purse);
 
                 List<Price> prices = foods.get(name);
                 if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
