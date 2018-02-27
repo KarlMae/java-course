@@ -85,7 +85,7 @@ public class Purse {
                 bestSolutionOverPay = priceLeft;
             }
 
-            if (usedCoins.size() == bestSolution.size() && priceLeft < bestSolutionOverPay) {
+            if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
