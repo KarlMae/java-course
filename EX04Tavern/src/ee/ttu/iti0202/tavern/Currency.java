@@ -84,11 +84,10 @@ public class Currency implements Comparable<Currency> {
     public static void add(String currency, int rateToBaseCurrency) {
         if (currencies.get(currency) != null) return; // cannot add if already exists, should throw exception?
         currencies.put(currency, new Currency(currency, rateToBaseCurrency));
+        currencyValues.put(currencies.get(currency), rateToBaseCurrency);
         if (rateToBaseCurrency == 1) {
+            currencyValues.put(currencies.get(currency), rateToBaseCurrency);
             baseCurrency = currencies.get(currency);
-            currencyValues.put(currencies.get(currency), rateToBaseCurrency);
-        } else {
-            currencyValues.put(currencies.get(currency), rateToBaseCurrency);
         }
     }
 
@@ -145,10 +144,7 @@ public class Currency implements Comparable<Currency> {
         // use the rate stored in add method
         // for example: gold -> silver should return 10
         // silver -> gold will return 0 (as the method returns int
-        int fromCurrencyValue = currencyValues.get(fromCurrency);
-        int toCurrencyValue = currencyValues.get(toCurrency);
-        if (toCurrencyValue > fromCurrencyValue) return 0;
-        return fromCurrencyValue / toCurrencyValue;
+        return currencyValues.get(fromCurrency) / currencyValues.get(toCurrency);
     }
 
     /**

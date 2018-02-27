@@ -7,15 +7,9 @@ public class Price {
 
     private int priceInBaseValue;
     private Map<Currency, Integer> priceInCoins = new HashMap<>();
-    private int amount;
-    private int rate;
-    private Currency currency;
+
 
     public Price(int amount, Currency currency) {
-        this.amount = amount;
-        this.currency = currency;
-        this.add(amount, currency);
-        rate = Currency.getRate(currency);
         this.priceInBaseValue = amount * Currency.getRate(currency);
     }
 

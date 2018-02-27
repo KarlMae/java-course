@@ -7,7 +7,7 @@ public class Purse {
     private ArrayList<Coin> coins = new ArrayList<>();
     private ArrayList<Coin> bestSolution = new ArrayList<>();
     private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
-    private Boolean bestSolutionExact = false;
+    private int bestSolutionOverPay = Integer.MAX_VALUE;
 
     public Purse(Coin... coins) {
         for (Coin c : coins) {
@@ -50,7 +50,7 @@ public class Purse {
         int priceToPay = price.getPriceInBaseValue();
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
-        bestSolutionExact = false;
+        bestSolutionOverPay = Integer.MAX_VALUE;
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
@@ -67,21 +67,28 @@ public class Purse {
             if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-                bestSolutionExact = true;
+                bestSolutionOverPay = 0;
                 return;
             }
             if (bestSolution.size() == 0){
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-                if (priceLeft == 0) bestSolutionExact = true;
+                bestSolutionOverPay = priceLeft;
                 return;
             }
-            if (bestSolutionExact) {
+            if (bestSolutionOverPay == 0) {
                 return;
             }
-            if (priceLeft < 0 && usedCoins.size() < bestSolution.size()) {
+            if (usedCoins.size() < bestSolution.size()) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
+            }
+
+            if (usedCoins.size() == bestSolution.size() && priceLeft < bestSolutionOverPay) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
             }
             return;
         }
