@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
+      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -33,8 +33,8 @@
       <file leaf-file-name="Purse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="211">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="e#467#468#0" expanded="true" />
                 <element signature="e#498#499#0" expanded="true" />
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tavern.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tavern.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="492">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
       <file leaf-file-name="Currency.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Currency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="2919">
               <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding>
                 <element signature="e#1230#1231#0" expanded="true" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="400">
               <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="e#414#415#0" expanded="true" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="Price.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="-314">
               <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#227#228#0" expanded="true" />
@@ -170,11 +170,11 @@
         <option value="$PROJECT_DIR$/PR04Kindergarten/src/ee/ttu/iti0202/kindergarten/Kindergarten.java" />
         <option value="$PROJECT_DIR$/EX01Calculator/src/ee/ttu/iti0202/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java" />
-        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Currency.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
+        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
       </list>
     </option>
   </component>
@@ -586,14 +586,7 @@
       <workItem from="1519118801428" duration="11000" />
       <workItem from="1519197701935" duration="12438000" />
       <workItem from="1519287580993" duration="54353000" />
-      <workItem from="1519640516831" duration="52067000" />
-    </task>
-    <task id="LOCAL-00081" summary="Exercise">
-      <created>1519425708584</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1519425708584</updated>
+      <workItem from="1519640516831" duration="54052000" />
     </task>
     <task id="LOCAL-00082" summary="Exercise">
       <created>1519425826537</created>
@@ -931,11 +924,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519759102976</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Exercise">
+      <created>1519759559898</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1519759559898</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213396000" />
+    <option name="totallyTimeSpent" value="215381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -950,7 +950,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3082873" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3038674" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3038674" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -962,7 +962,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26187846" sideWeight="0.478125" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26187846" sideWeight="0.478125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1021,16 +1021,34 @@
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java</url>
           <line>59</line>
           <properties />
           <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Book.java</url>
@@ -1057,7 +1075,7 @@
           <option name="timeStamp" value="180" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="206" />
+      <option name="time" value="210" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1443,17 +1461,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-314">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2320#2321#0" expanded="true" />
+            <element signature="e#2364#2365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
+        <state relative-caret-position="400">
           <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="e#414#415#0" expanded="true" />
@@ -1472,7 +1507,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="2919">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding>
             <element signature="e#1230#1231#0" expanded="true" />
@@ -1496,35 +1531,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>

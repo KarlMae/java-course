@@ -29,8 +29,9 @@ public class Tavern {
         return null;
     }
 
-    public void returnChange(List<Coin> paidCoins, Purse purse) {
+    public List<Coin> returnChange(List<Coin> paidCoins, Purse purse) {
         int returnamount = 0;
+        List<Coin> coinsToReturn = new ArrayList<>();
         for (Coin coin : paidCoins) {
             returnamount += coin.getValue();
         }
@@ -48,12 +49,11 @@ public class Tavern {
                 purse.addCoin(coin);
             }
         }
+        return coinsToReturn;
     }
 
     public List<Coin> buyWithChange(String name, Purse purse) {
-        List<Coin> x = new ArrayList<>();
-
-        if (!foods.containsKey(name)) return x;
+        if (!foods.containsKey(name)) return null;
         int money = 0;
         List<Coin> coins = purse.getCoins();
         for (Coin coin : coins) {
@@ -63,20 +63,20 @@ public class Tavern {
         if (foods.containsKey(name)) {
             Price foodCost = getPriceForFood(name);
 
-            if (foodCost == null) return x;
+            if (foodCost == null) return null;
 
             if (money > foodCost.getPriceInBaseValue()) {
                 List<Coin> paidCoins = purse.pay(foodCost);
-                returnChange(paidCoins, purse);
+                List<Coin> coinsToReturn = returnChange(paidCoins, purse);
 
                 List<Price> prices = foods.get(name);
                 if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
                     prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
                 }
-                return x;
+                return coinsToReturn;
             }
         }
-        return x;
+        return null;
     }
 
     public boolean buy(String name, Purse purse) {
@@ -102,7 +102,6 @@ public class Tavern {
                 return true;
             }
         }
-
         return false;
     }
 }
