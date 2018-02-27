@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Keeps track of currencies.
  */
-public class Currency implements Comparable<Currency> {
+public final class Currency implements Comparable<Currency> {
 
 
     private static Map<Currency, Integer> currencyValues = new HashMap<>();

@@ -1,6 +1,9 @@
 package ee.ttu.iti0202.tavern;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Purse {
 
@@ -64,14 +67,14 @@ public class Purse {
 
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
-        if (priceLeft  <= 0) {
+        if (priceLeft <= 0) {
             if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = 0;
                 return;
             }
-            if (bestSolution.size() == 0){
+            if (bestSolution.size() == 0) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;

@@ -40,8 +40,8 @@ public class Coin implements Comparable<Coin> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Coin coin = (Coin) o;
-        return amount == coin.amount &&
-                Objects.equals(currency, coin.currency);
+        return amount == coin.amount
+                && Objects.equals(currency, coin.currency);
     }
 
     @Override
