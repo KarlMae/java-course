@@ -16,7 +16,7 @@ public class Main {
         Currency s = Currency.get("silver");
         Currency g = Currency.get("gold");
 
-        Purse purse1 = new Purse(new Coin(c), new Coin(c),
+        Purse purse1 = new Purse(
                 new Coin(s), new Coin(s), new Coin(s),
                 new Coin(g), new Coin(g), new Coin(g)
         );

@@ -6,6 +6,7 @@ public class Purse {
 
     private static ArrayList<Coin> coins = new ArrayList<>();
     private static ArrayList<Coin> bestSolution = new ArrayList<>();
+    private static ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
     private static Boolean bestSolutionExact = false;
 
     public Purse(Coin... coins) {
@@ -51,6 +52,7 @@ public class Purse {
         bestSolution.clear();
         bestSolutionExact = false;
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
+        coins = new ArrayList<>(bestSolutionCoinsLeft);
 
         return bestSolution;
     }
@@ -60,6 +62,7 @@ public class Purse {
         if (priceLeft  <= 0) {
             if ((usedCoins.size() < bestSolution.size() && priceLeft == 0) || bestSolution.size() == 0) {
                 bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionExact = true;
                 return;
             }
@@ -68,6 +71,7 @@ public class Purse {
             }
             if (priceLeft < 0 && usedCoins.size() < bestSolution.size()) {
                 bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
             }
             return;
         }
