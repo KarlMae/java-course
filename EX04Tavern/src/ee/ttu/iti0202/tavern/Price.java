@@ -55,7 +55,9 @@ public class Price {
                 if (Currency.getRate(currency) == value) {
                     int amountOfCoinsToAdd = priceInBaseValue / Currency.getRate(currency);
                     priceInBaseValue -= amountOfCoinsToAdd * Currency.getRate(currency);
-                    optimalPayment.put(currency, amountOfCoinsToAdd);
+                    if (amountOfCoinsToAdd > 0) {
+                        optimalPayment.put(currency, amountOfCoinsToAdd);
+                    }
                 }
             }
         }

@@ -10,9 +10,12 @@ import java.util.Collections;
 
 public class Tavern {
 
+    private List<Currency> giveChangeOptimum = new ArrayList<>();
+    private List<Currency> availableCurrencies = new ArrayList<>();
     private static Map<String, List<Price>> foods = new HashMap<>();
 
 
+    // Add new food
     public void addFood(String name, Price price) {
         if (foods.containsKey(name)) {
             List<Price> updatedFood = foods.get(name);
@@ -25,6 +28,7 @@ public class Tavern {
         }
     }
 
+    // Return lowest price of given food
     public Price getPriceForFood(String name) {
         List<Price> prices = foods.getOrDefault(name, null);
         if (prices != null) {
@@ -35,31 +39,54 @@ public class Tavern {
         return null;
     }
 
-    public List<Coin> returnChange(List<Coin> paidCoins, int foodcost, Purse purse) {
-        List<Coin> coinsToReturn = new ArrayList<>();
-        List<Currency> availableCurrencies = Currency.getCurrencies();
-        availableCurrencies.sort(Collections.reverseOrder());
-        int amountPaid = 0;
+    // Return change
+    public List<Currency> returnChange(List<Coin> paidCoins, int foodcost, Purse purse) {
+        ArrayList<Currency> currenciesToReturn = new ArrayList<>();
 
+        //Calculate the amount to pay back
+        int amountPaid = 0;
         for (Coin coin : paidCoins) amountPaid += coin.getValue();
         int payBackAmount = amountPaid - foodcost;
 
-        for (Currency currency : availableCurrencies) {
-            int currencyValue = currency.getRate();
-            if (currencyValue > payBackAmount) {
-                continue;
-            }
-            int coinUseAmount = payBackAmount / currencyValue;
 
-            for (int i = 0; i < coinUseAmount; i++) {
-                payBackAmount -= currencyValue;
-                purse.addCoin(new Coin(currency));
-            }
+        //Make a list of all currencies
+        availableCurrencies.addAll(Currency.getCurrencies());
+        List<List<Currency>> previousCombinations = new ArrayList<>();
+
+        recursiveCoinFinder(currenciesToReturn, payBackAmount);
+
+        for (Currency currency : giveChangeOptimum) {
+            purse.addCoin(new Coin(currency));
         }
-        return coinsToReturn;
+
+        return giveChangeOptimum;
+
     }
 
-    public List<Coin> buyWithChange(String name, Purse purse) {
+
+    /* Recursive coin finder */
+    private void recursiveCoinFinder(ArrayList<Currency> usedCurrencies, int priceLeft) {
+        // Base case
+        if (priceLeft <= 0) {
+            if (priceLeft == 0 && usedCurrencies.size() < giveChangeOptimum.size()) {
+                giveChangeOptimum = new ArrayList<>(usedCurrencies);
+            }
+            if (giveChangeOptimum.size() == 0) {
+                giveChangeOptimum = new ArrayList<>(usedCurrencies);
+            }
+            return;
+        }
+
+        // Try every coin
+        for (Currency currency : availableCurrencies) {
+            usedCurrencies.add(currency);
+            recursiveCoinFinder(usedCurrencies, priceLeft - currency.getRate());
+            usedCurrencies.remove(usedCurrencies.size() - 1);
+        }
+    }
+
+
+    public List<Currency> buyWithChange(String name, Purse purse) {
         if (!foods.containsKey(name)) return null;
         int money = 0;
         List<Coin> coins = purse.getCoins();
@@ -74,12 +101,14 @@ public class Tavern {
 
             if (money > foodCost.getPriceInBaseValue()) {
                 List<Coin> paidCoins = purse.pay(foodCost);
-                List<Coin> coinsToReturn = returnChange(paidCoins, foodCost.getPriceInBaseValue(), purse);
+                List<Currency> coinsToReturn = returnChange(paidCoins, foodCost.getPriceInBaseValue(), purse);
 
                 List<Price> prices = foods.get(name);
                 if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
                     prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
+                    foods.put(name, prices);
                 }
+
                 return coinsToReturn;
             }
         }
