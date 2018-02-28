@@ -104,10 +104,8 @@ public class Tavern {
                 List<Currency> coinsToReturn = returnChange(paidCoins, foodCost.getPriceInBaseValue(), purse);
 
                 List<Price> prices = foods.get(name);
-                if (prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
-                    prices.remove(prices.stream().max(Comparator.comparing(Price::getPriceInBaseValue)).get());
-                    foods.put(name, prices);
-                }
+                if (prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
+                    prices.remove(prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).get());                }
 
                 return coinsToReturn;
             }

@@ -45,7 +45,7 @@ public class Main {
         System.out.println(purseForChange.getCoins()); // [1 13-EUR, 1 4-EUR, 1 4-EUR]
         System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
         System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 2-EUR]   <- used 4 + 4 for paying
-        System.out.println("Reaining coins: " + purseForChange.getCoins()); // [1 13-EUR, 1 2-EUR]
+        System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 13-EUR, 1 2-EUR]
         System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
         System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 5-EUR, 1 2-EUR]
         System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 5-EUR, 1 2-EUR, 1 2-EUR]
