@@ -97,9 +97,19 @@ public class Purse {
             return;
         }
 
+        Coin usedCoinAvoidPermutation = null;
+
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
             // Select a coin from the arraylist
+            if (usedCoinAvoidPermutation != null){
+                if (availableCoins.get(i) == usedCoinAvoidPermutation) return;
+                usedCoinAvoidPermutation = availableCoins.get(i);
+            } else {
+                usedCoinAvoidPermutation = availableCoins.get(i);
+            }
+
+
             Coin coin = availableCoins.get(i);
             usedCoins.add(coin);
             availableCoins.remove(i);
