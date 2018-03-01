@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Comparator;
-import java.util.Collections;
 
 public class Tavern {
 
@@ -64,23 +63,23 @@ public class Tavern {
 
 
     /* Recursive coin finder */
-    private void recursiveCoinFinder(ArrayList<Coin> usedCurrencies, int priceLeft) {
+    private void recursiveCoinFinder(ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
         if (priceLeft <= 0) {
-            if (priceLeft == 0 && usedCurrencies.size() < giveChangeOptimum.size()) {
-                giveChangeOptimum = new ArrayList<>(usedCurrencies);
+            if (priceLeft == 0 && usedCoins.size() < giveChangeOptimum.size()) {
+                giveChangeOptimum = new ArrayList<>(usedCoins);
             }
             if (giveChangeOptimum.size() == 0) {
-                giveChangeOptimum = new ArrayList<>(usedCurrencies);
+                giveChangeOptimum = new ArrayList<>(usedCoins);
             }
             return;
         }
 
         // Try every coin
         for (Currency currency : availableCurrencies) {
-            usedCurrencies.add(new Coin(currency));
-            recursiveCoinFinder(usedCurrencies, priceLeft - currency.getRate());
-            usedCurrencies.remove(usedCurrencies.size() - 1);
+            usedCoins.add(new Coin(currency));
+            recursiveCoinFinder(usedCoins, priceLeft - currency.getRate());
+            usedCoins.remove(usedCoins.size() - 1);
         }
     }
 
@@ -98,7 +97,7 @@ public class Tavern {
 
             if (foodCost == null) return null;
 
-            if (money > foodCost.getPriceInBaseValue()) {
+            if (money >= foodCost.getPriceInBaseValue()) {
                 List<Coin> paidCoins = purse.pay(foodCost);
                 List<Coin> coinsToReturn = returnChange(paidCoins, foodCost.getPriceInBaseValue(), purse);
 

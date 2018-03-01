@@ -50,28 +50,13 @@ public class Main {
         Currency.add("2-EUR", 2);
         Currency.add("4-EUR", 4);
         Currency.add("5-EUR", 5);
-        Currency.add("13-EUR", 13);
-        Purse purseForChange = new Purse(new Coin(Currency.get("13-EUR")), new Coin(Currency.get("13-EUR")));
+        Currency.add("100-EUR", 100);
+        Purse purseForChange = new Purse(new Coin(Currency.get("100-EUR")));
         Tavern tavern1ForChange = new Tavern();
-        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(10, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(5, Currency.getBaseCurrency()));
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 4-EUR, 1 4-EUR]
+        tavern1ForChange.addFood("Pasta", new Price(100, Currency.getBaseCurrency()));
+        System.out.println(purseForChange.getCoins());
+        System.out.println(tavern1ForChange.getPriceForFood("Pasta"));  // 1 5-EUR
+        System.out.println(tavern1ForChange.buyWithChange("Pasta", purseForChange)); // [1 4-EUR, 1 4-EUR]
         System.out.println(purseForChange.getCoins()); // [1 13-EUR, 1 4-EUR, 1 4-EUR]
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 2-EUR]   <- used 4 + 4 for paying
-        System.out.println("Reaining coins: " + purseForChange.getCoins()); // [1 13-EUR, 1 2-EUR]
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 5-EUR, 1 2-EUR]
-        System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 5-EUR, 1 2-EUR, 1 2-EUR]
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // null <- no money for ice cream 10EUR
-
-
-
-
-
-
     }
 }
