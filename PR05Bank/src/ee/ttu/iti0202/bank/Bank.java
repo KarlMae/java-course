@@ -1,8 +1,10 @@
 package ee.ttu.iti0202.bank;
 
 import ee.ttu.iti0202.card.BankCard;
+import ee.ttu.iti0202.card.CreditCard;
 import ee.ttu.iti0202.card.DebitCard;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +12,8 @@ import java.util.Map;
 public class Bank {
 
     private String name;
-    private Map<BankCard> cards = new HashMap<>();
+    private List<DebitCard> debitCards = new ArrayList<>();
+    private List<CreditCard> creditCards = new ArrayList<>();
 
 
     public Bank(String name) {
@@ -26,12 +29,26 @@ public class Bank {
     }
 
     public List<BankCard> getAllCards() {
-        return cards;
+        List<BankCard> allCards = new ArrayList<>(debitCards);
+        allCards.addAll(creditCards);
+        return allCards;
     }
 
     public List<DebitCard> getAllDebitCards() {
-        return
+        return debitCards;
     }
 
+    public List<CreditCard> getAllCreditCards() {
+        return creditCards;
+    }
+
+    @Override
+    public String toString() {
+        return "Bank " + name + ": " + (creditCards.size() + debitCards.size()) + ".";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Bank("Tere").toString());
+    }
 
 }

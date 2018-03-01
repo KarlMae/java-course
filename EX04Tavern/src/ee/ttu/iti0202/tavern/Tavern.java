@@ -10,6 +10,8 @@ import java.util.Comparator;
 public class Tavern {
 
     private List<Coin> giveChangeOptimum = new ArrayList<>();
+    private Boolean optimumFound = false;
+    private int optimumOverPay = Integer.MAX_VALUE;
     private List<Currency> availableCurrencies = new ArrayList<>();
     private static Map<String, List<Price>> foods = new HashMap<>();
 
@@ -62,18 +64,40 @@ public class Tavern {
     }
 
 
+    private void setOptimumOverPay (ArrayList<Coin> coins) {
+        int coinSum = 0;
+        for (Coin coin : coins) {
+            coinSum += coin.getValue();
+        }
+        optimumOverPay = coinSum;
+    }
+
     /* Recursive coin finder */
     private void recursiveCoinFinder(ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
         if (priceLeft <= 0) {
-            if (priceLeft == 0 && usedCoins.size() < giveChangeOptimum.size()) {
+
+            if (optimumFound && priceLeft == 0) {
+                if (usedCoins.size() < giveChangeOptimum.size()) {
+                    giveChangeOptimum = new ArrayList<>(usedCoins);
+                    setOptimumOverPay(usedCoins);
+                } else {
+                    return;
+                }
+
+            } else if (priceLeft == 0) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
-            }
-            if (giveChangeOptimum.size() == 0) {
+                setOptimumOverPay(usedCoins);
+                }
+                optimumFound = true;
+            } else if (priceLeft > optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
+                setOptimumOverPay(usedCoins);
+            } else if (usedCoins.size() < giveChangeOptimum.size()) {
+                giveChangeOptimum = new ArrayList<>(usedCoins);
+                setOptimumOverPay(usedCoins);
             }
             return;
-        }
 
         // Try every coin
         for (Currency currency : availableCurrencies) {
