@@ -97,16 +97,16 @@ public class Purse {
             return;
         }
 
-        List<Coin> usedCoinAvoidPermutation = new ArrayList<>();
+        Coin usedCoinAvoidPermutation = null;
 
-        // Try every coin.
+        // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
             // Select a coin from the arraylist
-            if (usedCoinAvoidPermutation.size() == 0){
-                if (usedCoinAvoidPermutation.contains(availableCoins.get(i))) return;
-                usedCoinAvoidPermutation.add(availableCoins.get(i));
+            if (usedCoinAvoidPermutation != null){
+                if (availableCoins.get(i) == usedCoinAvoidPermutation) return;
+                usedCoinAvoidPermutation = availableCoins.get(i);
             } else {
-                usedCoinAvoidPermutation.add(availableCoins.get(i));
+                usedCoinAvoidPermutation = availableCoins.get(i);
             }
 
 
