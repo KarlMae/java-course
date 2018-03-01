@@ -96,8 +96,9 @@ public class Tavern {
             } else if (usedCoins.size() < giveChangeOptimum.size()) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
-            }
-            return;
+        return;
+        }
+
 
         // Try every coin
         for (Currency currency : availableCurrencies) {
