@@ -99,7 +99,7 @@ public class Purse {
 
         List<Coin> usedCoinAvoidPermutation = new ArrayList<>();
 
-        // Try every coin
+        // Try every coin.
         for (int i = 0; i < availableCoins.size(); i++) {
             // Select a coin from the arraylist
             if (usedCoinAvoidPermutation.size() == 0){
