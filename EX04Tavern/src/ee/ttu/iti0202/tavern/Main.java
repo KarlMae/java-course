@@ -11,45 +11,37 @@ public class Main {
         Currency.add("silver", 10);
         Currency.add("gold", 100);
 
+// to shorten the code
+        Currency c = Currency.get("copper");
+        Currency s = Currency.get("silver");
+        Currency g = Currency.get("gold");
+
+        Purse purse1 = new Purse(new Coin(c), new Coin(s),
+                new Coin(g)
+        );
+
+        System.out.println(purse1.pay(Price.of(102))); // [1 copper, 1 copper]   should not be 1 silver
+        System.out.println(purse1.pay(Price.of(30))); // [1 silver, 1 silver, 1 silver]   should not be 1 gold
+        System.out.println(purse1.pay(Price.of(200))); // [1 gold, 1 gold]
+        System.out.println(purse1.pay(Price.of(100))); // [1 gold]   should not be [1 gold, 1 gold]
+        System.out.println(purse1.pay(Price.of(1))); // null   purse is empty
+
+// another try, a bit harder cases
+        purse1 = new Purse(new Coin(c), new Coin(c),
+                new Coin(s), new Coin(s), new Coin(s),
+                new Coin(g), new Coin(g), new Coin(g)
+        );
+
+        System.out.println(purse1.pay(Price.of(3))); // [1 silver]     should not be [1 copper, 1 copper, 1 silver]
+        System.out.println(purse1.getCoins()); // [1 copper, 1 copper, 1 silver, 1 silver, 1 gold, 1 gold, 1 gold]
+        System.out.println(purse1.pay(Price.of(30))); // [1 gold]     should not be [1 silver, 1 silver, 1 gold]
+        System.out.println(purse1.getCoins()); // [1 copper, 1 copper, 1 silver, 1 silver, 1 gold, 1 gold]
+        System.out.println(purse1.pay(Price.of(23))); // [1 gold]     should not be [1 copper, 1 copper, 1 silver, 1 silver, 1 gold]
+        System.out.println(purse1.getCoins()); // [1 copper, 1 copper, 1 silver, 1 silver, 1 gold]
+        System.out.println(purse1.pay(Price.of(123))); // null
+        System.out.println(purse1.getCoins()); // [1 copper, 1 copper, 1 silver, 1 silver, 1 gold]
 
 
-// test different currencies
-
-        Currency.reset();
-        Currency.add("1 EUR"); // base
-        Currency.add("2 EUR", 2);
-        Currency.add("4 EUR", 4);
-        Currency.add("5 EUR", 5);
-
-        Currency cur1 = Currency.get("1 EUR");
-        Currency cur2 = Currency.get("2 EUR");
-        Currency cur4 = Currency.get("4 EUR");
-        Currency cur5 = Currency.get("5 EUR");
-
-//
-// test buyWithChange
-        Currency.reset();
-        Currency.add("1-EUR"); // base
-        Currency.add("2-EUR", 2);
-        Currency.add("4-EUR", 4);
-        Currency.add("5-EUR", 5);
-        Currency.add("13-EUR", 13);
-        Purse purseForChange = new Purse(new Coin(Currency.get("13-EUR")), new Coin(Currency.get("13-EUR")));
-        Tavern tavern1ForChange = new Tavern();
-        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(10, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
-        tavern1ForChange.addFood("Ice Cream", new Price(5, Currency.getBaseCurrency()));
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 4-EUR, 1 4-EUR]
-        System.out.println(purseForChange.getCoins()); // [1 13-EUR, 1 4-EUR, 1 4-EUR]
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 2-EUR]   <- used 4 + 4 for paying
-        System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 13-EUR, 1 2-EUR]
-        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 5-EUR, 1 2-EUR]
-        System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 5-EUR, 1 2-EUR, 1 2-EUR]
-        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // null <- no money for ice cream 10EUR
 
 
     }

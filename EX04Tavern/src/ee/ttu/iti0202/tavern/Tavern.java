@@ -51,7 +51,6 @@ public class Tavern {
 
         //Make a list of all currencies
         availableCurrencies.addAll(Currency.getCurrencies());
-        List<List<Currency>> previousCombinations = new ArrayList<>();
 
         recursiveCoinFinder(currenciesToReturn, payBackAmount);
 
