@@ -6,15 +6,18 @@ public class Coin implements Comparable<Coin> {
 
     private int amount;
     private Currency currency;
+    private int value;
 
     public Coin(int amount, Currency currency) {
         this.amount = amount;
         this.currency = currency;
+        this.value = amount * Currency.getRate(currency);
     }
 
     public Coin(Currency currency) {
         this.amount = 1;
         this.currency = currency;
+        this.value = amount * Currency.getRate(currency);
     }
 
     public int getAmount() {
@@ -26,7 +29,7 @@ public class Coin implements Comparable<Coin> {
     }
 
     public int getValue() {
-        return this.amount * Currency.getRate(this.currency);
+        return this.value;
     }
 
 
