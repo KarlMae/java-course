@@ -3,6 +3,7 @@ package ee.ttu.iti0202.tavern;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Purse {
@@ -54,6 +55,7 @@ public class Purse {
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
         bestSolutionOverPay = Integer.MAX_VALUE;
+        coins.sort(Comparator.reverseOrder());
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
@@ -97,19 +99,9 @@ public class Purse {
             return;
         }
 
-        List<Coin> usedCoinAvoidPermutation = new ArrayList<>();
-
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
             // Select a coin from the arraylist
-            if (usedCoinAvoidPermutation.size() == 0){
-                if (usedCoinAvoidPermutation.contains(availableCoins.get(i))) return;
-                usedCoinAvoidPermutation.add(availableCoins.get(i));
-            } else {
-                usedCoinAvoidPermutation.add(availableCoins.get(i));
-            }
-
-
             Coin coin = availableCoins.get(i);
             usedCoins.add(coin);
             availableCoins.remove(i);
@@ -119,7 +111,7 @@ public class Purse {
             usedCoins.remove(usedCoins.size() - 1);
             availableCoins.add(i, coin);
 
-            if (i < availableCoins.size() - 1) {
+            if (i < availableCoins.size() - 1   ) {
                 if (coin == availableCoins.get(i + 1)) {
                     i++;
                 }
