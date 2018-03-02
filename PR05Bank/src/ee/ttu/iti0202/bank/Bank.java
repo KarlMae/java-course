@@ -15,7 +15,7 @@ public class Bank {
     public String name;
     private List<DebitCard> debitCards = new ArrayList<>();
     private List<CreditCard> creditCards = new ArrayList<>();
-    private static List<Bank> banks = new ArrayList<>();
+    public static List<Bank> banks = new ArrayList<>();
 
 
     Bank(String name) {
