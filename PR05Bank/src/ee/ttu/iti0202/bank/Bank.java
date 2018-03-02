@@ -12,7 +12,7 @@ import static ee.ttu.iti0202.card.BankCard.CardType.DEBIT;
 
 public class Bank {
 
-    private String name;
+    public String name;
     private List<DebitCard> debitCards = new ArrayList<>();
     private List<CreditCard> creditCards = new ArrayList<>();
     private static List<Bank> banks = new ArrayList<>();
