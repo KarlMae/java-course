@@ -10,7 +10,6 @@ public class Purse {
     private ArrayList<Coin> coins = new ArrayList<>();
     private ArrayList<Coin> bestSolution = new ArrayList<>();
     private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
-    private int bestSolutionSize = Integer.MAX_VALUE;
     private int bestSolutionOverPay = Integer.MAX_VALUE;
 
     public Purse(Coin... coins) {
@@ -55,11 +54,10 @@ public class Purse {
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
         bestSolutionOverPay = Integer.MAX_VALUE;
-        bestSolutionSize = Integer.MAX_VALUE;
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
-        if (bestSolutionSize != Integer.MAX_VALUE) {
+        if (bestSolution.size() != 0) {
             Collections.reverse(bestSolution);
             return bestSolution;
         } else {
@@ -70,27 +68,28 @@ public class Purse {
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
         if (priceLeft <= 0) {
-            if (usedCoins.size() < bestSolutionSize && priceLeft == 0) {
+            if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = 0;
-                bestSolution = new ArrayList<>(usedCoins);
-                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 return;
             }
-            // If this is the first combination
-            if (bestSolutionSize == Integer.MAX_VALUE) {
+            if (bestSolution.size() == 0) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
                 return;
             }
-            // If new combination pays less
-            if (bestSolutionOverPay != 0 && priceLeft > bestSolutionOverPay) {
+            if (bestSolutionOverPay == 0) {
+                return;
+            }
+            if (usedCoins.size() < bestSolution.size()) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
-                return;
             }
-            if (bestSolutionOverPay != 0 && priceLeft == bestSolutionOverPay && usedCoins.size() == bestSolution.size()) {
+
+            if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
@@ -98,22 +97,20 @@ public class Purse {
             return;
         }
 
-        List<Coin> usedCoinAvoidPermutation = new ArrayList<>();
+        Coin usedCoinAvoidPermutation = null;
 
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
-            Coin coin = availableCoins.get(i);
-
             // Select a coin from the arraylist
-            if (usedCoinAvoidPermutation.size() == 0){
-                if (usedCoinAvoidPermutation.contains(coin)){
-                    return;
-                }
-                usedCoinAvoidPermutation.add(coin);
+            if (usedCoinAvoidPermutation != null){
+                if (availableCoins.get(i) == usedCoinAvoidPermutation) return;
+                usedCoinAvoidPermutation = availableCoins.get(i);
             } else {
-                usedCoinAvoidPermutation.add(coin);
+                usedCoinAvoidPermutation = availableCoins.get(i);
             }
 
+
+            Coin coin = availableCoins.get(i);
             usedCoins.add(coin);
             availableCoins.remove(i);
 
@@ -121,6 +118,10 @@ public class Purse {
 
             usedCoins.remove(usedCoins.size() - 1);
             availableCoins.add(i, coin);
+
+            while (coin == availableCoins.get(i +1)) {
+                i++;
+            }
         }
     }
 }
