@@ -24,8 +24,8 @@ public final class CreditCard extends BankCard {
             return false;
         }
 
-        if (value.compareTo(balance.add(BigDecimal.valueOf(5000))) < 0) {
-            balance = balance.subtract(value);
+        if (value.compareTo(super.balance.add(BigDecimal.valueOf(5000))) < 0) {
+            super.balance = super.balance.subtract(value);
             return true;
         }
         return false;
