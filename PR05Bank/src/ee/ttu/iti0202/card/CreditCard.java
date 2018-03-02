@@ -1,7 +1,5 @@
 package ee.ttu.iti0202.card;
 
-import ee.ttu.iti0202.bank.Bank;
-
 import java.math.BigDecimal;
 
 public final class CreditCard extends BankCard {

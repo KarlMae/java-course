@@ -28,6 +28,8 @@ public abstract class BankCard {
                 bank.addCard(creditCard);
                 creditCard.bank = bank;
                 return creditCard;
+
+            default: break;
         }
 
         return null;
