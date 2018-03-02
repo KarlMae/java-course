@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 public abstract class BankCard {
 
     public enum CardType {CREDIT, DEBIT}
+
     public CardType type;
     Bank bank;
     BigDecimal balance;
@@ -14,17 +15,19 @@ public abstract class BankCard {
     public static BankCard createCard(CardType cardType, Bank bank) {
 
         switch (cardType) {
-            case DEBIT :    DebitCard debitCard = new DebitCard();
-                            debitCard.type = cardType;
-                            bank.addCard(debitCard);
-                            debitCard.bank = bank;
-                            return debitCard;
+            case DEBIT:
+                DebitCard debitCard = new DebitCard();
+                debitCard.type = cardType;
+                bank.addCard(debitCard);
+                debitCard.bank = bank;
+                return debitCard;
 
-            case CREDIT :   CreditCard creditCard = new CreditCard();
-                            creditCard.type = cardType;
-                            bank.addCard(creditCard);
-                            creditCard.bank = bank;
-                            return creditCard;
+            case CREDIT:
+                CreditCard creditCard = new CreditCard();
+                creditCard.type = cardType;
+                bank.addCard(creditCard);
+                creditCard.bank = bank;
+                return creditCard;
         }
 
         return null;

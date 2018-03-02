@@ -19,7 +19,7 @@ public final class CreditCard extends BankCard {
     }
 
     @Override
-    public BigDecimal getBalance(){
+    public BigDecimal getBalance() {
         if (balance.compareTo(BigDecimal.valueOf(0)) < 0) {
             return BigDecimal.valueOf(0);
         } else {
@@ -28,7 +28,7 @@ public final class CreditCard extends BankCard {
     }
 
     @Override
-    public boolean withdraw(BigDecimal value){
+    public boolean withdraw(BigDecimal value) {
         if (value.compareTo(BigDecimal.valueOf(0)) <= 0) {
             return false;
         }
