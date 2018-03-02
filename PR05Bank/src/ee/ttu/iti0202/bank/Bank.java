@@ -28,9 +28,21 @@ public class Bank {
     }
 
     public void addCard(BankCard card) {
+
+
         if (card.type == CREDIT) {
+            for (Bank bank : banks) {
+                if (bank.creditCards.contains((CreditCard)card)){
+                    return;
+                }
+            }
             creditCards.add((CreditCard)card);
         } else if (card.type == DEBIT) {
+            for (Bank bank : banks) {
+                if (bank.debitCards.contains((DebitCard)card)){
+                    return;
+                }
+            }
             debitCards.add((DebitCard)card);
         }
     }
