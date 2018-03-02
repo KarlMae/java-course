@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public final class DebitCard extends BankCard {
 
-    void DebitCard() {
+    DebitCard() {
         super.balance = BigDecimal.valueOf(0);
     }
 
@@ -15,7 +15,7 @@ public final class DebitCard extends BankCard {
             return false;
         }
 
-        if (value.compareTo(balance) < 0) {
+        if (value.compareTo(balance) <= 0) {
             balance = balance.subtract(value);
             return true;
         }

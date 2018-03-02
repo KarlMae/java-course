@@ -5,19 +5,22 @@ import ee.ttu.iti0202.card.CreditCard;
 import ee.ttu.iti0202.card.DebitCard;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
+import static ee.ttu.iti0202.card.BankCard.CardType.CREDIT;
+import static ee.ttu.iti0202.card.BankCard.CardType.DEBIT;
 
 public class Bank {
 
     private String name;
     private List<DebitCard> debitCards = new ArrayList<>();
     private List<CreditCard> creditCards = new ArrayList<>();
+    private static List<Bank> banks = new ArrayList<>();
 
 
-    public Bank(String name) {
+    Bank(String name) {
         this.name = name;
+        banks.add(this);
     }
 
     public String getName() {
@@ -25,7 +28,11 @@ public class Bank {
     }
 
     public void addCard(BankCard card) {
-
+        if (card.type == CREDIT) {
+            creditCards.add((CreditCard)card);
+        } else if (card.type == DEBIT) {
+            debitCards.add((DebitCard)card);
+        }
     }
 
     public List<BankCard> getAllCards() {
@@ -44,11 +51,7 @@ public class Bank {
 
     @Override
     public String toString() {
-        return "Bank " + name + ": " + (creditCards.size() + debitCards.size()) + ".";
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Bank("Tere").toString());
+        return "Bank[" + name + "]: " + (creditCards.size() + debitCards.size()) + " cards.";
     }
 
 }
