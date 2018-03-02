@@ -18,7 +18,7 @@ public class Bank {
     public static List<Bank> banks = new ArrayList<>();
 
 
-    Bank(String name) {
+    public Bank(String name) {
         this.name = name;
         banks.add(this);
     }
