@@ -59,7 +59,7 @@ public class Purse {
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
-        if (bestSolution.size() != 0) {
+        if (bestSolutionSize != Integer.MAX_VALUE) {
             Collections.reverse(bestSolution);
             return bestSolution;
         } else {
@@ -76,17 +76,21 @@ public class Purse {
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 return;
             }
+            // If this is the first combination
             if (bestSolutionSize == Integer.MAX_VALUE) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
                 return;
             }
-            if (bestSolutionOverPay == 0) {
+            // If new combination pays less
+            if (bestSolutionOverPay != 0 && priceLeft > bestSolutionOverPay) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
                 return;
             }
-
-            if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
+            if (bestSolutionOverPay != 0 && priceLeft == bestSolutionOverPay && usedCoins.size() == bestSolution.size()) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
