@@ -10,6 +10,7 @@ public class Purse {
     private ArrayList<Coin> coins = new ArrayList<>();
     private ArrayList<Coin> bestSolution = new ArrayList<>();
     private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
+    private int bestSolutionSize = Integer.MAX_VALUE;
     private int bestSolutionOverPay = Integer.MAX_VALUE;
 
     public Purse(Coin... coins) {
@@ -54,6 +55,7 @@ public class Purse {
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
         bestSolutionOverPay = Integer.MAX_VALUE;
+        bestSolutionSize = Integer.MAX_VALUE;
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
@@ -68,13 +70,13 @@ public class Purse {
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
         if (priceLeft <= 0) {
-            if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
+            if (usedCoins.size() < bestSolutionSize && priceLeft == 0) {
+                bestSolutionOverPay = 0;
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-                bestSolutionOverPay = 0;
                 return;
             }
-            if (bestSolution.size() == 0) {
+            if (bestSolutionSize == Integer.MAX_VALUE) {
                 bestSolution = new ArrayList<>(usedCoins);
                 bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
                 bestSolutionOverPay = priceLeft;
@@ -82,11 +84,6 @@ public class Purse {
             }
             if (bestSolutionOverPay == 0) {
                 return;
-            }
-            if (usedCoins.size() < bestSolution.size()) {
-                bestSolution = new ArrayList<>(usedCoins);
-                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-                bestSolutionOverPay = priceLeft;
             }
 
             if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
