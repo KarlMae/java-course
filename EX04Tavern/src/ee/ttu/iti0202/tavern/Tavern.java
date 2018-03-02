@@ -88,7 +88,6 @@ public class Tavern {
             } else if (priceLeft == 0) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
-                }
                 optimumFound = true;
             } else if (priceLeft > optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
@@ -96,7 +95,8 @@ public class Tavern {
             } else if (usedCoins.size() < giveChangeOptimum.size()) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
-        return;
+            }
+            return;
         }
 
 
