@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public abstract class BankCard {
 
-    public enum CardType {CREDIT, DEBIT}
+    public enum CardType { CREDIT, DEBIT }
 
     public CardType type;
     Bank bank;

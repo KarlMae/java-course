@@ -4,8 +4,11 @@ import java.math.BigDecimal;
 
 public final class CreditCard extends BankCard {
 
+    private final BigDecimal startingMoney = BigDecimal.valueOf(10000);
+    private final BigDecimal debtLimit = BigDecimal.valueOf(5000);
+
     CreditCard() {
-        super.balance = BigDecimal.valueOf(10000);
+        super.balance = startingMoney;
     }
 
 
@@ -31,7 +34,7 @@ public final class CreditCard extends BankCard {
             return false;
         }
 
-        if (value.compareTo(balance.add(BigDecimal.valueOf(5000))) <= 0) {
+        if (value.compareTo(balance.add(debtLimit)) <= 0) {
             balance = balance.subtract(value);
             return true;
         }
