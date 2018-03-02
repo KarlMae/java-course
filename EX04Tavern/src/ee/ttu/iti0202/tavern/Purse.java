@@ -111,8 +111,9 @@ public class Purse {
             usedCoins.remove(usedCoins.size() - 1);
             availableCoins.add(i, coin);
 
-            if (i < availableCoins.size() - 1   ) {
-                if (coin == availableCoins.get(i + 1)) {
+            if (i < availableCoins.size() - 1) {
+                Coin nextCoin = availableCoins.get(i + 1);
+                if (coin.getValue() ==  nextCoin.getValue()) {
                     i++;
                 }
             }
