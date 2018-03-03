@@ -18,18 +18,28 @@ public class SpaceOven extends Oven{
     public Optional<Orb> craftOrb() {
         Optional<Orb> orbOptional = Optional.empty();
 
-        if (!this.isBroken()  && resourceStorage.getResourceAmount("meteorite stone") >= 1
+        if (!this.isBroken() && resourceStorage.getResourceAmount("meteorite stone") >= 1
                 && resourceStorage.getResourceAmount("star fragment") >= 15) {
 
             Orb orb = new SpaceOrb(super.name);
+            createdOrbs++;
+
             orbOptional = Optional.of(orb);
 
-            resourceStorage.takeResource("gold", 1);
-            resourceStorage.takeResource("dust", 3);
-        }
+            resourceStorage.takeResource("meteorite stone", 1);
+            resourceStorage.takeResource("star fragment", 15);
+        } else if (resourceStorage.getResourceAmount("pearl") >= 1
+                && resourceStorage.getResourceAmount("silver") >= 1) {
 
-        orbOptional = super.craftOrb();
+           orbOptional = super.createNormalOrb();
+        }
 
         return orbOptional;
     }
+
+    @Override
+    public boolean isBroken() {
+        return super.createdOrbs >= 25;
+    }
+
 }

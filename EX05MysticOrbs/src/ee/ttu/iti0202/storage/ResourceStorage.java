@@ -5,29 +5,31 @@ import java.util.Map;
 
 public class ResourceStorage {
 
-    Map<String, Integer> storage = new HashMap<>();
+    private Map<String, Integer> storage = new HashMap<>();
 
     public boolean isEmpty() {
         if (storage.size() > 0) {
             for (Integer amount : storage.values()) {
-                if (amount > 0) return true;
+                if (amount > 0) return false;
             }
         }
 
-        return false;
+        return true;
     }
 
     public void addResource(String resource, int amount) {
-        if (storage.keySet().contains(resource)) {
-            storage.put(resource, storage.get(resource) + amount);
+        if (amount < 0) return;
+
+        if (storage.keySet().contains(resource.toLowerCase())) {
+            storage.put(resource.toLowerCase(), storage.get(resource.toLowerCase()) + amount);
         } else {
-            storage.put(resource, amount);
+            storage.put(resource.toLowerCase(), amount);
         }
     }
 
     public int getResourceAmount(String resource) {
-        if (storage.containsKey(resource)) {
-            return storage.get(resource);
+        if (storage.containsKey(resource.toLowerCase())) {
+            return storage.get(resource.toLowerCase());
         }
         return 0;
     }
@@ -35,7 +37,7 @@ public class ResourceStorage {
     public boolean hasEnoughResource(String resource, int amount) {
         if (amount < 1) return false;
 
-        if (storage.containsKey(resource)) return storage.get(resource) > amount;
+        if (storage.containsKey(resource.toLowerCase())) return storage.get(resource.toLowerCase()) >= amount;
 
         return false;
     }

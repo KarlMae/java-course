@@ -35,6 +35,21 @@ public class Oven {
         return createdOrbs >= 15;
     }
 
+    Optional<Orb> createNormalOrb() {
+        Orb orb = new Orb(name);
+        createdOrbs++;
+
+        orb.charge("pearl", 1);
+        orb.charge("silver", 1);
+
+        Optional<Orb> orbOptional = Optional.of(orb);
+
+        resourceStorage.takeResource("pearl", 1);
+        resourceStorage.takeResource("silver", 1);
+
+        return orbOptional;
+    }
+
     public Optional<Orb> craftOrb() {
         Optional<Orb> orbOptional = Optional.empty();
 
@@ -42,15 +57,7 @@ public class Oven {
         if (!this.isBroken()  && resourceStorage.getResourceAmount("pearl") >= 1
                 && resourceStorage.getResourceAmount("silver") >= 1) {
 
-            Orb orb = new Orb(name);
-
-            orb.charge("pearl", 1);
-            orb.charge("silver", 1);
-
-            orbOptional = Optional.of(orb);
-
-            resourceStorage.takeResource("pearl", 1);
-            resourceStorage.takeResource("silver", 1);
+            orbOptional = createNormalOrb();
         }
 
         return orbOptional;

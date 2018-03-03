@@ -29,11 +29,12 @@ public class MagicOven extends Oven{
                 && resourceStorage.getResourceAmount("dust") >= 3) {
             Orb orb;
 
-            if (super.createdOrbs % 2 == 0) {
+            if (super.createdOrbs % 2 == 1) {
                 orb = new MagicOrb(super.name);
             } else {
                 orb = new Orb(super.name);
             }
+            createdOrbs++;
 
 
             orb.charge("gold", 1);

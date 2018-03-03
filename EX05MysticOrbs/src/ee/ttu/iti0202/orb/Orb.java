@@ -13,7 +13,7 @@ public class Orb {
     }
 
     public void charge(String resource, int amount){
-        if (resource.equals("dust") || resource.matches(" +")) return;
+        if (resource.toLowerCase().equals("dust") || resource.matches(" +")) return;
 
         energy += resource.length() * amount;
     }
