@@ -18,7 +18,7 @@ public class ResourceStorage {
     }
 
     public void addResource(String resource, int amount) {
-        if (amount < 0 || resource.equals("")) return;
+        if (amount < 0 || resource.equals("") || resource.matches(" +")) return;
 
         if (storage.keySet().contains(resource.toLowerCase())) {
             storage.put(resource.toLowerCase(), storage.get(resource.toLowerCase()) + amount);

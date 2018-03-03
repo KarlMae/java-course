@@ -9,7 +9,7 @@ public class MagicOrb extends Orb{
 
     @Override
     public void charge(String resource, int amount){
-        if (resource.toLowerCase().equals("dust") || resource.matches(" +")) return;
+        if (resource.toLowerCase().equals("dust") || resource.matches(" +") || amount < 0) return;
 
         super.energy += resource.length() * amount * 2;
     }
