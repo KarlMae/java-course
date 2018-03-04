@@ -83,10 +83,11 @@ public class Main {
             testPurse.addCoin(co1);
         }
         Tavern tavern1 = new Tavern();
-        tavern1.addFood("pasta", Price.of(100));
+        tavern1.addFood("pasta", Price.of(1));
         Boolean bought = tavern1.buy("pasta", testPurse);
         System.out.println("----- My tests -----");
         System.out.println(bought);
+        System.out.println(tavern1.getPriceForFood("pasta"));
 
 
 
