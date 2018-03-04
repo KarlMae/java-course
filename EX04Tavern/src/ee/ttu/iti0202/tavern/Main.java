@@ -13,76 +13,69 @@ public class Main {
         Currency.add("gold", 100);
 
 
-// let's register currencies
-        Currency.add("copper");
-        Currency.add("silver", 10);
-        Currency.add("gold", 100);
 
-// use "variables" to shorten currency usage
-        Currency c = Currency.get("copper");
-        Currency s = Currency.get("silver");
-        Currency g = Currency.get("gold");
+// test different currencies
 
-        Coin c1 = new Coin(s);
-        System.out.println(c1.getAmount());   // 1
-        System.out.println(c1.getCurrency()); // silver
+        Currency.reset();
+        Currency.add("1 EUR"); // base
+        Currency.add("2 EUR", 2);
+        Currency.add("4 EUR", 4);
+        Currency.add("5 EUR", 5);
 
-        Coin c2 = new Coin(s);
-        Coin c3 = new Coin(g);
-// this won't be used in purse in main part
-// but this should work
-        Coin c4 = new Coin(10, g);
+        Currency cur1 = Currency.get("1 EUR");
+        Currency cur2 = Currency.get("2 EUR");
+        Currency cur4 = Currency.get("4 EUR");
+        Currency cur5 = Currency.get("5 EUR");
 
-        System.out.println(c4.getAmount());    // 10
-        System.out.println(c4.getCurrency());  // gold
+        Purse purse2 = new Purse(new Coin(cur1),
+                new Coin(cur2), new Coin(cur2), new Coin(cur2),
+                new Coin(cur4), new Coin(cur4),
+                new Coin(cur5)
+        );
 
-        Purse purse = new Purse(c1, c2, c3);
+        Price price8 = new Price(8, cur1);
+        System.out.println(purse2.pay(price8)); // [1 4 EUR, 1 4 EUR]
 
-        Price price = Price.of(1, 0, 10);
-        Price price2 = Price.of(110);
+// the same example, using coin amount and one currency
+        Currency.reset();
+        Currency.add("EUR");
+        Currency eur = Currency.get("EUR");
+        Purse purse3 = new Purse(new Coin(eur),
+                new Coin(2, eur), new Coin(2, eur), new Coin(2, eur), new Coin(2, eur),
+                new Coin(4, eur), new Coin(4, eur),
+                new Coin(5, eur), new Coin(5, eur)
+        );
+        price8 = new Price(8, eur);
+        System.out.println(purse3.pay(price8)); // [4 EUR, 4 EUR]
+        System.out.println(purse3.pay(price8)); // [5 EUR, 2 EUR, 1 EUR]
+        System.out.println(purse3.pay(price8)); // [5 EUR, 2 EUR, 2 EUR]
+        System.out.println(purse3.pay(price8)); // null <- no more coins left
+        System.out.println(purse3.getCoins()); // [2 EUR] <- one coin remaining
 
-        System.out.println(price.equals(price2)); // true
+// test buyWithChange
+        Currency.reset();
+        Currency.add("1-EUR"); // base
+        Currency.add("2-EUR", 2);
+        Currency.add("4-EUR", 4);
+        Currency.add("5-EUR", 5);
+        Currency.add("13-EUR", 13);
+        Purse purseForChange = new Purse(new Coin(Currency.get("13-EUR")), new Coin(Currency.get("13-EUR")));
+        Tavern tavern1ForChange = new Tavern();
+        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
+        tavern1ForChange.addFood("Ice Cream", new Price(10, Currency.getBaseCurrency()));
+        tavern1ForChange.addFood("Ice Cream", new Price(6, Currency.getBaseCurrency()));
+        tavern1ForChange.addFood("Ice Cream", new Price(5, Currency.getBaseCurrency()));
+        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR
+        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 4-EUR, 1 4-EUR]
+        System.out.println(purseForChange.getCoins()); // [1 13-EUR, 1 4-EUR, 1 4-EUR]
+        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
+        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 2-EUR]   <- used 4 + 4 for paying
+        System.out.println("Reaining coins: " + purseForChange.getCoins()); // [1 13-EUR, 1 2-EUR]
+        System.out.println(tavern1ForChange.getPriceForFood("Ice Cream"));  // 1 5-EUR, 1 1-EUR
+        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // [1 5-EUR, 1 2-EUR]
+        System.out.println("Remaining coins: " + purseForChange.getCoins()); // [1 5-EUR, 1 2-EUR, 1 2-EUR]
+        System.out.println(tavern1ForChange.buyWithChange("Ice Cream", purseForChange)); // null <- no money for ice cream 10EUR
 
-        Price price3 = Price.of(111);
-        System.out.println(price3); // 1 gold, 1 silver, 1 copper
-        System.out.println(price.equals(price3)); // false
-
-        List<Coin> paidCoins = purse.pay(price);
-        System.out.println(paidCoins); // [1 gold, 1 silver]
-        System.out.println(purse.getCoins()); // [1 silver]
-
-        Tavern tavern = new Tavern();
-        tavern.addFood("pasta", Price.of(11));
-
-        System.out.println(tavern.getPriceForFood("pasta")); // 1 silver, 1 copper
-
-        System.out.println(tavern.buy("pasta", purse)); // false, not enough money
-        purse.addCoin(new Coin(g));
-        System.out.println(tavern.buy("pasta", purse)); // true
-        System.out.println(purse.getCoins()); // [1 silver]
-
-        System.out.println(tavern.getPriceForFood("pasta")); // null, no more this food
-
-        tavern.addFood("pasta", Price.of(20));
-// let's add 2 silver coins
-        purse.addCoin(new Coin(s));
-        purse.addCoin(new Coin(s));
-        System.out.println(purse.getCoins()); // [1 silver, 1 silver, 1 silver]
-        tavern.buy("pasta", purse);
-        System.out.println(purse.getCoins()); // [1 silver]
-
-
-
-
-        Coin co1 = new Coin(c);
-        Coin co2 = new Coin(s);
-        Coin co3 = new Coin(g);
-        Purse testPurse = new Purse(co3, co3, co2, co2, co2, co1, co1, co1, co1);
-
-        Price price1 = Price.of(125);
-        List<Coin> paidCoinstest =testPurse.pay(price1);
-        System.out.println("----- My tests -----");
-        System.out.println(paidCoinstest);
 
 
 

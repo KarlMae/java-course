@@ -53,7 +53,7 @@ public class Tavern {
         //Make a list of all currencies
         availableCurrencies.addAll(Currency.getCurrencies());
 
-        recursiveCoinFinder(currenciesToReturn, payBackAmount);
+        recursiveCoinFinder(currenciesToReturn, payBackAmount, foodcost);
 
         for (Coin coin : giveChangeOptimum) {
             purse.addCoin(coin);
@@ -63,7 +63,7 @@ public class Tavern {
 
     }
 
-
+    // If end of branch has been reached, save its overpay
     private void setOptimumOverPay(ArrayList<Coin> coins) {
         int coinSum = 0;
         for (Coin coin : coins) {
@@ -73,8 +73,8 @@ public class Tavern {
     }
 
     /* Recursive coin finder */
-    private void recursiveCoinFinder(ArrayList<Coin> usedCoins, int priceLeft) {
-        if (usedCoins.size() > giveChangeOptimum.size()) return;
+    private void recursiveCoinFinder(ArrayList<Coin> usedCoins, int priceLeft, int foodcost) {
+        if (usedCoins.size() > giveChangeOptimum.size() && optimumFound) return;
 
         // Base case
         if (priceLeft <= 0) {
@@ -91,32 +91,26 @@ public class Tavern {
                     setOptimumOverPay(usedCoins);
                     optimumFound = true;
                 }
-            } else if (priceLeft > optimumOverPay) {
+            } else if (priceLeft < optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
             } else if (usedCoins.size() < giveChangeOptimum.size() && priceLeft == optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
             }
-            return;
         }
-
 
         // Try every coin
         for (Currency currency : availableCurrencies) {
             usedCoins.add(new Coin(currency));
-            recursiveCoinFinder(usedCoins, priceLeft - currency.getRate());
+            recursiveCoinFinder(usedCoins, priceLeft - currency.getRate(), foodcost);
             usedCoins.remove(usedCoins.size() - 1);
         }
     }
 
     private int setupPurse(List<Coin> coins) {
         int money = 0;
-
-        for (Coin coin : coins) {
-            money += coin.getValue();
-
-        }
+        for (Coin coin : coins) money += coin.getValue();
         return money;
     }
 
@@ -144,7 +138,6 @@ public class Tavern {
     }
 
     public boolean buy(String name, Purse purse) {
-
         if (!foods.containsKey(name)) return false;
 
         int money = setupPurse(purse.getCoins());
