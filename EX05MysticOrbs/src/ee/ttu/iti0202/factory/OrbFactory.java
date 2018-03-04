@@ -76,7 +76,7 @@ public class OrbFactory {
     public int produceOrbs(int cycles) {
         int amount = 0;
 
-        for (int i = 0; i < cycles - 1; i++){
+        for (int i = 0; i < cycles; i++){
             amount += produceOrbs();
         }
 
