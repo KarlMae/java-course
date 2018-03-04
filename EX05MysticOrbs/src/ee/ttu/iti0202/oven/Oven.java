@@ -93,9 +93,9 @@ public class Oven implements Comparable<Oven>, Fixable {
             if (otherOven.getCreatedOrbsAmount() % 2 == 0 && thisOven.getCreatedOrbsAmount() % 2 != 0) return 1;
 
             if (thisOven instanceof InfinityMagicOven && !(otherOven instanceof InfinityMagicOven))
-                return -1;
-            if (otherOven instanceof InfinityMagicOven && !(thisOven instanceof InfinityMagicOven))
                 return 1;
+            if (otherOven instanceof InfinityMagicOven && !(thisOven instanceof InfinityMagicOven))
+                return -1;
         }
 
         if (thisOven.getCreatedOrbsAmount() < otherOven.getCreatedOrbsAmount()) return 1;
