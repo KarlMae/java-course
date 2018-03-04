@@ -35,7 +35,7 @@ public class OrbFactory {
 
     public void getRidOfOvensThatCannotBeFixed() {
         for (Oven oven : getOvensThatCannotBeFixed()) {
-            ovens.remove(oven);
+            unfixableOvens.remove(oven);
         }
     }
 
@@ -60,6 +60,7 @@ public class OrbFactory {
                 } catch (CannotFixException ex) {
                     if (ex.getReason() == CannotFixException.Reason.FIXED_MAXIMUM_TIMES) {
                         if (!getOvensThatCannotBeFixed().contains(ex.getOven())) getOvensThatCannotBeFixed().add(ex.getOven());
+                        if (ovens.contains(ex.getOven())) ovens.remove(ex.getOven());
                     }
                 }
             }
