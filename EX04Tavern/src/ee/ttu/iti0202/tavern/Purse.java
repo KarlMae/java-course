@@ -91,12 +91,12 @@ public class Purse {
             if (bestSolutionOverPay == 0) {
                 return;
             }
-            if (usedCoins.size() < bestSolution.size()) {
+            if (priceLeft > bestSolutionOverPay) {
                 setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
 
-            if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
+            if (usedCoins.size() < bestSolution.size() && priceLeft == bestSolutionOverPay) {
                 setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
