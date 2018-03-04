@@ -35,9 +35,8 @@ public class OrbFactory {
     }
 
     public void getRidOfOvensThatCannotBeFixed() {
-        for (Oven oven : getOvensThatCannotBeFixed()) {
-            unfixableOvens.remove(oven);
-        }
+        ovens.removeAll(unfixableOvens);
+        unfixableOvens.clear();
     }
 
     public void optimizeOvensOrder() {
@@ -62,16 +61,16 @@ public class OrbFactory {
                     if (ex.getReason() == CannotFixException.Reason.FIXED_MAXIMUM_TIMES) {
                         Oven brokenOven = ex.getOven();
                         if (!getOvensThatCannotBeFixed().contains(brokenOven)) getOvensThatCannotBeFixed().add(brokenOven);
-                        if (ovens.contains(brokenOven) && brokenOven instanceof MagicOven) ovens.remove(brokenOven);
+                        continue;
                     }
                 }
-            } else {
+            }
                 Optional<Orb> newOrb = oven.craftOrb();
                 if (newOrb.isPresent()) {
                     orbs.add(newOrb.get());
                     amount++;
                 }
-            }
+
         }
         return amount;
     }

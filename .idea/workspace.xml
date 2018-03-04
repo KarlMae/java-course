@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
       <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,19 +26,6 @@
             <state relative-caret-position="402">
               <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Purse.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding>
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,18 +73,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrbFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrbFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+            <state relative-caret-position="109">
+              <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="e#864#865#0" expanded="true" />
                 <element signature="e#892#893#0" expanded="true" />
                 <element signature="e#945#946#0" expanded="true" />
                 <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,8 +212,8 @@
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/MagicOvenTest.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/factory/OrbFactoryTest.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
       </list>
     </option>
   </component>
@@ -642,14 +628,7 @@
       <workItem from="1519989084990" duration="14352000" />
       <workItem from="1520102445748" duration="20166000" />
       <workItem from="1520160857615" duration="146000" />
-      <workItem from="1520184933170" duration="19660000" />
-    </task>
-    <task id="LOCAL-00174" summary="Exercise">
-      <created>1520109924181</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1520109924181</updated>
+      <workItem from="1520184933170" duration="20412000" />
     </task>
     <task id="LOCAL-00175" summary="Exercise">
       <created>1520110112764</created>
@@ -987,28 +966,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520203995712</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="Exercise">
+      <created>1520204617298</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1520204617298</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 00h 59m 28s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 00h 59m 34s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 00h 59m 39s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 00m 07s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 00m 11s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 00m 18s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 00m 29s.xml">
       <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
     </history-entry>
@@ -1021,13 +989,30 @@
     <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 03m 15s.xml">
       <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 12m 49s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 13m 42s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 14m 13s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 14m 27s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 15m 03s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.05 at 01h 15m 57s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294097000" />
+    <option name="totallyTimeSpent" value="294849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1023,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3082873" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1121,12 +1106,6 @@
           <option name="timeStamp" value="415" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="432" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/FixableTest.java</url>
           <line>209</line>
           <properties />
@@ -1134,7 +1113,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java</url>
-          <line>57</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="439" />
         </line-breakpoint>
@@ -1490,14 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/factory/OrbFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1564,21 +1535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/FixableTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1594,6 +1550,29 @@
           <folding>
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/factory/OrbFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
           </folding>
         </state>
       </provider>
