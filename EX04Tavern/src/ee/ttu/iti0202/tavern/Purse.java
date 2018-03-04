@@ -60,7 +60,6 @@ public class Purse {
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
         if (bestSolution.size() != 0) {
-            Collections.reverse(bestSolution);
             return bestSolution;
         } else {
             return null;
