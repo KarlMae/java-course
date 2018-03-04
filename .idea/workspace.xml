@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -511,14 +510,7 @@
       <workItem from="1519989084990" duration="14352000" />
       <workItem from="1520102445748" duration="20166000" />
       <workItem from="1520160857615" duration="146000" />
-      <workItem from="1520184933170" duration="4128000" />
-    </task>
-    <task id="LOCAL-00146" summary="Exercise">
-      <created>1519891222791</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1519891222791</updated>
+      <workItem from="1520184933170" duration="4389000" />
     </task>
     <task id="LOCAL-00147" summary="Exercise">
       <created>1519891308055</created>
@@ -856,7 +848,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520188899689</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Exercise">
+      <created>1520189072583</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1520189072583</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -892,7 +891,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278565000" />
+    <option name="totallyTimeSpent" value="278826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
