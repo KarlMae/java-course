@@ -76,7 +76,7 @@ public class Purse {
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
         // Base case
 
-        if (priceLeft < bestSolutionOverPay && bestSolution.size() < usedCoins.size() && bestSolution.size() != 0) return;
+        if (usedCoins.size() > bestSolution.size() && bestSolution.size() != 0) return;
 
         if (priceLeft <= 0) {
             if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
