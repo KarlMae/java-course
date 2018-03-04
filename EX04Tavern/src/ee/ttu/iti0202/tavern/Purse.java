@@ -10,7 +10,6 @@ public class Purse {
 
     private ArrayList<Coin> coins = new ArrayList<>();
     private ArrayList<Coin> bestSolution = new ArrayList<>();
-    private int coinsInBestSolution = Integer.MAX_VALUE;
     private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
     private int bestSolutionOverPay = Integer.MAX_VALUE;
 
@@ -68,39 +67,38 @@ public class Purse {
         }
     }
 
-    private void setSolution(List<Coin> usedCoins, List<Coin> availableCoins) {
+    private void setSolution(List<Coin> usedCoins, List<Coin> availableCoins, int priceLeft) {
         bestSolution = new ArrayList<>(usedCoins);
         bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-        coinsInBestSolution = bestSolution.size();
-        bestSolutionOverPay = 0;
+        bestSolutionOverPay = priceLeft;
     }
 
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
-
         // Base case
-        if (priceLeft < bestSolutionOverPay && coinsInBestSolution != Integer.MAX_VALUE) return;
+
+        if (priceLeft < bestSolutionOverPay && bestSolution.size() < usedCoins.size() && bestSolution.size() != 0) return;
 
         if (priceLeft <= 0) {
-            if (coinsInBestSolution == 0) {
-                setSolution(usedCoins, availableCoins);
+            if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
+                setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
 
-            if (usedCoins.size() < coinsInBestSolution && priceLeft == 0) {
-                setSolution(usedCoins, availableCoins);
+            if (bestSolution.size() == 0) {
+                setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
 
             if (bestSolutionOverPay == 0) {
                 return;
             }
-            if (usedCoins.size() < coinsInBestSolution) {
-                setSolution(usedCoins, availableCoins);
+            if (usedCoins.size() < bestSolution.size()) {
+                setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
 
-            if (usedCoins.size() == coinsInBestSolution && priceLeft > bestSolutionOverPay) {
-                setSolution(usedCoins, availableCoins);
+            if (usedCoins.size() == bestSolution.size() && priceLeft > bestSolutionOverPay) {
+                setSolution(usedCoins, availableCoins, priceLeft);
                 return;
             }
             return;
