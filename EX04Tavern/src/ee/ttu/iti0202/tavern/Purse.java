@@ -38,7 +38,7 @@ public class Purse {
         // Used to avoid coins, that are already used
         Collections.sort(coins);
 
-        // Find the best solution
+        // Find the best solution.
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
 
         coins = new ArrayList<>(bestSolutionCoinsLeft);
