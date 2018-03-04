@@ -53,6 +53,11 @@ public class Tavern {
         //Make a list of all currencies
         availableCurrencies.addAll(Currency.getCurrencies());
 
+        //Reset recursive
+        optimumFound = false;
+        giveChangeOptimum.clear();
+        optimumOverPay = Integer.MAX_VALUE;
+
         recursiveCoinFinder(currenciesToReturn, payBackAmount, foodcost);
 
         for (Coin coin : giveChangeOptimum) {
@@ -69,7 +74,7 @@ public class Tavern {
         for (Coin coin : coins) {
             coinSum += coin.getValue();
         }
-        optimumOverPay = coinSum;
+        optimumOverPay = -coinSum;
     }
 
     /* Recursive coin finder */
@@ -78,26 +83,28 @@ public class Tavern {
 
         // Base case
         if (priceLeft <= 0) {
-            if (priceLeft == 0) {
-                if (optimumFound) {
-                    if (usedCoins.size() < giveChangeOptimum.size()) {
-                        giveChangeOptimum = new ArrayList<>(usedCoins);
-                        setOptimumOverPay(usedCoins);
-                    } else {
-                        return;
-                    }
-                } else {
+            if (optimumFound) {
+                if (usedCoins.size() < giveChangeOptimum.size() && priceLeft == 0) {
                     giveChangeOptimum = new ArrayList<>(usedCoins);
                     setOptimumOverPay(usedCoins);
-                    optimumFound = true;
+                } else {
+                    return;
                 }
-            } else if (priceLeft < optimumOverPay) {
+            }
+
+            if (priceLeft == 0) {
+                giveChangeOptimum = new ArrayList<>(usedCoins);
+                setOptimumOverPay(usedCoins);
+                optimumFound = true;
+            } else if (priceLeft > optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
             } else if (usedCoins.size() < giveChangeOptimum.size() && priceLeft == optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
             }
+
+            return;
         }
 
         // Try every coin
