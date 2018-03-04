@@ -55,7 +55,7 @@ public class Purse {
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
         bestSolutionOverPay = Integer.MAX_VALUE;
-        coins.sort(Comparator.reverseOrder());
+        Collections.sort(coins);
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
