@@ -28,7 +28,7 @@ public class MagicOven extends Oven implements Fixable {
         if (createdOrbs < 5) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
         if (resourceStorage.getResourceAmount("clay") >= 25 * (timesFixed + 1)
-                && resourceStorage.getResourceAmount("freezing powder") >= (100 * timesFixed + 1)) {
+                && resourceStorage.getResourceAmount("freezing powder") >= 100 * (timesFixed + 1)) {
             createdOrbs = 0;
             resourceStorage.takeResource("clay", 25 * (timesFixed + 1));
             resourceStorage.takeResource("freezing powder", 100 * (timesFixed + 1));

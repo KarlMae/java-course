@@ -144,7 +144,7 @@ public final class Currency implements Comparable<Currency> {
     }
 
     public static int getRate(Currency fromCurrency, Currency toCurrency) {
-        // use the rate stored in add method
+        // use the rate stored in add method.
         // for example: gold -> silver should return 10
         // silver -> gold will return 0 (as the method returns int
         return currencyValues.get(fromCurrency) / currencyValues.get(toCurrency);
