@@ -5,14 +5,15 @@ public class Orb {
     String creator;
     int energy;
 
-    Orb() {}
+    Orb() {
+    }
 
-    public Orb(String creator){
+    public Orb(String creator) {
         this.creator = creator;
         this.energy = 0;
     }
 
-    public void charge(String resource, int amount){
+    public void charge(String resource, int amount) {
         if (resource.toLowerCase().equals("dust") || resource.matches(" +") || amount < 0) return;
 
         energy += resource.length() * amount;

@@ -2,7 +2,7 @@ package ee.ttu.iti0202.orb;
 
 public class SpaceOrb extends Orb {
 
-    public SpaceOrb(String creator){
+    public SpaceOrb(String creator) {
         this.creator = creator;
         this.energy = 100;
     }

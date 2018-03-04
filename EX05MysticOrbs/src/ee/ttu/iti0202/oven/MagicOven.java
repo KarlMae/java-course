@@ -9,11 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class MagicOven extends Oven implements Fixable{
+public class MagicOven extends Oven implements Fixable {
 
     private Map<String, Integer> fixingMaterials = new HashMap<>();
 
-    MagicOven(){}
+    MagicOven() {
+    }
 
     public MagicOven(String name, ResourceStorage resourceStorage) {
         super.name = name;
@@ -22,7 +23,7 @@ public class MagicOven extends Oven implements Fixable{
     }
 
     @Override
-    public void fix(){
+    public void fix() {
         if (timesFixed >= 10) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
         if (createdOrbs < 5) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
@@ -37,7 +38,7 @@ public class MagicOven extends Oven implements Fixable{
         }
     }
 
-    public int getTimesFixed(){
+    public int getTimesFixed() {
         return timesFixed;
     }
 
@@ -51,7 +52,7 @@ public class MagicOven extends Oven implements Fixable{
         Optional<Orb> orbOptional = Optional.empty();
 
 
-        if (!this.isBroken()  && resourceStorage.getResourceAmount("gold") >= 1
+        if (!this.isBroken() && resourceStorage.getResourceAmount("gold") >= 1
                 && resourceStorage.getResourceAmount("dust") >= 3) {
             Orb orb;
 

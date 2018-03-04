@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
       <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java" />
+      <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,94 +27,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Oven.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Oven.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-482">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#885#886#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpaceOven.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
-                <element signature="e#2329#2330#0" expanded="true" />
-                <element signature="e#2394#2395#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MagicOven.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
-                <element signature="e#1438#1439#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixableTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/FixableTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="3">
+              <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComparableTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/ComparableTest.java">
+      <file leaf-file-name="Purse.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="115" column="26" lean-forward="true" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrbFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java">
+      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-              <folding>
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="method#getRidOfOvensThatCannotBeFixed#0;class#OrbFactory#0" expanded="false" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="method#getAndClearProducedOrbsList#0;class#OrbFactory#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="318">
+              <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,21 +119,21 @@
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/card/BankCard.java" />
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/card/CreditCard.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
-        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/storage/ResourceStorage.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Fixable.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/exceptions/CannotFixException.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/ComparableTest.java" />
-        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Oven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" />
+        <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java" />
+        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
       </list>
     </option>
   </component>
@@ -232,123 +177,20 @@
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
+              <item name="EX04Tavern" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
+              <item name="EX04Tavern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
+              <item name="EX04Tavern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="orb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="oven" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="EX05MysticOrbs" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="orb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR05Bank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR05Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR05Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR05Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR05Bank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="card" type="462c0819:PsiDirectoryNode" />
+              <item name="tavern" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -382,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in EX05MysticOrbs">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -569,8 +411,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in EX05MysticOrbs" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main (2)" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in EX05MysticOrbs" />
         <item index="2" class="java.lang.String" itemvalue="Application.main" />
         <item index="3" class="java.lang.String" itemvalue="Application.Bank" />
         <item index="4" class="java.lang.String" itemvalue="Application.Kindergarten" />
@@ -617,14 +459,7 @@
       <workItem from="1519640516831" duration="66473000" />
       <workItem from="1519892705761" duration="11971000" />
       <workItem from="1519989084990" duration="14352000" />
-      <workItem from="1520102445748" duration="18649000" />
-    </task>
-    <task id="LOCAL-00138" summary="Exercise">
-      <created>1519769066291</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1519769066291</updated>
+      <workItem from="1520102445748" duration="19006000" />
     </task>
     <task id="LOCAL-00139" summary="Exercise">
       <created>1519830277322</created>
@@ -962,16 +797,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520158839196</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Exercise">
+      <created>1520158871949</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1520158871949</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 03m 44s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 03m 47s.xml">
-      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 06m 28s.xml">
       <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
     </history-entry>
@@ -996,9 +832,15 @@
     <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 20m 18s.xml">
       <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 21m 24s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_EX05MysticOrbs - 2018.03.04 at 12h 26m 23s.xml">
+      <configuration name="All in EX05MysticOrbs" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272774000" />
+    <option name="totallyTimeSpent" value="273131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1013,7 +855,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3082873" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1097,15 +939,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="344" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java</url>
           <line>78</line>
           <properties />
           <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/EX03Bookshelf/src/ee/ttu/iti0202/bookshelf/Book.java</url>
@@ -1124,7 +966,7 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="349" />
+      <option name="time" value="350" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1238,14 +1080,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/main.java" />
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="53" column="86" lean-forward="false" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1263,18 +1097,6 @@
           <folding>
             <element signature="e#267#268#0" expanded="false" />
             <element signature="e#312#313#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="115" column="30" lean-forward="false" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#558#559#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1377,58 +1199,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/card/BankCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Fixable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1507,49 +1281,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/storage/ResourceStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/SpaceOvenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-350">
           <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1561,10 +1297,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/MagicOrb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/Orb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/orb/SpaceOrb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Fixable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/Oven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="21">
+          <caret line="50" column="32" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
             <element signature="e#674#675#0" expanded="true" />
             <element signature="e#712#713#0" expanded="true" />
@@ -1580,6 +1362,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/SpaceOven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="28" column="69" lean-forward="false" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/storage/ResourceStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/FixableTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1590,8 +1396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="78" column="22" lean-forward="false" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+        <state relative-caret-position="344">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="e#826#827#0" expanded="true" />
             <element signature="e#854#855#0" expanded="true" />
@@ -1602,6 +1408,38 @@
             <element signature="e#1179#1180#0" expanded="true" />
             <element signature="method#getAndClearProducedOrbsList#0;class#OrbFactory#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="115" column="26" lean-forward="true" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

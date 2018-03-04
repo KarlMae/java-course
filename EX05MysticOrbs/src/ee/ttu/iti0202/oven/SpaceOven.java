@@ -9,7 +9,7 @@ import ee.ttu.iti0202.storage.ResourceStorage;
 import java.util.Comparator;
 import java.util.Optional;
 
-public class SpaceOven extends Oven implements Fixable{
+public class SpaceOven extends Oven implements Fixable {
 
     public SpaceOven(String name, ResourceStorage resourceStorage) {
         super.name = name;
@@ -18,11 +18,10 @@ public class SpaceOven extends Oven implements Fixable{
     }
 
     @Override
-    public void fix(){
+    public void fix() {
         if (timesFixed >= 5) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
         if (createdOrbs < 25) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
-        //TODO WTF Miks 39 liquid silver? testSpaceOvenCreatesStandardOrbsIfItIsBroken
         if (resourceStorage.getResourceAmount("liquid silver") >= 40 * (timesFixed + 1)) {
             createdOrbs = 0;
             resourceStorage.takeResource("liquid silver", 40 * (timesFixed + 1));
@@ -36,7 +35,7 @@ public class SpaceOven extends Oven implements Fixable{
         }
     }
 
-    public int getTimesFixed(){
+    public int getTimesFixed() {
         return timesFixed;
     }
 
@@ -57,7 +56,7 @@ public class SpaceOven extends Oven implements Fixable{
         } else if (resourceStorage.getResourceAmount("pearl") >= 1
                 && resourceStorage.getResourceAmount("silver") >= 1) {
 
-           orbOptional = super.createNormalOrb();
+            orbOptional = super.createNormalOrb();
         }
 
         return orbOptional;
