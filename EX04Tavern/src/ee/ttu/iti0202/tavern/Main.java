@@ -77,7 +77,7 @@ public class Main {
         Coin co1 = new Coin(c);
         Coin co2 = new Coin(s);
         Coin co3 = new Coin(g);
-        Purse testPurse = new Purse(co1, co2, co3, co3, co2);
+        Purse testPurse = new Purse(co1, co3, co3, co3, co3);
 
         Price newPrice = Price.of(102);
         List<Coin> paid2Coins = testPurse.pay(newPrice);
