@@ -27,28 +27,6 @@ public class Purse {
         return coins;
     }
 
-    private Coin tryEveryCoin(int priceToPay) {
-        Coin bestCoin = null;
-        Collections.sort(coins);
-
-        for (Coin c : coins) {
-            if (bestCoin == null) {
-                bestCoin = c;
-                continue;
-            }
-
-            // If new coin suits better
-            int newCoinValue = c.getAmount() * c.getCurrency().getRate();
-            if (newCoinValue >= priceToPay) bestCoin = c;
-        }
-
-        if (bestCoin != null) {
-            return bestCoin;
-        } else {
-            return null;
-        }
-    }
-
     public List<Coin> pay(Price price) {
         int priceToPay = price.getPriceInBaseValue();
 
@@ -79,10 +57,11 @@ public class Purse {
     }
 
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
-        // Base case
 
+        // Avoid unnecessary branches
         if (usedCoins.size() > bestSolution.size() && priceLeft < bestSolutionOverPay && bestSolutionOverPay != Integer.MAX_VALUE) return;
 
+        // Base case
         if (priceLeft <= 0) {
 
             // This solution is better than the last one
