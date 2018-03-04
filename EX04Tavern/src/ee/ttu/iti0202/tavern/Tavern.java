@@ -64,7 +64,7 @@ public class Tavern {
     }
 
 
-    private void setOptimumOverPay (ArrayList<Coin> coins) {
+    private void setOptimumOverPay(ArrayList<Coin> coins) {
         int coinSum = 0;
         for (Coin coin : coins) {
             coinSum += coin.getValue();
@@ -74,25 +74,27 @@ public class Tavern {
 
     /* Recursive coin finder */
     private void recursiveCoinFinder(ArrayList<Coin> usedCoins, int priceLeft) {
+        if (usedCoins.size() > giveChangeOptimum.size()) return;
+
         // Base case
         if (priceLeft <= 0) {
-
-            if (optimumFound && priceLeft == 0) {
-                if (usedCoins.size() < giveChangeOptimum.size()) {
+            if (priceLeft == 0) {
+                if (optimumFound) {
+                    if (usedCoins.size() < giveChangeOptimum.size()) {
+                        giveChangeOptimum = new ArrayList<>(usedCoins);
+                        setOptimumOverPay(usedCoins);
+                    } else {
+                        return;
+                    }
+                } else {
                     giveChangeOptimum = new ArrayList<>(usedCoins);
                     setOptimumOverPay(usedCoins);
-                } else {
-                    return;
+                    optimumFound = true;
                 }
-
-            } else if (priceLeft == 0) {
-                giveChangeOptimum = new ArrayList<>(usedCoins);
-                setOptimumOverPay(usedCoins);
-                optimumFound = true;
             } else if (priceLeft > optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
-            } else if (usedCoins.size() < giveChangeOptimum.size()) {
+            } else if (usedCoins.size() < giveChangeOptimum.size() && priceLeft == optimumOverPay) {
                 giveChangeOptimum = new ArrayList<>(usedCoins);
                 setOptimumOverPay(usedCoins);
             }
@@ -128,7 +130,8 @@ public class Tavern {
 
                 List<Price> prices = foods.get(name);
                 if (prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).isPresent()) {
-                    prices.remove(prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).get());                }
+                    prices.remove(prices.stream().min(Comparator.comparing(Price::getPriceInBaseValue)).get());
+                }
 
                 return coinsToReturn;
             }

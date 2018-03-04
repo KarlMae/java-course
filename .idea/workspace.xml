@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
+      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +33,8 @@
       <file leaf-file-name="Tavern.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="402">
+              <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -178,8 +178,8 @@
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/MagicOven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
-        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
+        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
       </list>
     </option>
   </component>
@@ -549,14 +549,7 @@
       <workItem from="1519989084990" duration="14352000" />
       <workItem from="1520102445748" duration="20166000" />
       <workItem from="1520160857615" duration="146000" />
-      <workItem from="1520184933170" duration="7374000" />
-    </task>
-    <task id="LOCAL-00155" summary="Exercise">
-      <created>1520000096911</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1520000096911</updated>
+      <workItem from="1520184933170" duration="8205000" />
     </task>
     <task id="LOCAL-00156" summary="Exercise">
       <created>1520000166194</created>
@@ -894,7 +887,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520191155715</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="Exercise">
+      <created>1520192320283</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1520192320283</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -930,7 +930,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281811000" />
+    <option name="totallyTimeSpent" value="282642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -945,7 +945,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3082873" sideWeight="0.5208333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928178" sideWeight="0.47916666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1457,8 +1457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="402">
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
           <folding />
         </state>
       </provider>
