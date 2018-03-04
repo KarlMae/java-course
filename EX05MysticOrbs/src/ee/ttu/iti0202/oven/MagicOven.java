@@ -44,7 +44,7 @@ public class MagicOven extends Oven implements Fixable {
 
     @Override
     public boolean isBroken() {
-        return super.createdOrbs >= 5;
+        return super.createdOrbs >= 5 && timesFixed < 5;
     }
 
     @Override
