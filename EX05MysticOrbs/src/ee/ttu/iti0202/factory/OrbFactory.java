@@ -65,12 +65,12 @@ public class OrbFactory {
                         if (ovens.contains(brokenOven) && brokenOven instanceof MagicOven) ovens.remove(brokenOven);
                     }
                 }
-            }
-
-            Optional<Orb> newOrb = oven.craftOrb();
-            if (newOrb.isPresent()) {
-                orbs.add(newOrb.get());
-                amount++;
+            } else {
+                Optional<Orb> newOrb = oven.craftOrb();
+                if (newOrb.isPresent()) {
+                    orbs.add(newOrb.get());
+                    amount++;
+                }
             }
         }
         return amount;
