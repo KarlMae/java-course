@@ -149,7 +149,7 @@ public class Tavern {
 
             if (foodCost == null) return false;
 
-            if (money > foodCost.getPriceInBaseValue()) {
+            if (money >= foodCost.getPriceInBaseValue()) {
                 purse.pay(foodCost);
 
                 List<Price> prices = foods.get(name);

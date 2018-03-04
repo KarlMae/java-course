@@ -77,12 +77,16 @@ public class Main {
         Coin co1 = new Coin(c);
         Coin co2 = new Coin(s);
         Coin co3 = new Coin(g);
-        Purse testPurse = new Purse(co1, co3, co3, co3, co3);
+        Purse testPurse = new Purse();
 
-        Price newPrice = Price.of(102);
-        List<Coin> paid2Coins = testPurse.pay(newPrice);
+        for (int i = 0; i < 100; i++) {
+            testPurse.addCoin(co1);
+        }
+        Tavern tavern1 = new Tavern();
+        tavern1.addFood("pasta", Price.of(100));
+        Boolean bought = tavern1.buy("pasta", testPurse);
         System.out.println("----- My tests -----");
-        System.out.println(paid2Coins);
+        System.out.println(bought);
 
 
 
