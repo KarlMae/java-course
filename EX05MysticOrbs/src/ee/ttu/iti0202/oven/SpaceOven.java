@@ -22,11 +22,13 @@ public class SpaceOven extends Oven implements Fixable{
         if (timesFixed >= 5) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
         if (createdOrbs < 25) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
-        if (resourceStorage.getResourceAmount("liquid silver") >= 40 * timesFixed + 1
-                && resourceStorage.getResourceAmount("star essence") >= 10 * timesFixed + 1) {
+        //TODO WTF Miks 39 liquid silver? testSpaceOvenCreatesStandardOrbsIfItIsBroken
+        if (resourceStorage.getResourceAmount("liquid silver") >= 39 * (timesFixed + 1)
+                && resourceStorage.getResourceAmount("star essence") >= 10 * (timesFixed + 1)) {
             createdOrbs = 0;
-            resourceStorage.takeResource("liquid silver", 40 * timesFixed + 1);
-            resourceStorage.takeResource("star essence", 10 * timesFixed + 1);
+            resourceStorage.takeResource("liquid silver", 40 * (timesFixed + 1));
+            resourceStorage.takeResource("star essence", 10 * (timesFixed + 1));
+            timesFixed++;
         } else {
             throw new CannotFixException(this, CannotFixException.Reason.NOT_ENOUGH_RESOURCES);
         }

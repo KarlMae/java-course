@@ -39,7 +39,7 @@ public class OrbFactory {
     }
 
     public void optimizeOvensOrder() {
-        
+
     }
 
     public List<Orb> getAndClearProducedOrbsList() {
@@ -75,7 +75,7 @@ public class OrbFactory {
     public int produceOrbs(int cycles) {
         int amount = 0;
 
-        for (int i = 0; i < cycles; i++){
+        for (int i = 0; i < cycles - 1; i++){
             amount += produceOrbs();
         }
 

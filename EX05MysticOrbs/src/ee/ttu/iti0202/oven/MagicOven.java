@@ -23,14 +23,15 @@ public class MagicOven extends Oven implements Fixable{
 
     @Override
     public void fix(){
-        if (timesFixed > 10) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
+        if (timesFixed >= 10) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
         if (createdOrbs < 5) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
-        if (resourceStorage.getResourceAmount("clay") >= 25 * timesFixed + 1
-                && resourceStorage.getResourceAmount("freezing powder") >= 100 * timesFixed + 1) {
+        if (resourceStorage.getResourceAmount("clay") >= 25 * (timesFixed + 1)
+                && resourceStorage.getResourceAmount("freezing powder") >= (100 * timesFixed + 1)) {
             createdOrbs = 0;
-            resourceStorage.takeResource("clay", 25 * timesFixed + 1);
-            resourceStorage.takeResource("freezing powder", 100 * timesFixed + 1);
+            resourceStorage.takeResource("clay", 25 * (timesFixed + 1));
+            resourceStorage.takeResource("freezing powder", 100 * (timesFixed + 1));
+            timesFixed++;
         } else {
             throw new CannotFixException(this, CannotFixException.Reason.NOT_ENOUGH_RESOURCES);
         }

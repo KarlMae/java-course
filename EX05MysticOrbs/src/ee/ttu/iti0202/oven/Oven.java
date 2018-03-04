@@ -1,5 +1,6 @@
 package ee.ttu.iti0202.oven;
 
+import ee.ttu.iti0202.exceptions.CannotFixException;
 import ee.ttu.iti0202.orb.Orb;
 import ee.ttu.iti0202.storage.ResourceStorage;
 
@@ -39,6 +40,7 @@ public class Oven implements Comparable<Oven>, Fixable {
     }
 
     public void fix() {
+        throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
     }
 
     public int getTimesFixed() {
@@ -80,26 +82,27 @@ public class Oven implements Comparable<Oven>, Fixable {
         if (thisOven.isBroken() && !otherOven.isBroken()) return -1;
         if (otherOven.isBroken() && !thisOven.isBroken()) return 1;
 
-        if (thisOven.getClass() == SpaceOven.class && otherOven.getClass() != SpaceOven.class) return 1;
-        if (otherOven.getClass() == SpaceOven.class && thisOven.getClass() != SpaceOven.class) return -1;
-        if (thisOven.getClass() == otherOven.getClass()) {
-            if (thisOven.getCreatedOrbsAmount() > otherOven.getCreatedOrbsAmount()) return 1;
-            if (otherOven.getCreatedOrbsAmount() > otherOven.getCreatedOrbsAmount()) return -1;
+        if (thisOven instanceof SpaceOven && !(otherOven instanceof SpaceOven)) return 1;
+        if (otherOven instanceof SpaceOven && !(thisOven instanceof SpaceOven)) return -1;
 
-            if (thisOven.getClass() == MagicOven.class) {
-                if (thisOven.getCreatedOrbsAmount() % 2 == 0 && otherOven.getCreatedOrbsAmount() % 2 != 0) return 1;
-                if (otherOven.getCreatedOrbsAmount() % 2 == 0 && thisOven.getCreatedOrbsAmount() % 2 != 0) return -1;
+        if (thisOven instanceof MagicOven && !(otherOven instanceof MagicOven)) return 1;
+        if (otherOven instanceof MagicOven && !(thisOven instanceof MagicOven)) return -1;
 
-                if (thisOven.getClass() == InfinityMagicOven.class && otherOven.getClass() != InfinityMagicOven.class)
-                    return 1;
-                if (otherOven.getClass() == InfinityMagicOven.class && thisOven.getClass() != InfinityMagicOven.class)
-                    return -1;
-            }
+        if (thisOven instanceof MagicOven && otherOven instanceof MagicOven) {
+            if (thisOven.getCreatedOrbsAmount() % 2 == 0 && otherOven.getCreatedOrbsAmount() % 2 != 0) return -1;
+            if (otherOven.getCreatedOrbsAmount() % 2 == 0 && thisOven.getCreatedOrbsAmount() % 2 != 0) return 1;
+
+            if (thisOven instanceof InfinityMagicOven && !(otherOven instanceof InfinityMagicOven))
+                return -1;
+            if (otherOven instanceof InfinityMagicOven && !(thisOven instanceof InfinityMagicOven))
+                return 1;
         }
+
+        if (thisOven.getCreatedOrbsAmount() < otherOven.getCreatedOrbsAmount()) return 1;
+        if (otherOven.getCreatedOrbsAmount() < thisOven.getCreatedOrbsAmount()) return -1;
 
         int thisOvenNameLength = thisOven.name.length();
         int otherOvenNameLength = otherOven.name.length();
-
         return Integer.compare(thisOvenNameLength, otherOvenNameLength);
 
     }
