@@ -6,6 +6,7 @@ import ee.ttu.iti0202.oven.Oven;
 import ee.ttu.iti0202.storage.ResourceStorage;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -39,7 +40,7 @@ public class OrbFactory {
     }
 
     public void optimizeOvensOrder() {
-
+        Collections.sort(ovens);
     }
 
     public List<Orb> getAndClearProducedOrbsList() {
