@@ -20,15 +20,12 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public void fix() {
-        if (timesFixed >= maxFixTimes) {
-            throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
-        }
         if (createdOrbs < ovenBrokenAt) {
             throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
         }
 
-        int silverToFix = 40;
-        int essenceToFix = 10;
+        final int silverToFix = 40;
+        final int essenceToFix = 10;
         if (resourceStorage.getResourceAmount("liquid silver") >= silverToFix * (timesFixed + 1)) {
             createdOrbs = 0;
             resourceStorage.takeResource("liquid silver", silverToFix * (timesFixed + 1));
@@ -74,10 +71,7 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public boolean isBroken() {
-        if (timesFixed < maxFixTimes) {
-            return createdOrbs >= ovenBrokenAt;
-        }
-        return false;
+        return createdOrbs >= ovenBrokenAt;
     }
 
 }
