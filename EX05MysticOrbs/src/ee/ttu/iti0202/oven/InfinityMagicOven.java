@@ -10,6 +10,7 @@ public class InfinityMagicOven extends MagicOven {
         super.resourceStorage = resourceStorage;
     }
 
+    //
     public void fix() {
         throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
     }
