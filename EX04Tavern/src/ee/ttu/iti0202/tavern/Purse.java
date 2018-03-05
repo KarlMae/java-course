@@ -60,9 +60,7 @@ public class Purse {
 
         // Avoid unnecessary branches
         if (usedCoins.size() > bestSolution.size() && priceLeft < bestSolutionOverPay && bestSolutionOverPay != Integer.MAX_VALUE) return;
-
-        System.out.println(usedCoins);
-
+        
         // Base case
         if (priceLeft <= 0) {
 
