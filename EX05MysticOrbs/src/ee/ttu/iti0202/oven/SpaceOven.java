@@ -71,7 +71,10 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public boolean isBroken() {
-        return createdOrbs >= ovenBrokenAt;
+        if (timesFixed < maxFixTimes) {
+            return createdOrbs >= ovenBrokenAt;
+        }
+        return false;
     }
 
 }
