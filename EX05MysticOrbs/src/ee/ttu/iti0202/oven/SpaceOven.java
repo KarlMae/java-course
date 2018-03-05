@@ -1,15 +1,20 @@
 package ee.ttu.iti0202.oven;
 
 import ee.ttu.iti0202.exceptions.CannotFixException;
-import ee.ttu.iti0202.orb.MagicOrb;
 import ee.ttu.iti0202.orb.Orb;
 import ee.ttu.iti0202.orb.SpaceOrb;
 import ee.ttu.iti0202.storage.ResourceStorage;
 
-import java.util.Comparator;
 import java.util.Optional;
 
 public class SpaceOven extends Oven implements Fixable {
+
+    private int ovenBrokenAt = 25;
+    private int maxFixTimes = 5;
+    private int silverToFix = 40;
+    private int essenceToFix = 10;
+    private int starForOrb = 15;
+    private int meteoriteForOrb = 1;
 
     public SpaceOven(String name, ResourceStorage resourceStorage) {
         super.name = name;
@@ -19,16 +24,16 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public void fix() {
-        if (timesFixed >= 5) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
-        if (createdOrbs < 25) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
+        if (timesFixed >= maxFixTimes) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
+        if (createdOrbs < ovenBrokenAt) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
-        if (resourceStorage.getResourceAmount("liquid silver") >= 40 * (timesFixed + 1)) {
+        if (resourceStorage.getResourceAmount("liquid silver") >= silverToFix * (timesFixed + 1)) {
             createdOrbs = 0;
-            resourceStorage.takeResource("liquid silver", 40 * (timesFixed + 1));
+            resourceStorage.takeResource("liquid silver", silverToFix * (timesFixed + 1));
             timesFixed++;
-        } else if (resourceStorage.getResourceAmount("star essence") >= 10 * (timesFixed + 1)) {
+        } else if (resourceStorage.getResourceAmount("star essence") >= essenceToFix * (timesFixed + 1)) {
             createdOrbs = 0;
-            resourceStorage.takeResource("star essence", 10 * (timesFixed + 1));
+            resourceStorage.takeResource("star essence", essenceToFix * (timesFixed + 1));
             timesFixed++;
         } else {
             throw new CannotFixException(this, CannotFixException.Reason.NOT_ENOUGH_RESOURCES);
@@ -43,16 +48,16 @@ public class SpaceOven extends Oven implements Fixable {
     public Optional<Orb> craftOrb() {
         Optional<Orb> orbOptional = Optional.empty();
 
-        if (!this.isBroken() && resourceStorage.getResourceAmount("meteorite stone") >= 1
-                && resourceStorage.getResourceAmount("star fragment") >= 15) {
+        if (!this.isBroken() && resourceStorage.getResourceAmount("meteorite stone") >= meteoriteForOrb
+                && resourceStorage.getResourceAmount("star fragment") >= starForOrb) {
 
             Orb orb = new SpaceOrb(super.name);
             createdOrbs++;
 
             orbOptional = Optional.of(orb);
 
-            resourceStorage.takeResource("meteorite stone", 1);
-            resourceStorage.takeResource("star fragment", 15);
+            resourceStorage.takeResource("meteorite stone", meteoriteForOrb);
+            resourceStorage.takeResource("star fragment", starForOrb);
         } else if (resourceStorage.getResourceAmount("pearl") >= 1
                 && resourceStorage.getResourceAmount("silver") >= 1) {
 
@@ -64,8 +69,8 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public boolean isBroken() {
-        if (timesFixed < 5) {
-            return createdOrbs >= 25;
+        if (timesFixed < maxFixTimes) {
+            return createdOrbs >= ovenBrokenAt;
         }
         return false;
     }

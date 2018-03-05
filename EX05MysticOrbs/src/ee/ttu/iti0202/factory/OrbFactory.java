@@ -2,7 +2,6 @@ package ee.ttu.iti0202.factory;
 
 import ee.ttu.iti0202.exceptions.CannotFixException;
 import ee.ttu.iti0202.orb.Orb;
-import ee.ttu.iti0202.oven.MagicOven;
 import ee.ttu.iti0202.oven.Oven;
 import ee.ttu.iti0202.storage.ResourceStorage;
 
@@ -60,16 +59,18 @@ public class OrbFactory {
                 } catch (CannotFixException ex) {
                     if (ex.getReason() == CannotFixException.Reason.FIXED_MAXIMUM_TIMES) {
                         Oven brokenOven = ex.getOven();
-                        if (!getOvensThatCannotBeFixed().contains(brokenOven)) getOvensThatCannotBeFixed().add(brokenOven);
+                        if (!getOvensThatCannotBeFixed().contains(brokenOven)) {
+                            getOvensThatCannotBeFixed().add(brokenOven);
+                        }
                         continue;
                     }
                 }
             }
-                Optional<Orb> newOrb = oven.craftOrb();
-                if (newOrb.isPresent()) {
-                    orbs.add(newOrb.get());
-                    amount++;
-                }
+            Optional<Orb> newOrb = oven.craftOrb();
+            if (newOrb.isPresent()) {
+                orbs.add(newOrb.get());
+                amount++;
+            }
 
         }
         return amount;
