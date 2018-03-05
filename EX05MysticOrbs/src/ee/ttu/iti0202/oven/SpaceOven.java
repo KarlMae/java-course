@@ -9,8 +9,8 @@ import java.util.Optional;
 
 public class SpaceOven extends Oven implements Fixable {
 
-    private int ovenBrokenAt = 25;
-    private int maxFixTimes = 5;
+    private final int ovenBrokenAt = 25;
+    private final int maxFixTimes = 5;
 
     public SpaceOven(String name, ResourceStorage resourceStorage) {
         super.name = name;
@@ -50,8 +50,8 @@ public class SpaceOven extends Oven implements Fixable {
     public Optional<Orb> craftOrb() {
         Optional<Orb> orbOptional = Optional.empty();
 
-        int starForOrb = 15;
-        int meteoriteForOrb = 1;
+        final int starForOrb = 15;
+        final int meteoriteForOrb = 1;
         if (!this.isBroken()
                 && resourceStorage.getResourceAmount("meteorite stone") >= meteoriteForOrb
                 && resourceStorage.getResourceAmount("star fragment") >= starForOrb) {
