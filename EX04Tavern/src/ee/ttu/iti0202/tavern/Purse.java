@@ -61,6 +61,8 @@ public class Purse {
         // Avoid unnecessary branches
         if (usedCoins.size() > bestSolution.size() && priceLeft < bestSolutionOverPay && bestSolutionOverPay != Integer.MAX_VALUE) return;
 
+        System.out.println(usedCoins);
+
         // Base case
         if (priceLeft <= 0) {
 
@@ -102,7 +104,7 @@ public class Purse {
             availableCoins.add(i, usedCoins.remove(usedCoins.size() - 1));
 
             if (i < availableCoins.size() - 1) {
-                if (availableCoins.get(i) == availableCoins.get(i + 1)) {
+                if (availableCoins.get(i).getValue() == availableCoins.get(i + 1).getValue()) {
                     i++;
                 }
             }
