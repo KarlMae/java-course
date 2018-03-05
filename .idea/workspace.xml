@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
       <change beforePath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" afterPath="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,12 +56,12 @@
       <file leaf-file-name="InfinityMagicOven.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="231">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -565,14 +564,7 @@
       <workItem from="1519989084990" duration="14352000" />
       <workItem from="1520102445748" duration="20166000" />
       <workItem from="1520160857615" duration="146000" />
-      <workItem from="1520184933170" duration="24285000" />
-    </task>
-    <task id="LOCAL-00182" summary="Exercise">
-      <created>1520158313187</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1520158313187</updated>
+      <workItem from="1520184933170" duration="24804000" />
     </task>
     <task id="LOCAL-00183" summary="Exercise">
       <created>1520158372542</created>
@@ -910,7 +902,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520238863587</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="Exercise">
+      <created>1520239872612</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1520239872612</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -946,7 +945,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298722000" />
+    <option name="totallyTimeSpent" value="299241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1499,12 +1498,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="231">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
           </folding>
         </state>
       </provider>

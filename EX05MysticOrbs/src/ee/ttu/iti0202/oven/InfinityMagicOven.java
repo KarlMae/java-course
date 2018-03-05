@@ -9,8 +9,7 @@ public class InfinityMagicOven extends MagicOven {
         super.name = name;
         super.resourceStorage = resourceStorage;
     }
-
-    //
+    
     public void fix() {
         throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
     }
