@@ -20,7 +20,7 @@ public class SpaceOven extends Oven implements Fixable {
 
     @Override
     public void fix() {
-        if (timesFixed >= maxFixTimes){
+        if (timesFixed >= maxFixTimes) {
             throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
         }
         if (createdOrbs < ovenBrokenAt) {
