@@ -130,7 +130,7 @@ public class Tavern {
     }
 
 
-    private List<Coin> buyWithChange(String name, Purse purse) {
+    public List<Coin> buyWithChange(String name, Purse purse) {
         if (!foods.containsKey(name)) return null;
 
         int money = setupPurse(purse.getCoins());
