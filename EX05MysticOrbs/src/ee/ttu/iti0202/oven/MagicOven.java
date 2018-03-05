@@ -5,16 +5,11 @@ import ee.ttu.iti0202.orb.MagicOrb;
 import ee.ttu.iti0202.orb.Orb;
 import ee.ttu.iti0202.storage.ResourceStorage;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
 public class MagicOven extends Oven implements Fixable {
 
     private int ovenBrokenAt = 5;
-    private int maxFixTimes = 10;
-    private int clayToFix = 25;
-    private int powderToFix = 100;
 
     MagicOven() {
     }
@@ -27,9 +22,16 @@ public class MagicOven extends Oven implements Fixable {
 
     @Override
     public void fix() {
-        if (timesFixed >= maxFixTimes) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
-        if (createdOrbs < ovenBrokenAt) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
+        int maxFixTimes = 10;
+        if (timesFixed >= maxFixTimes) {
+            throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
+        }
+        if (createdOrbs < ovenBrokenAt) {
+            throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
+        }
 
+        int clayToFix = 25;
+        int powderToFix = 100;
         if (resourceStorage.getResourceAmount("clay") >= clayToFix * (timesFixed + 1)
                 && resourceStorage.getResourceAmount("freezing powder") >= powderToFix * (timesFixed + 1)) {
             createdOrbs = 0;
