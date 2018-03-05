@@ -11,7 +11,10 @@ import java.util.Optional;
 
 public class MagicOven extends Oven implements Fixable {
 
-    private Map<String, Integer> fixingMaterials = new HashMap<>();
+    private int ovenBrokenAt = 5;
+    private int maxFixTimes = 10;
+    private int clayToFix = 25;
+    private int powderToFix = 100;
 
     MagicOven() {
     }
@@ -24,14 +27,14 @@ public class MagicOven extends Oven implements Fixable {
 
     @Override
     public void fix() {
-        if (timesFixed >= 10) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
-        if (createdOrbs < 5) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
+        if (timesFixed >= maxFixTimes) throw new CannotFixException(this, CannotFixException.Reason.FIXED_MAXIMUM_TIMES);
+        if (createdOrbs < ovenBrokenAt) throw new CannotFixException(this, CannotFixException.Reason.IS_NOT_BROKEN);
 
-        if (resourceStorage.getResourceAmount("clay") >= 25 * (timesFixed + 1)
-                && resourceStorage.getResourceAmount("freezing powder") >= 100 * (timesFixed + 1)) {
+        if (resourceStorage.getResourceAmount("clay") >= clayToFix * (timesFixed + 1)
+                && resourceStorage.getResourceAmount("freezing powder") >= powderToFix * (timesFixed + 1)) {
             createdOrbs = 0;
-            resourceStorage.takeResource("clay", 25 * (timesFixed + 1));
-            resourceStorage.takeResource("freezing powder", 100 * (timesFixed + 1));
+            resourceStorage.takeResource("clay", clayToFix * (timesFixed + 1));
+            resourceStorage.takeResource("freezing powder", powderToFix * (timesFixed + 1));
             timesFixed++;
         } else {
             throw new CannotFixException(this, CannotFixException.Reason.NOT_ENOUGH_RESOURCES);
@@ -44,7 +47,7 @@ public class MagicOven extends Oven implements Fixable {
 
     @Override
     public boolean isBroken() {
-        return super.createdOrbs >= 5;
+        return super.createdOrbs >= ovenBrokenAt;
     }
 
     @Override

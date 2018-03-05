@@ -4,7 +4,7 @@ import ee.ttu.iti0202.oven.Oven;
 
 public class CannotFixException extends RuntimeException {
 
-    public enum Reason {IS_NOT_BROKEN, FIXED_MAXIMUM_TIMES, NOT_ENOUGH_RESOURCES}
+    public enum Reason { IS_NOT_BROKEN, FIXED_MAXIMUM_TIMES, NOT_ENOUGH_RESOURCES }
 
     private Oven oven;
     private Reason reason;

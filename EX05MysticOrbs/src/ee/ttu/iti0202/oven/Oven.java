@@ -36,7 +36,8 @@ public class Oven implements Comparable<Oven>, Fixable {
     }
 
     public boolean isBroken() {
-        return createdOrbs >= 15;
+        int ovenBrokenAt = 15;
+        return createdOrbs >= ovenBrokenAt;
     }
 
     public void fix() {
