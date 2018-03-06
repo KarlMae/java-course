@@ -3,12 +3,14 @@ package ee.ttu.iti0202.tavern;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Purse {
 
     private ArrayList<Coin> coins = new ArrayList<>();
     private ArrayList<Coin> bestSolution = new ArrayList<>();
+    private int coinsInBestSolution = Integer.MAX_VALUE;
     private ArrayList<Coin> bestSolutionCoinsLeft = new ArrayList<>();
     private int bestSolutionOverPay = Integer.MAX_VALUE;
 
@@ -27,82 +29,99 @@ public class Purse {
         return coins;
     }
 
+    private Coin tryEveryCoin(int priceToPay) {
+        Coin bestCoin = null;
+        Collections.sort(coins);
+
+        for (Coin c : coins) {
+            if (bestCoin == null) {
+                bestCoin = c;
+                continue;
+            }
+
+            // If new coin suits better
+            int newCoinValue = c.getAmount() * c.getCurrency().getRate();
+            if (newCoinValue >= priceToPay) bestCoin = c;
+        }
+
+        if (bestCoin != null) {
+            return bestCoin;
+        } else {
+            return null;
+        }
+    }
+
     public List<Coin> pay(Price price) {
         int priceToPay = price.getPriceInBaseValue();
-
-        // Reset best solution
         ArrayList<Coin> coinsToPay = new ArrayList<>();
         bestSolution.clear();
         bestSolutionOverPay = Integer.MAX_VALUE;
-
-        // Used to avoid coins, that are already used
-        Collections.sort(coins);
-
-        // Find the best solution
+        coins.sort(Comparator.reverseOrder());
         recursiveCoinFinder(coins, coinsToPay, priceToPay);
-
         coins = new ArrayList<>(bestSolutionCoinsLeft);
 
         if (bestSolution.size() != 0) {
+            Collections.reverse(bestSolution);
             return bestSolution;
         } else {
             return null;
         }
     }
 
-    private void saveSolution(List<Coin> usedCoins, List<Coin> availableCoins, int priceLeft) {
-        bestSolution = new ArrayList<>(usedCoins);
-        bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
-        bestSolutionOverPay = priceLeft;
-    }
-
     private void recursiveCoinFinder(ArrayList<Coin> availableCoins, ArrayList<Coin> usedCoins, int priceLeft) {
-
-        // Avoid unnecessary branches
-        if (usedCoins.size() > bestSolution.size() && priceLeft < bestSolutionOverPay && bestSolutionOverPay != Integer.MAX_VALUE) return;
-
         // Base case
+
+        if (priceLeft < bestSolutionOverPay) return;
+
         if (priceLeft <= 0) {
-
-            // This solution is better than the last one
-            if (usedCoins.size() < bestSolution.size() && priceLeft == 0) {
-                saveSolution(usedCoins, availableCoins, priceLeft);
+            if (usedCoins.size() < coinsInBestSolution && priceLeft == 0) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = 0;
+                coinsInBestSolution = bestSolution.size();
                 return;
             }
-
-            // No solution yet, add one
-            if (bestSolution.size() == 0) {
-                saveSolution(usedCoins, availableCoins, priceLeft);
+            if (coinsInBestSolution == 0) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
+                coinsInBestSolution = bestSolution.size();
                 return;
             }
-
-            // This solution is worse than the saved one
             if (bestSolutionOverPay == 0) {
                 return;
             }
-
-            // This solution is better than the last one
-            if (priceLeft > bestSolutionOverPay) {
-                saveSolution(usedCoins, availableCoins, priceLeft);
-                return;
+            if (usedCoins.size() < coinsInBestSolution) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
+                coinsInBestSolution = bestSolution.size();
             }
 
-            // This solution is better than the last one
-            if (usedCoins.size() < bestSolution.size() && priceLeft == bestSolutionOverPay) {
-                saveSolution(usedCoins, availableCoins, priceLeft);
-                return;
+            if (usedCoins.size() == coinsInBestSolution && priceLeft > bestSolutionOverPay) {
+                bestSolution = new ArrayList<>(usedCoins);
+                bestSolutionCoinsLeft = new ArrayList<>(availableCoins);
+                bestSolutionOverPay = priceLeft;
+                coinsInBestSolution = bestSolution.size();
             }
             return;
         }
 
         // Try every coin
         for (int i = 0; i < availableCoins.size(); i++) {
-            usedCoins.add(availableCoins.remove(i));
-            recursiveCoinFinder(availableCoins, usedCoins, priceLeft - usedCoins.get(usedCoins.size() - 1).getValue());
-            availableCoins.add(i, usedCoins.remove(usedCoins.size() - 1));
+            // Select a coin from the arraylist
+            Coin coin = availableCoins.get(i);
+            usedCoins.add(coin);
+            availableCoins.remove(i);
+
+            recursiveCoinFinder(availableCoins, usedCoins, priceLeft - coin.getValue());
+
+            usedCoins.remove(usedCoins.size() - 1);
+            availableCoins.add(i, coin);
 
             if (i < availableCoins.size() - 1) {
-                if (availableCoins.get(i).getValue() == availableCoins.get(i + 1).getValue()) {
+                Coin nextCoin = availableCoins.get(i + 1);
+                if (coin == nextCoin) {
                     i++;
                 }
             }

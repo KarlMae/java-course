@@ -28,8 +28,6 @@ public class Bank {
     }
 
     public void addCard(BankCard card) {
-
-
         if (card.type == CREDIT) {
             for (Bank bank : banks) {
                 if (bank.creditCards.contains((CreditCard) card)) {
