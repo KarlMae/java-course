@@ -4,7 +4,7 @@
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
-      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
+      <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Purse.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Purse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
+            <state relative-caret-position="2686">
               <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,18 +36,18 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tavern.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tavern.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -119,7 +121,6 @@
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Currency.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/oven/MagicOvenTest.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/test/ee/ttu/iti0202/factory/OrbFactoryTest.java" />
-        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/oven/InfinityMagicOven.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/factory/OrbFactory.java" />
         <option value="$PROJECT_DIR$/EX05MysticOrbs/src/ee/ttu/iti0202/exceptions/CannotFixException.java" />
@@ -131,8 +132,9 @@
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/card/CreditCard.java" />
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/card/DebitCard.java" />
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" />
-        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
+        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
+        <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java" />
       </list>
     </option>
   </component>
@@ -462,14 +464,7 @@
       <workItem from="1520160857615" duration="146000" />
       <workItem from="1520184933170" duration="27075000" />
       <workItem from="1520263277337" duration="7920000" />
-      <workItem from="1520318896158" duration="3356000" />
-    </task>
-    <task id="LOCAL-00192" summary="Exercise">
-      <created>1520186671171</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1520186671171</updated>
+      <workItem from="1520318896158" duration="3519000" />
     </task>
     <task id="LOCAL-00193" summary="Exercise">
       <created>1520187307061</created>
@@ -807,7 +802,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520339684600</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="Exercise">
+      <created>1520339819643</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1520339819643</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -843,7 +845,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312788000" />
+    <option name="totallyTimeSpent" value="312951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -918,7 +920,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java</url>
-          <line>6</line>
+          <line>3</line>
           <properties />
           <option name="timeStamp" value="179" />
         </line-breakpoint>
@@ -1365,24 +1367,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
+        <state relative-caret-position="2686">
           <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Tavern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>

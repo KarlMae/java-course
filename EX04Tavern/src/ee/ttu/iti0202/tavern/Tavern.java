@@ -12,7 +12,7 @@ public class Tavern {
     private List<Integer> giveChangeOptimum = new ArrayList<>();
     private Boolean optimumFound = false;
     private int optimumOverPay = Integer.MAX_VALUE;
-    private Map<Integer, Currency> CurrencyMap = new HashMap<>();
+    private Map<Integer, Currency> currencyMap = new HashMap<>();
     private static Map<String, List<Price>> foods = new HashMap<>();
 
 
@@ -55,7 +55,7 @@ public class Tavern {
 
 
         for (Currency c : availableCurrencies) {
-            CurrencyMap.put(c.getRate(), c);
+            currencyMap.put(c.getRate(), c);
         }
 
         //Reset recursive
@@ -67,7 +67,7 @@ public class Tavern {
 
         List<Coin> coinsToReturn = new ArrayList<>();
         for (Integer value : giveChangeOptimum) {
-            Coin coin = new Coin(CurrencyMap.get(value));
+            Coin coin = new Coin(currencyMap.get(value));
             purse.addCoin(coin);
             coinsToReturn.add(coin);
         }
@@ -116,7 +116,7 @@ public class Tavern {
         }
 
         // Try every coin
-        for (Integer value : CurrencyMap.keySet()) {
+        for (Integer value : currencyMap.keySet()) {
             usedCoins.add(value);
             recursiveCoinFinder(usedCoins, priceLeft - value);
             usedCoins.remove(usedCoins.size() - 1);
