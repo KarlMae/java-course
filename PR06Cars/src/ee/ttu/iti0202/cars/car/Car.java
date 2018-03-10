@@ -6,7 +6,8 @@ public abstract class Car {
     Driver driver;
     private long distanceDriven = 0;
 
-    Car(){}
+    Car() {
+    }
 
     Car(Driver driver) {
         this.driver = driver;
@@ -14,6 +15,7 @@ public abstract class Car {
 
     void drive(long distance) {
         this.distanceDriven += distance;
+        driver.speak();
     }
 
     long getDistanceDriven() {
