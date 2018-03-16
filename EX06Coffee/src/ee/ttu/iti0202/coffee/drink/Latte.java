@@ -1,6 +1,7 @@
 package ee.ttu.iti0202.coffee.drink;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Latte implements Drink {
     private static HashMap<String, Integer> ingredients = new HashMap<>();

@@ -13,7 +13,13 @@ public class WaterContainer {
     }
 
     public void useWater(int amount) {
+        // Could throw exception of not having enough here, but opted against it
+
+        if (amount <= 0) return;
+
         waterInTank -= amount;
+
+        if (waterInTank < 0) waterInTank = 0;
     }
 
     public boolean isEmpty() {

@@ -38,8 +38,8 @@ public abstract class CoffeeMaker {
             throw new CannotMakeCoffeeException(this, waterContainer, CannotMakeCoffeeException.Reason.OUT_OF_WATER);
         }
         if (drink.getIngredients().containsKey("milk")
-                && (milkContainer.isEmpty() || drink.getIngredients().get("milk") > milkContainer.getIngredientLeft
-                ())) {
+                && (milkContainer.isEmpty() || drink.getIngredients().get("milk") > milkContainer.getIngredientLeft(
+        ))) {
             throw new CannotMakeCoffeeException(this, milkContainer, CannotMakeCoffeeException.Reason
                     .OUT_OF_INGREDIENT);
         }

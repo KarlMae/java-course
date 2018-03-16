@@ -9,13 +9,15 @@ public abstract class Container {
 
     enum ContainerType { BEAN, MILK, COCOA }
 
-    public ContainerType containerType;
+    ContainerType containerType;
     int containerSize;
     int ingredientLeft;
 
     public void useIngredient(int amount) {
         if (amount <= 0) return;
         ingredientLeft -= amount;
+
+        if (ingredientLeft < 0) ingredientLeft = 0;
     }
 
     public boolean isEmpty() {

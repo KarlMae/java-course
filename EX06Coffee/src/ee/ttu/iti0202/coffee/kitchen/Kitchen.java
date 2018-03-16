@@ -28,7 +28,6 @@ public class Kitchen {
     private List<CoffeeMaker> coffeeMakers = new ArrayList<>();
     private HashMap<String, Integer> stock = new HashMap<>();
     private Logger kitchenLogger = Logger.getLogger("kitchen.logger");
-    private FileHandler fh;
 
     public Kitchen() {
         try {
@@ -40,7 +39,7 @@ public class Kitchen {
             Path file = Paths.get("kitchenlog.txt");
             Files.write(file, lines, Charset.forName("UTF-8"));
 
-            fh = new FileHandler("kitchenlog.txt");
+            FileHandler fh = new FileHandler("kitchenlog.txt");
             kitchenLogger.addHandler(fh);
             SimpleFormatter formatter = new SimpleFormatter();
             fh.setFormatter(formatter);
@@ -53,8 +52,8 @@ public class Kitchen {
     }
 
 
-    /* If something is wrong with the coffee maker i.e. water/ingredient is missing or garbage is full
-     * barista will deal with the problem. This method is the barista.*/
+    /* If something is wrong with the coffee maker i.e. water/ingredient is missing or garbage is full,
+     * the barista will deal with the problem. This method is the barista.*/
     private boolean handleException(CannotMakeCoffeeException ex) {
         // Take out the garbage
         if (ex.getReason() == CannotMakeCoffeeException.Reason.GARBAGE_FULL) {

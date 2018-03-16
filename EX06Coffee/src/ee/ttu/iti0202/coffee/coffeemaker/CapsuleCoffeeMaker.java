@@ -45,20 +45,20 @@ public class CapsuleCoffeeMaker extends CoffeeMaker {
     /* Make coffee using the capsule already in the capsule holder.
      * If capsule holder is empty or the capsule is empty, makes water.*/
     public Drink makeCoffee() {
-        Drink drinkInCapsule;
-        if (capsuleHolder == null) {
-            drinkInCapsule = new Water();
+        Drink drinkToMake;
+        if (capsuleHolder == null || capsuleHolder.getIngredients().size() <= 0) {
+            drinkToMake = new Water();
         } else {
-            drinkInCapsule = capsuleHolder.getDrink();
+            drinkToMake = capsuleHolder.getDrink();
         }
 
         checkContainers(capsuleHolder.getDrink());
-        if (drinkInCapsule.getIngredients().containsKey("water")) {
-            waterContainer.useWater(drinkInCapsule.getIngredients().get("water"));
+        if (drinkToMake.getIngredients().containsKey("water")) {
+            waterContainer.useWater(drinkToMake.getIngredients().get("water"));
         }
         capsuleHolder.useCapsule();
         garbageContainer.addGarbage();
-        return drinkInCapsule;
+        return drinkToMake;
     }
 
     public void changeCapsule(Capsule capsule) {
