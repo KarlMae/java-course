@@ -6,7 +6,7 @@ public class WaterContainer {
     private int tankCapacity;
 
     /* Water measured in milliliters
-    *  i.e. 1000 units = 1 litre */
+     *  i.e. 1000 units = 1 litre */
     public WaterContainer(int tankCapacity) {
         this.tankCapacity = tankCapacity;
         this.waterInTank = tankCapacity;

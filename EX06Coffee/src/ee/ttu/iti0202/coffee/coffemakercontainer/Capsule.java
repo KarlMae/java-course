@@ -3,7 +3,6 @@ package ee.ttu.iti0202.coffee.coffemakercontainer;
 import ee.ttu.iti0202.coffee.drink.Drink;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class Capsule {
 

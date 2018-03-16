@@ -24,7 +24,8 @@ public class AutomaticCoffeeMaker extends CoffeeMaker {
         }
         if (drink.getIngredients().containsKey("water")) {
             if (waterContainer.isEmpty() || drink.getIngredients().get("water") > waterContainer.waterLeft()) {
-                throw new CannotMakeCoffeeException(this, waterContainer, CannotMakeCoffeeException.Reason.OUT_OF_WATER);
+                throw new CannotMakeCoffeeException(this, waterContainer, CannotMakeCoffeeException.Reason
+                        .OUT_OF_WATER);
             }
         }
     }

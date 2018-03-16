@@ -22,29 +22,34 @@ public class Main {
         Capsule latteCapsule = new Capsule(latte);
         System.out.println("Drink in capsule: " + latteCapsule.getDrink());        // Latte
         System.out.println(latteCapsule.getIngredients());  // {beans=100, milk=250, water=250}
-        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer().waterLeft());
+        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer()
+                .waterLeft());
 
         // Make coffee using capsule
         capsuleCoffeeMaker.insertCapsule(latteCapsule);
         System.out.println("I made one " + capsuleCoffeeMaker.makeCoffee()); // I made one Latte
         System.out.println(latteCapsule.getIngredients());  // {}
-        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer().waterLeft()); // 4750
+        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer()
+                .waterLeft()); // 4750
 
         // Make coffee with machine self selecting capsule
         System.out.println("I made one " + capsuleCoffeeMaker.makeCoffee(new Coffee()));
-        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer().waterLeft()); // 4250
+        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer()
+                .waterLeft()); // 4250
 
         for (int i = 0; i < 10; i++) {
             kitchen.makeCapsuleCoffee(capsuleCoffeeMaker, new Coffee());
         }
 
         // 4250 - 8 coffee's -> Refill -> 5000 - 2 coffee's
-        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer().waterLeft()); // 4000
+        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer()
+                .waterLeft()); // 4000
         Drink cocoa = new Cocoa();
         Capsule cocoaCapsule = new Capsule(cocoa);
         capsuleCoffeeMaker.changeCapsule(cocoaCapsule);
         System.out.println("I made one " + capsuleCoffeeMaker.makeCoffee()); // I made one Cocoa
-        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer().waterLeft()); // 4000
+        System.out.println("Water left in capsule coffee machine: " + capsuleCoffeeMaker.getWaterContainer()
+                .waterLeft()); // 4000
         System.out.println(capsuleCoffeeMaker.getCapsuleHolder().getIngredients()); // Capsule empty
         capsuleCoffeeMaker.takeOutCapsule();
         System.out.println(capsuleCoffeeMaker.getCapsuleHolder()); // null - No capsule

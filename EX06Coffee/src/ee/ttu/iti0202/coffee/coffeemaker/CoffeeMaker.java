@@ -33,16 +33,22 @@ public abstract class CoffeeMaker {
             throw new CannotMakeCoffeeException(this, waterContainer, CannotMakeCoffeeException.Reason.OUT_OF_WATER);
         }
         if (drink.getIngredients().containsKey("milk")
-                && (milkContainer.isEmpty() || drink.getIngredients().get("milk") > milkContainer.getIngredientLeft())) {
-            throw new CannotMakeCoffeeException(this, milkContainer, CannotMakeCoffeeException.Reason.OUT_OF_INGREDIENT);
+                && (milkContainer.isEmpty() || drink.getIngredients().get("milk") > milkContainer.getIngredientLeft
+                ())) {
+            throw new CannotMakeCoffeeException(this, milkContainer, CannotMakeCoffeeException.Reason
+                    .OUT_OF_INGREDIENT);
         }
         if (drink.getIngredients().containsKey("coffee beans")
-                && beanContainer.isEmpty() || drink.getIngredients().get("coffee beans") > beanContainer.getIngredientLeft()) {
-            throw new CannotMakeCoffeeException(this, beanContainer, CannotMakeCoffeeException.Reason.OUT_OF_INGREDIENT);
+                && beanContainer.isEmpty() || drink.getIngredients().get("coffee beans") > beanContainer
+                .getIngredientLeft()) {
+            throw new CannotMakeCoffeeException(this, beanContainer, CannotMakeCoffeeException.Reason
+                    .OUT_OF_INGREDIENT);
         }
         if (drink.getIngredients().containsKey("cocoa beans")
-                && cocoaContainer.isEmpty() || drink.getIngredients().get("cocoa beans") > cocoaContainer.getIngredientLeft()) {
-            throw new CannotMakeCoffeeException(this, cocoaContainer, CannotMakeCoffeeException.Reason.OUT_OF_INGREDIENT);
+                && cocoaContainer.isEmpty() || drink.getIngredients().get("cocoa beans") > cocoaContainer
+                .getIngredientLeft()) {
+            throw new CannotMakeCoffeeException(this, cocoaContainer, CannotMakeCoffeeException.Reason
+                    .OUT_OF_INGREDIENT);
         }
     }
 

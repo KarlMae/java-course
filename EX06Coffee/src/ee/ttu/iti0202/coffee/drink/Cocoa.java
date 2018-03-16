@@ -2,7 +2,7 @@ package ee.ttu.iti0202.coffee.drink;
 
 import java.util.HashMap;
 
-public class Cocoa implements Drink{
+public class Cocoa implements Drink {
 
     private static HashMap<String, Integer> ingredients = new HashMap<>();
 
