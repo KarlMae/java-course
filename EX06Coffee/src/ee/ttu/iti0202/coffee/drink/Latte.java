@@ -5,10 +5,14 @@ import java.util.HashMap;
 public class Latte implements Drink {
     private static HashMap<String, Integer> ingredients = new HashMap<>();
 
+    private final int coffeeAmount = 100;
+    private final int waterAmount = 250;
+    private final int milkAmount = 250;
+
     public Latte() {
-        ingredients.put("milk", 250);
-        ingredients.put("water", 250);
-        ingredients.put("beans", 100);
+        ingredients.put("milk", milkAmount);
+        ingredients.put("water", waterAmount);
+        ingredients.put("coffee beans", coffeeAmount);
     }
 
     public HashMap<String, Integer> getIngredients() {

@@ -6,8 +6,10 @@ public class Water implements Drink {
 
     private static HashMap<String, Integer> ingredients = new HashMap<>();
 
+    private final int waterAmount = 500;
+
     public Water() {
-        ingredients.put("water", 500);
+        ingredients.put("water", waterAmount);
     }
 
     public HashMap<String, Integer> getIngredients() {

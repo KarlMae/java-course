@@ -6,9 +6,12 @@ public class Cappuccino implements Drink {
 
     private static HashMap<String, Integer> ingredients = new HashMap<>();
 
+    private final int waterAmount = 250;
+    private final int coffeeAmount = 200;
+
     public Cappuccino() {
-        ingredients.put("water", 250);
-        ingredients.put("beans", 200);
+        ingredients.put("water", waterAmount);
+        ingredients.put("coffee beans", coffeeAmount);
     }
 
     public HashMap<String, Integer> getIngredients() {
