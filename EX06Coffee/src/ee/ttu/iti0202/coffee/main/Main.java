@@ -3,7 +3,11 @@ package ee.ttu.iti0202.coffee.main;
 import ee.ttu.iti0202.coffee.coffeemaker.AutomaticCoffeeMaker;
 import ee.ttu.iti0202.coffee.coffeemaker.CapsuleCoffeeMaker;
 import ee.ttu.iti0202.coffee.coffemakercontainer.Capsule;
-import ee.ttu.iti0202.coffee.drink.*;
+import ee.ttu.iti0202.coffee.drink.Drink;
+import ee.ttu.iti0202.coffee.drink.Latte;
+import ee.ttu.iti0202.coffee.drink.Coffee;
+import ee.ttu.iti0202.coffee.drink.Cocoa;
+import ee.ttu.iti0202.coffee.drink.Cappuccino;
 import ee.ttu.iti0202.coffee.kitchen.Kitchen;
 
 public class Main {

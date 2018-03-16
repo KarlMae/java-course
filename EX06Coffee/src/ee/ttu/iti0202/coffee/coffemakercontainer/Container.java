@@ -7,7 +7,7 @@ public abstract class Container {
      * - Make new Exception, for when the container gets empty
      * - Add container to coffeemaker*/
 
-    enum ContainerType {BEAN, MILK, COCOA}
+    enum ContainerType { BEAN, MILK, COCOA }
 
     public ContainerType containerType;
     int containerSize;

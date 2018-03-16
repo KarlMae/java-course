@@ -1,6 +1,11 @@
 package ee.ttu.iti0202.coffee.coffeemaker;
 
-import ee.ttu.iti0202.coffee.coffemakercontainer.*;
+
+import ee.ttu.iti0202.coffee.coffemakercontainer.BeanContainer;
+import ee.ttu.iti0202.coffee.coffemakercontainer.CocoaContainer;
+import ee.ttu.iti0202.coffee.coffemakercontainer.GarbageContainer;
+import ee.ttu.iti0202.coffee.coffemakercontainer.MilkContainer;
+import ee.ttu.iti0202.coffee.coffemakercontainer.WaterContainer;
 import ee.ttu.iti0202.coffee.drink.Drink;
 import ee.ttu.iti0202.coffee.exceptions.CannotMakeCoffeeException;
 
