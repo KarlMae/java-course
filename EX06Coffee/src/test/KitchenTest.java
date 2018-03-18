@@ -9,7 +9,9 @@ import ee.ttu.iti0202.coffee.drink.Coffee;
 import ee.ttu.iti0202.coffee.drink.Latte;
 import ee.ttu.iti0202.coffee.drink.Water;
 import ee.ttu.iti0202.coffee.kitchen.Kitchen;
+
 import static org.hamcrest.CoreMatchers.instanceOf;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -48,7 +50,7 @@ public class KitchenTest {
         CapsuleCoffeeMaker capsuleCoffeeMaker = new CapsuleCoffeeMaker();
         Coffee coffee = new Coffee();
         kitchen.addCoffeeMachine(capsuleCoffeeMaker);
-        for(int i = 0; i < INT1; i++) {
+        for (int i = 0; i < INT1; i++) {
             kitchen.makeCapsuleCoffee(capsuleCoffeeMaker, coffee);
         }
     }

@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 
 public class WaterContainerTest {
 
-    public static final int TestWaterAmount = 50;
-    public static final int TestWaterAmount2 = 50;
+    public static final int testWaterAmount = 50;
+    public static final int testWaterAmount2 = 50;
     public static final int AMOUNT = -20;
     public static final int AMOUNT1 = 200;
     public static final int EXPECTED = 100;
@@ -22,8 +22,8 @@ public class WaterContainerTest {
         WaterContainer waterContainer = new WaterContainer(TANK_CAPACITY);
 
         assertEquals(EXPECTED2, waterContainer.waterLeft());
-        waterContainer.useWater(TestWaterAmount);
-        assertEquals(TestWaterAmount2, waterContainer.waterLeft());
+        waterContainer.useWater(testWaterAmount);
+        assertEquals(testWaterAmount2, waterContainer.waterLeft());
         waterContainer.useWater(AMOUNT);
         assertEquals(EXPECTED1, waterContainer.waterLeft());
         waterContainer.useWater(AMOUNT1);
