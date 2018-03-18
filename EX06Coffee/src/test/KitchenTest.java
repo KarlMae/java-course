@@ -17,15 +17,18 @@ import static org.junit.Assert.*;
 public class KitchenTest {
 
 
+    public static final int INT = 100;
+    public static final int INT1 = 50;
 
     @Test
+
     public void makeCoffee() {
         Kitchen kitchen = new Kitchen();
         AutomaticCoffeeMaker automaticCoffeeMaker = new AutomaticCoffeeMaker();
         Cappuccino cappuccino = new Cappuccino();
 
         // Doesn't use ingredients, auto-refill water
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < INT; i++) {
             kitchen.makeCoffee(automaticCoffeeMaker, cappuccino);
         }
     }
@@ -45,7 +48,7 @@ public class KitchenTest {
         CapsuleCoffeeMaker capsuleCoffeeMaker = new CapsuleCoffeeMaker();
         Coffee coffee = new Coffee();
         kitchen.addCoffeeMachine(capsuleCoffeeMaker);
-        for(int i = 0; i < 50; i++) {
+        for(int i = 0; i < INT1; i++) {
             kitchen.makeCapsuleCoffee(capsuleCoffeeMaker, coffee);
         }
     }

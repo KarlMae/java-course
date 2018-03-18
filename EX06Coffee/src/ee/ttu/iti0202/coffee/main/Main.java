@@ -12,7 +12,7 @@ import ee.ttu.iti0202.coffee.kitchen.Kitchen;
 
 public class Main {
 
-    public static final int RandomLoopNumber = 50;
+    public static final int randomLoopNumber = 50;
 
     public static void main(String[] args) {
         Kitchen kitchen = new Kitchen();
@@ -77,7 +77,7 @@ public class Main {
         System.out.println("Water left: " + automaticCoffeeMaker.getWaterContainer().waterLeft());
         System.out.println(kitchen.getCoffeeMakers());
 
-        for (int i = 0; i < RandomLoopNumber; i++) {
+        for (int i = 0; i < randomLoopNumber; i++) {
             kitchen.makeCoffee(automaticCoffeeMaker, cappuccino);
         }
     }

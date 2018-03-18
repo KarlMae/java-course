@@ -11,12 +11,14 @@ import static org.junit.Assert.*;
 public class AutomaticCoffeeMakerTest {
 
 
+    public static final int EXPECTED = 5000;
+
     @Test
     public void checkContainers() {
         AutomaticCoffeeMaker automaticCoffeeMaker = new AutomaticCoffeeMaker();
         Latte latte = new Latte();
-        assertEquals(5000, automaticCoffeeMaker.getWaterContainer().waterLeft());
-        for (int i = 0; i < 5; i++){
+        assertEquals(EXPECTED, automaticCoffeeMaker.getWaterContainer().waterLeft());
+        for (int i = 0; i < 5; i++) {
             automaticCoffeeMaker.makeCoffee(latte);
         }
         assertFalse(automaticCoffeeMaker.getWaterContainer().isEmpty());

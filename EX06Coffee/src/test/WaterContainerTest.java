@@ -9,21 +9,28 @@ public class WaterContainerTest {
 
     public static final int TestWaterAmount = 50;
     public static final int TestWaterAmount2 = 50;
+    public static final int AMOUNT = -20;
+    public static final int AMOUNT1 = 200;
+    public static final int EXPECTED = 100;
+    public static final int EXPECTED1 = 50;
+    public static final int EXPECTED2 = 100;
+    public static final int EXPECTED3 = 0;
+    public static final int TANK_CAPACITY = 100;
 
     @Test
     public void testWaterContainer() {
-        WaterContainer waterContainer = new WaterContainer(100);
+        WaterContainer waterContainer = new WaterContainer(TANK_CAPACITY);
 
-        assertEquals(100, waterContainer.waterLeft());
+        assertEquals(EXPECTED2, waterContainer.waterLeft());
         waterContainer.useWater(TestWaterAmount);
         assertEquals(TestWaterAmount2, waterContainer.waterLeft());
-        waterContainer.useWater(-20);
-        assertEquals(50, waterContainer.waterLeft());
-        waterContainer.useWater(200);
-        assertEquals(0, waterContainer.waterLeft());
+        waterContainer.useWater(AMOUNT);
+        assertEquals(EXPECTED1, waterContainer.waterLeft());
+        waterContainer.useWater(AMOUNT1);
+        assertEquals(EXPECTED3, waterContainer.waterLeft());
         assertTrue(waterContainer.isEmpty());
         waterContainer.fillTank();
-        assertEquals(100, waterContainer.waterLeft());
+        assertEquals(EXPECTED, waterContainer.waterLeft());
     }
 
 }
