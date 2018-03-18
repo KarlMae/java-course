@@ -7,13 +7,16 @@ import static org.junit.Assert.*;
 
 public class WaterContainerTest {
 
+    public static final int TestWaterAmount = 50;
+    public static final int TestWaterAmount2 = 50;
+
     @Test
     public void testWaterContainer() {
         WaterContainer waterContainer = new WaterContainer(100);
 
         assertEquals(100, waterContainer.waterLeft());
-        waterContainer.useWater(50);
-        assertEquals(50, waterContainer.waterLeft());
+        waterContainer.useWater(TestWaterAmount);
+        assertEquals(TestWaterAmount2, waterContainer.waterLeft());
         waterContainer.useWater(-20);
         assertEquals(50, waterContainer.waterLeft());
         waterContainer.useWater(200);

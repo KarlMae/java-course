@@ -13,9 +13,10 @@ import java.util.HashMap;
 
 public abstract class CoffeeMaker {
 
+    public static final int TANK_CAPACITY = 5000;
     BeanContainer beanContainer;
     MilkContainer milkContainer;
-    WaterContainer waterContainer = new WaterContainer(5000);
+    WaterContainer waterContainer = new WaterContainer(TANK_CAPACITY);
     CocoaContainer cocoaContainer;
     GarbageContainer garbageContainer;
 
