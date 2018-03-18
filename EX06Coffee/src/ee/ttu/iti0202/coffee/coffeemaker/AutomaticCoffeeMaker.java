@@ -13,11 +13,13 @@ import java.util.HashMap;
 
 public class AutomaticCoffeeMaker extends CoffeeMaker {
 
+    private final int liquidContainerSize = 5000;
+
     public AutomaticCoffeeMaker() {
         this.garbageContainer = new GarbageContainer(5);
         beanContainer = new BeanContainer(1000);
-        milkContainer = new MilkContainer(5000);
-        waterContainer = new WaterContainer(5000);
+        milkContainer = new MilkContainer(liquidContainerSize);
+        waterContainer = new WaterContainer(liquidContainerSize);
         cocoaContainer = new CocoaContainer(1000);
     }
 
