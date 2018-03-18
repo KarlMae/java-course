@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" />
+      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" />
       <change beforePath="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,8 +59,8 @@
       <file leaf-file-name="KitchenTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="217">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,24 +82,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutomaticCoffeeMakerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AutomaticCoffeeMakerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaterContainerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WaterContainerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,10 +238,10 @@
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/AutomaticCoffeeMaker.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Latte.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/main/Main.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" />
+        <option value="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" />
+        <option value="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" />
       </list>
     </option>
   </component>
@@ -641,14 +643,7 @@
       <workItem from="1520790817281" duration="3445000" />
       <workItem from="1520841456326" duration="715000" />
       <workItem from="1520927441244" duration="47000" />
-      <workItem from="1521134434631" duration="10132000" />
-    </task>
-    <task id="LOCAL-00207" summary="Exercise">
-      <created>1520194713355</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1520194713355</updated>
+      <workItem from="1521134434631" duration="10383000" />
     </task>
     <task id="LOCAL-00208" summary="Exercise">
       <created>1520195352660</created>
@@ -986,7 +981,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521369257040</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="Exercise">
+      <created>1521369384521</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1521369384521</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1022,7 +1024,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365333000" />
+    <option name="totallyTimeSpent" value="365584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1139,7 +1141,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java</url>
-          <line>33</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="473" />
         </line-breakpoint>
@@ -1546,26 +1548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1578,8 +1560,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="294">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>

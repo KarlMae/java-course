@@ -9,9 +9,7 @@ import ee.ttu.iti0202.coffee.drink.Coffee;
 import ee.ttu.iti0202.coffee.drink.Latte;
 import ee.ttu.iti0202.coffee.drink.Water;
 import ee.ttu.iti0202.coffee.kitchen.Kitchen;
-
 import static org.hamcrest.CoreMatchers.instanceOf;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -19,18 +17,15 @@ import static org.junit.Assert.*;
 public class KitchenTest {
 
 
-    public static final int INT = 100;
-    public static final int INT1 = 50;
 
     @Test
-
     public void makeCoffee() {
         Kitchen kitchen = new Kitchen();
         AutomaticCoffeeMaker automaticCoffeeMaker = new AutomaticCoffeeMaker();
         Cappuccino cappuccino = new Cappuccino();
 
         // Doesn't use ingredients, auto-refill water
-        for (int i = 0; i < INT; i++) {
+        for (int i = 0; i < 100; i++) {
             kitchen.makeCoffee(automaticCoffeeMaker, cappuccino);
         }
     }
@@ -50,7 +45,7 @@ public class KitchenTest {
         CapsuleCoffeeMaker capsuleCoffeeMaker = new CapsuleCoffeeMaker();
         Coffee coffee = new Coffee();
         kitchen.addCoffeeMachine(capsuleCoffeeMaker);
-        for (int i = 0; i < INT1; i++) {
+        for(int i = 0; i < 50; i++) {
             kitchen.makeCapsuleCoffee(capsuleCoffeeMaker, coffee);
         }
     }

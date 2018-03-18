@@ -7,30 +7,20 @@ import static org.junit.Assert.*;
 
 public class WaterContainerTest {
 
-    public static final int TEST_WATER_AMOUNT = 50;
-    public static final int TEST_WATER_AMOUNT_2 = 50;
-    public static final int AMOUNT = -20;
-    public static final int AMOUNT1 = 200;
-    public static final int EXPECTED = 100;
-    public static final int EXPECTED1 = 50;
-    public static final int EXPECTED2 = 100;
-    public static final int EXPECTED3 = 0;
-    public static final int TANK_CAPACITY = 100;
-
     @Test
     public void testWaterContainer() {
-        WaterContainer waterContainer = new WaterContainer(TANK_CAPACITY);
+        WaterContainer waterContainer = new WaterContainer(100);
 
-        assertEquals(EXPECTED2, waterContainer.waterLeft());
-        waterContainer.useWater(TEST_WATER_AMOUNT);
-        assertEquals(TEST_WATER_AMOUNT_2, waterContainer.waterLeft());
-        waterContainer.useWater(AMOUNT);
-        assertEquals(EXPECTED1, waterContainer.waterLeft());
-        waterContainer.useWater(AMOUNT1);
-        assertEquals(EXPECTED3, waterContainer.waterLeft());
+        assertEquals(100, waterContainer.waterLeft());
+        waterContainer.useWater(50);
+        assertEquals(50, waterContainer.waterLeft());
+        waterContainer.useWater(-20);
+        assertEquals(50, waterContainer.waterLeft());
+        waterContainer.useWater(200);
+        assertEquals(0, waterContainer.waterLeft());
         assertTrue(waterContainer.isEmpty());
         waterContainer.fillTank();
-        assertEquals(EXPECTED, waterContainer.waterLeft());
+        assertEquals(100, waterContainer.waterLeft());
     }
 
 }
