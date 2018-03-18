@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CapsuleCoffeeMaker.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CapsuleCoffeeMaker.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/Container.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/Container.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/WaterContainer.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/WaterContainer.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Latte.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Latte.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/kitchen/Kitchen.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/kitchen/Kitchen.java" />
-      <change beforePath="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" afterPath="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,6 +28,26 @@
                 <element signature="method#makeCoffee#0;class#Kitchen#0" expanded="false" />
                 <element signature="method#makeCapsuleCoffee#0;class#Kitchen#0" expanded="false" />
                 <element signature="method#makeCapsuleCoffee#1;class#Kitchen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffeeMaker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#3368#3369#0" expanded="true" />
+                <element signature="e#3405#3406#0" expanded="true" />
+                <element signature="e#3458#3459#0" expanded="true" />
+                <element signature="e#3497#3498#0" expanded="true" />
+                <element signature="e#3546#3547#0" expanded="true" />
+                <element signature="e#3583#3584#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,14 +101,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaterContainerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WaterContainerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="63">
+              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cocoa.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cocoa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Cocoa.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -268,6 +277,39 @@
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX06Coffee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX06Coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX06Coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX06Coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeemaker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX06Coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -582,14 +624,7 @@
       <workItem from="1520790817281" duration="3445000" />
       <workItem from="1520841456326" duration="715000" />
       <workItem from="1520927441244" duration="47000" />
-      <workItem from="1521134434631" duration="8679000" />
-    </task>
-    <task id="LOCAL-00201" summary="Exercise">
-      <created>1520190697129</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1520190697129</updated>
+      <workItem from="1521134434631" duration="9332000" />
     </task>
     <task id="LOCAL-00202" summary="Exercise">
       <created>1520190886274</created>
@@ -927,7 +962,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521194955576</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Exercise">
+      <created>1521224354850</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1521224354850</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -963,10 +1005,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363880000" />
+    <option name="totallyTimeSpent" value="364533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -981,7 +1024,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1369,23 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <element signature="e#3405#3406#0" expanded="true" />
-            <element signature="e#3458#3459#0" expanded="true" />
-            <element signature="e#3497#3498#0" expanded="true" />
-            <element signature="e#3583#3584#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/WaterContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1511,20 +1537,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Cocoa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#3368#3369#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="e#3458#3459#0" expanded="true" />
+            <element signature="e#3497#3498#0" expanded="true" />
+            <element signature="e#3546#3547#0" expanded="true" />
+            <element signature="e#3583#3584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
