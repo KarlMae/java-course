@@ -6,13 +6,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.util.Callback;
+import javafx.util.StringConverter;
 
 import java.net.URL;
+import java.util.Map;
 import java.util.Random;
 import java.util.ResourceBundle;
 
@@ -62,7 +66,7 @@ public class Controller implements Initializable {
     // Get all cards
     public ObservableList<Card> getCard() {
         ObservableList<Card> cards = FXCollections.observableArrayList();
-        cards.add(new Card("Karl Maee", "Credit card", "420", "Unlimited"));
+        cards.add(new Card("Karl Mae", "Credit card", "420", "Unlimited"));
         return cards;
     }
 
@@ -70,9 +74,13 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         table.setEditable(true);
 
+        Callback<TableColumn<Card, String>,
+                        TableCell<Card, String>> cellFactory
+                = (TableColumn<Card, String> p) -> new EditingCell();
+
         //Table columns
         ownerColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("ownerName"));
-        ownerColumn.setCellFactory(TextFieldTableCell.<Card>forTableColumn());
+        ownerColumn.setCellFactory(cellFactory);
         ownerColumn.setOnEditCommit(
                 (TableColumn.CellEditEvent<Card, String> t) -> {
                     ((Card) t.getTableView().getItems().get(
@@ -83,7 +91,7 @@ public class Controller implements Initializable {
         typeColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("cardType"));
 
         creditLimitColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("credit"));
-        creditLimitColumn.setCellFactory(TextFieldTableCell.<Card>forTableColumn());
+        creditLimitColumn.setCellFactory(cellFactory);
         creditLimitColumn.setOnEditCommit(
                 (TableColumn.CellEditEvent<Card, String> t) -> {
                     ((Card) t.getTableView().getItems().get(
