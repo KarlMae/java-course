@@ -14,7 +14,7 @@
 
 <SplitPane dividerPositions="0.27540106951871657" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
            minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9.0.1"
-           xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.Controller">
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.Controller">
     <items>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
             <children>
@@ -35,7 +35,7 @@
                 <ChoiceBox fx:id="typeBox" layoutX="7.0" layoutY="256.0" prefWidth="150.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
-                            <String fx:value="Bank card"/>
+                            <String fx:value="bank card"/>
                             <String fx:value="Credit card"/>
                         </FXCollections>
                     </items>

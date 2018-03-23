@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX07Bank/EX07Bank.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX07Bank/src/Bank/Card.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX07Bank/src/Bank/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX07Bank/src/Bank/sample.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PR08Stopper/PR08Stopper.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EX07Bank/src/Bank/Card.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Card.java" />
+      <change beforePath="$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Controller.java" />
+      <change beforePath="$PROJECT_DIR$/EX07Bank/src/Bank/Main.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Main.java" />
+      <change beforePath="$PROJECT_DIR$/EX07Bank/src/Bank/sample.fxml" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/sample.fxml" />
+      <change beforePath="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" afterPath="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,35 +24,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Main.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="336">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+            <state relative-caret-position="294">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2344#2350#0" expanded="true" />
-                <element signature="e#2919#2925#0" expanded="true" />
+                <element signature="e#2272#2278#0" expanded="true" />
+                <element signature="e#2847#2853#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Card.java">
+        <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Card.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -111,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/Ingridient.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/MilkContainer.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffemakercontainer/GarbageContainer.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/exceptions/GarbageFullException.java" />
@@ -162,6 +158,7 @@
         <option value="$PROJECT_DIR$/EX07Bank/src/Bank/MyTable.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Main.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java" />
+        <option value="$PROJECT_DIR$/EX07Bank/src/bank/Controller.java" />
       </list>
     </option>
   </component>
@@ -217,7 +214,7 @@
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
               <item name="EX07Bank" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Bank" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
@@ -315,11 +312,11 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Bank.*" />
+          <option name="PATTERN" value="bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Bank.Main" />
+      <option name="MAIN_CLASS_NAME" value="bank.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -353,7 +350,7 @@
     <configuration name="MyTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Bank.*" />
+          <option name="PATTERN" value="bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -550,14 +547,7 @@
       <workItem from="1521486848056" duration="10867000" />
       <workItem from="1521534219272" duration="1017000" />
       <workItem from="1521550714350" duration="1396000" />
-      <workItem from="1521708342907" duration="8465000" />
-    </task>
-    <task id="LOCAL-00210" summary="Exercise">
-      <created>1520198351900</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1520198351900</updated>
+      <workItem from="1521708342907" duration="8616000" />
     </task>
     <task id="LOCAL-00211" summary="Exercise">
       <created>1520199201408</created>
@@ -895,7 +885,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521469171741</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="Exercise">
+      <created>1521832171739</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1521832171741</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -931,7 +928,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398263000" />
+    <option name="totallyTimeSpent" value="398414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1069,9 +1066,9 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java</url>
-          <line>41</line>
-          <properties field="creditLimitColumn" class="Bank.Controller" />
+          <url>file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java</url>
+          <line>39</line>
+          <properties field="creditLimitColumn" class="bank.Controller" />
           <option name="timeStamp" value="475" />
         </line-breakpoint>
       </breakpoints>
@@ -1305,7 +1302,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/Test/Person.java" />
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/Test/TableViewWithAddButtonExample.java" />
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
@@ -1401,18 +1398,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Main.java">
+    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="294">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#2272#2278#0" expanded="true" />
+            <element signature="e#2847#2853#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Card.java">
+    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -1420,14 +1417,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java">
+    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="75" column="23" lean-forward="true" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+        <state relative-caret-position="336">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2344#2350#0" expanded="true" />
-            <element signature="e#2919#2925#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
           </folding>
         </state>
       </provider>

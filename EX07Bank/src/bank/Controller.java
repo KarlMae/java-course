@@ -1,6 +1,5 @@
-package Bank;
+package bank;
 
-import javafx.beans.value.ObservableStringValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,7 +13,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 
 import java.net.URL;
-import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
 
@@ -46,7 +44,7 @@ public class Controller implements Initializable {
     public void addCard() {
 
         String creditLimit;
-        if (typeBox.getValue().toString().equals("Bank card")) {
+        if (typeBox.getValue().toString().equals("bank card")) {
             creditLimit = "0";
         } else {
             creditLimit = limitField.getText();
