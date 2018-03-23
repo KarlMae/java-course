@@ -16,6 +16,7 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
+
 public class Controller implements Initializable {
 
     @FXML
@@ -42,9 +43,8 @@ public class Controller implements Initializable {
     private TableView<Card> table = new TableView<>();
 
     public void addCard() {
-
         String creditLimit;
-        if (typeBox.getValue().toString().equals("bank card")) {
+        if (typeBox.getValue().toString().equals("Debit card")) {
             creditLimit = "0";
         } else {
             creditLimit = limitField.getText();
@@ -55,7 +55,6 @@ public class Controller implements Initializable {
         nameField.clear();
         numberField.clear();
         limitField.clear();
-        typeBox.setValue(null);
         table.refresh();
     }
 
@@ -63,7 +62,7 @@ public class Controller implements Initializable {
     // Get all cards
     public ObservableList<Card> getCard() {
         ObservableList<Card> cards = FXCollections.observableArrayList();
-        cards.add(new Card("Karl Mae", "Credit card", "420", "Unlimited"));
+        cards.add(new Card("Karl Maee", "Credit card", "420", "Unlimited"));
         return cards;
     }
 
@@ -83,7 +82,7 @@ public class Controller implements Initializable {
 
         typeColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("cardType"));
 
-        creditLimitColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("cardNumber"));
+        creditLimitColumn.setCellValueFactory(new PropertyValueFactory<Card, String>("credit"));
         creditLimitColumn.setCellFactory(TextFieldTableCell.<Card>forTableColumn());
         creditLimitColumn.setOnEditCommit(
                 (TableColumn.CellEditEvent<Card, String> t) -> {

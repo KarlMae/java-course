@@ -61,7 +61,7 @@ public class Bank {
 
     @Override
     public String toString() {
-        return "bank[" + name + "]: " + (creditCards.size() + debitCards.size()) + " cards.";
+        return "Bank[" + name + "]: " + (creditCards.size() + debitCards.size()) + " cards.";
     }
 
 }
