@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="Exercise">
+    <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX07Bank/src/bank/Controller.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/EX07Bank/src/bank/Main.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Main.java" />
-      <change beforePath="$PROJECT_DIR$/EX07Bank/src/bank/sample.fxml" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/sample.fxml" />
-      <change beforePath="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" afterPath="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" />
-      <change beforePath="$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java" afterPath="$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java" afterPath="$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java" />
+      <change beforePath="$PROJECT_DIR$/PR08Stopper/PR08Stopper.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +37,7 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java">
+        <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
               <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
@@ -49,8 +46,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java">
+        <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
@@ -63,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1722">
@@ -284,18 +294,18 @@
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR08Stopper" type="462c0819:PsiDirectoryNode" />
+              <item name="PR08Timeline" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR08Stopper" type="462c0819:PsiDirectoryNode" />
+              <item name="PR08Timeline" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="PR08Stopper" type="462c0819:PsiDirectoryNode" />
+              <item name="PR08Timeline" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="stopper" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -615,14 +625,7 @@
       <workItem from="1521708342907" duration="14440000" />
       <workItem from="1521841033172" duration="325000" />
       <workItem from="1521841403146" duration="207000" />
-      <workItem from="1521841651831" duration="611000" />
-    </task>
-    <task id="LOCAL-00212" summary="Exercise">
-      <created>1520199439569</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1520199439569</updated>
+      <workItem from="1521841651831" duration="758000" />
     </task>
     <task id="LOCAL-00213" summary="Exercise">
       <created>1520200093815</created>
@@ -960,7 +963,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521832323724</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="Exercise">
+      <created>1521842274270</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1521842274271</updated>
+    </task>
+    <option name="localTasksCounter" value="262" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -996,7 +1006,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405381000" />
+    <option name="totallyTimeSpent" value="405528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1397,25 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR08Stopper/src/stopper/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-658">
@@ -1460,18 +1451,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR08Stopper/src/stopper/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1494,6 +1473,37 @@
             <element signature="e#2813#2819#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
