@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.27540106951871657" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9.0.1"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <TextField fx:id="numberField" layoutX="8.0" layoutY="143.0"/>
+                <Label layoutX="61.0" layoutY="14.0" prefHeight="18.0" prefWidth="90.0" text="Make a new card"/>
+                <Label layoutX="17.0" layoutY="64.0" text="Card owner"/>
+                <AnchorPane layoutX="13.0" layoutY="143.0"/>
+                <TextField fx:id="nameField" layoutX="8.0" layoutY="82.0"/>
+                <Button fx:id="generateRandomNumberButton" layoutX="9.0" layoutY="175.0" mnemonicParsing="false"
+                        onAction="#generateCardNumber" text="Generate random"/>
+                <Label layoutX="13.0" layoutY="125.0" text="Card number"/>
+                <Separator layoutX="1.0" layoutY="44.0" prefHeight="2.0" prefWidth="224.0"/>
+                <Label layoutX="9.0" layoutY="231.0" text="Card type"/>
+                <Button fx:id="submitButton" layoutX="42.0" layoutY="443.0" mnemonicParsing="false" onAction="#addCard"
+                        prefHeight="32.0" prefWidth="119.0" text="Add card"/>
+                <Label layoutX="13.0" layoutY="323.0" text="Credit limit"/>
+                <TextField fx:id="limitField" layoutX="8.0" layoutY="341.0"/>
+                <ChoiceBox fx:id="typeBox" layoutX="7.0" layoutY="256.0" prefWidth="150.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Bank card"/>
+                            <String fx:value="Credit card"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <TableView fx:id="table" layoutY="-1.0" prefHeight="500.0" prefWidth="537.0">
+                    <columns>
+                        <TableColumn fx:id="ownerColumn" prefWidth="117.60005342960358" text="Card Owner"/>
+                        <TableColumn fx:id="typeColumn" prefWidth="78.40001678466797" text="Card Type"/>
+                        <TableColumn fx:id="creditLimitColumn" prefWidth="173.5999755859375" text="Credit Limit"/>
+                        <TableColumn fx:id="numberColumn" prefWidth="168.00009155273438" text="Card Number"/>
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
