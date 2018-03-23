@@ -37,7 +37,7 @@ public class EditingCell extends TextFieldTableCell<Card, String> {
 
         setOnKeyPressed(ke -> {
             KeyCode keyCode = ke.getCode();
-            if (keyCode.equals(KeyCode.ENTER)){
+            if (keyCode.equals(KeyCode.ENTER)) {
                 commitEdit(textField.getText());
             }
         });
