@@ -4,6 +4,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.scene.input.KeyCode;
 
 public class EditingCell extends TextFieldTableCell<Card, String> {
 
@@ -33,6 +34,13 @@ public class EditingCell extends TextFieldTableCell<Card, String> {
                         commitEdit(textField.getText());
                     }
                 });
+
+        setOnKeyPressed(ke -> {
+            KeyCode keyCode = ke.getCode();
+            if (keyCode.equals(KeyCode.ENTER)){
+                commitEdit(textField.getText());
+            }
+        });
 
     }
 
