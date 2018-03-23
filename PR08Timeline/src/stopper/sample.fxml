@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="200.0" maxWidth="-250.0" minHeight="-200.0" minWidth="-250.0" prefHeight="200.0" prefWidth="250.0"
+      xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stopper.Controller">
+    <children>
+        <Label fx:id="textLabel" layoutX="123.0" layoutY="31.0" text="0.0">
+            <font>
+                <Font name="System Bold" size="38.0"/>
+            </font>
+        </Label>
+        <Button fx:id="startButton" layoutX="55.0" layoutY="137.0" mnemonicParsing="false" onAction="#startButtonClick"
+                prefHeight="25.0" prefWidth="81.0" text="Start"/>
+        <Button fx:id="stopButton" layoutX="163.0" layoutY="137.0" mnemonicParsing="false" onAction="#stopButtonClick"
+                prefHeight="25.0" prefWidth="81.0" text="Stop"/>
+    </children>
+</Pane>
