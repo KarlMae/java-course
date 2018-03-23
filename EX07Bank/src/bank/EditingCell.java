@@ -10,7 +10,7 @@ public class EditingCell extends TextFieldTableCell<Card, String> {
     private TextField textField;
 
     @Override
-    public void startEdit(){
+    public void startEdit() {
         TableRow<Card> tableRow = getTableRow();
         Card bc = tableRow.getItem();
 
@@ -25,7 +25,7 @@ public class EditingCell extends TextFieldTableCell<Card, String> {
 
     private void createTextField() {
         textField = new TextField(getString());
-        textField.setMinWidth(this.getWidth() - this.getGraphicTextGap()* 2);
+        textField.setMinWidth(this.getWidth() - this.getGraphicTextGap() * 2);
         textField.focusedProperty().addListener(
                 (ObservableValue<? extends Boolean> arg0,
                  Boolean arg1, Boolean arg2) -> {
@@ -33,6 +33,7 @@ public class EditingCell extends TextFieldTableCell<Card, String> {
                         commitEdit(textField.getText());
                     }
                 });
+
     }
 
     private String getString() {
