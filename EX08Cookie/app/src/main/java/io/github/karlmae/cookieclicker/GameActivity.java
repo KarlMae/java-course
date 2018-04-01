@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import io.github.karlmae.cookieclicker.databinding.ActivityGameBinding;
 
 /**
- *Show everything on screen
+ * Show everything on screen
  */
 public class GameActivity extends AppCompatActivity {
 
@@ -169,6 +169,4 @@ public class GameActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

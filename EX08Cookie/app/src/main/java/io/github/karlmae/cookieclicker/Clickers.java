@@ -3,7 +3,7 @@ package io.github.karlmae.cookieclicker;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
-public final class Clickers extends BaseObservable{
+public final class Clickers extends BaseObservable {
 
     private int fingerPrice;
     private int autoclickerPrice;
@@ -13,7 +13,7 @@ public final class Clickers extends BaseObservable{
         fingerPrice = 10;
         autoclickerPrice = 50;
         parentsPrice = 200;
-        }
+    }
 
     @Bindable
     public int getFingerPrice() {
@@ -42,7 +42,7 @@ public final class Clickers extends BaseObservable{
         this.parentsPrice = parentsPrice;
     }
 
-    void updateFields(){
+    void updateFields() {
         notifyPropertyChanged(BR.fingerPrice);
         notifyPropertyChanged(BR.autoclickerPrice);
         notifyPropertyChanged(BR.parentsPrice);

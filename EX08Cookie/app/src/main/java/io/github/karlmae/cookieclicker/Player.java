@@ -6,8 +6,8 @@ import android.databinding.Bindable;
 import android.os.Handler;
 
 /*
-* Hold player info and handle buying more stuff
-* */
+ * Hold player info and handle buying more stuff
+ * */
 
 public class Player extends BaseObservable {
 
@@ -18,6 +18,7 @@ public class Player extends BaseObservable {
 
     private int fingers, autoclickers, parents, points;
     private Handler handler;
+
     public enum clickerTypes {parents, autoclickers}
 
     // Used for displaying "MAX" as price in XML, when max amount is bought
@@ -79,6 +80,9 @@ public class Player extends BaseObservable {
                 } else {
                     GameActivity.clickers.setAutoclickerPrice(GameActivity.clickers.getAutoclickerPrice() + 50);
                 }
+                break;
+
+            case default:
                 break;
         }
 
@@ -144,7 +148,7 @@ public class Player extends BaseObservable {
         final Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                if (clicker == clickerTypes.autoclickers){
+                if (clicker == clickerTypes.autoclickers) {
                     points += autoclickers * fingers;
                     handler.postDelayed(this, defaultInterval - (autoclickers - 1) * reduceInterval);
                 } else if (clicker == clickerTypes.parents) {
@@ -159,12 +163,13 @@ public class Player extends BaseObservable {
 
 
     // Return boolean if the player can buy any more clickers
-    private boolean clickerLimitReached(int clickerAmount){
+    private boolean clickerLimitReached(int clickerAmount) {
         return defaultInterval - clickerAmount * reduceInterval <= minimumInterval;
     }
 
-    private void calculateCookiesPerSec(){
-        double autoclickersPerSec = (1000 / (double)(defaultInterval - (autoclickers - 1) * reduceInterval)) * autoclickers * fingers;
+    private void calculateCookiesPerSec() {
+        double autoclickersPerSec = (1000 / (double) (defaultInterval - (autoclickers - 1) * reduceInterval)) *
+                autoclickers * fingers;
         double parentsPerSec = (1000 / (double) defaultInterval) * parents * 10;
 
         this.cookiesPerSec = Math.round((autoclickersPerSec + parentsPerSec) * 100.0) / 100.0;
