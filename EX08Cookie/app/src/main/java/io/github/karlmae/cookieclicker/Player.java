@@ -16,7 +16,8 @@ public class Player extends BaseObservable {
     private int minimumInterval = 1000;
     private int reduceInterval = 100;
 
-    private int fingers, autoclickers, parents, points;
+    private int fingers, autoclickers, parents;
+    private double points;
     private Handler handler;
 
     public enum clickerTypes {parents, autoclickers}
@@ -53,10 +54,10 @@ public class Player extends BaseObservable {
             case parents:
                 if (GameActivity.clickers.getParentsPrice() > points || clickerLimitReached(parents)) return;
 
-                if (parents == 1) createTimerThread(clickerTypes.parents);
-
                 parents++;
                 points -= GameActivity.clickers.getParentsPrice();
+
+                if (parents == 1) createTimerThread(clickerTypes.parents);
 
                 if (clickerLimitReached(parents)) {
                     parentLimitReached = true;
@@ -69,10 +70,10 @@ public class Player extends BaseObservable {
             case autoclickers:
                 if (GameActivity.clickers.getAutoclickerPrice() > points || clickerLimitReached(autoclickers)) return;
 
-                if (autoclickers == 1) createTimerThread(clickerTypes.autoclickers);
-
                 autoclickers++;
                 points -= GameActivity.clickers.getAutoclickerPrice();
+
+                if (autoclickers == 1) createTimerThread(clickerTypes.autoclickers);
 
                 if (clickerLimitReached(autoclickers)) {
                     autoclickerLimitReached = true;
@@ -109,7 +110,7 @@ public class Player extends BaseObservable {
 
     @Bindable
     public int getPoints() {
-        return points;
+        return (int) points;
     }
 
     @Bindable
@@ -149,7 +150,7 @@ public class Player extends BaseObservable {
             @Override
             public void run() {
                 if (clicker == clickerTypes.autoclickers) {
-                    points += autoclickers * fingers;
+                    points += fingers;
                     handler.postDelayed(this, defaultInterval - (autoclickers - 1) * reduceInterval);
                 } else if (clicker == clickerTypes.parents) {
                     points += parents * 10;
@@ -168,8 +169,10 @@ public class Player extends BaseObservable {
     }
 
     private void calculateCookiesPerSec() {
+        if (autoclickers == 0 && parents == 0) return;
+
         double autoclickersPerSec = (1000 / (double) (defaultInterval - (autoclickers - 1) * reduceInterval)) *
-                autoclickers * fingers;
+                fingers;
         double parentsPerSec = (1000 / (double) defaultInterval) * parents * 10;
 
         this.cookiesPerSec = Math.round((autoclickersPerSec + parentsPerSec) * 100.0) / 100.0;

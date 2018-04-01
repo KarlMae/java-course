@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cookieclicker.iml" filepath="$PROJECT_DIR$/Cookieclicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX08Cookie.iml" filepath="$PROJECT_DIR$/EX08Cookie.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
