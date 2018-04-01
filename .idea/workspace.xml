@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/EX08Cookie/.idea/modules.xml" afterPath="$PROJECT_DIR$/EX08Cookie/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/EX08Cookie/app/src/main/java/io/github/karlmae/cookieclicker/Player.java" afterPath="$PROJECT_DIR$/EX08Cookie/app/src/main/java/io/github/karlmae/cookieclicker/Player.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -740,14 +738,7 @@
       <workItem from="1522139266429" duration="1144000" />
       <workItem from="1522331156376" duration="1330000" />
       <workItem from="1522582261150" duration="469000" />
-      <workItem from="1522583053254" duration="2620000" />
-    </task>
-    <task id="LOCAL-00226" summary="Exercise">
-      <created>1520236980908</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1520236980908</updated>
+      <workItem from="1522583053254" duration="3673000" />
     </task>
     <task id="LOCAL-00227" summary="Exercise">
       <created>1520237246489</created>
@@ -1085,7 +1076,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522582608457</updated>
     </task>
-    <option name="localTasksCounter" value="275" />
+    <task id="LOCAL-00275" summary="Cookieclicker homework for android">
+      <created>1522587425979</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1522587425981</updated>
+    </task>
+    <option name="localTasksCounter" value="276" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1121,7 +1119,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="416808000" />
+    <option name="totallyTimeSpent" value="417861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
