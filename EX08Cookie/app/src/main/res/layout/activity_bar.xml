@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="cookieplayer"
+            type="io.github.karlmae.cookieclicker.Player" />
+
+        <variable
+            name="clicker"
+            type="io.github.karlmae.cookieclicker.Clickers" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="29dp"
+                android:layout_weight="3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="#222222">
+
+
+                <ImageButton
+                    android:id="@+id/helpButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/parents_price"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/help_button" />
+
+
+                <TextView
+                    android:id="@+id/shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/Shop"
+                    android:textColor="#DDDD"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/shop"
+                    android:layout_alignStart="@+id/shop"
+                    android:layout_below="@+id/shop"
+                    android:text="@string/Amount"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/amount"
+                    android:layout_alignBottom="@+id/amount"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/amount"
+                    android:layout_toRightOf="@+id/amount"
+                    android:text="@string/Price"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/autoclicker"
+                    android:layout_alignStart="@+id/autoclicker"
+                    android:layout_below="@+id/shop"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/finger"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/autoclicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/finger"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="@string/Autoclicker"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/parents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/autoclicker"
+                    android:layout_alignStart="@+id/autoclicker"
+                    android:layout_below="@+id/autoclicker"
+                    android:text="@string/Wealthy_parents"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/finger_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/price"
+                    android:layout_alignStart="@+id/price"
+                    android:layout_below="@+id/price"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:text="@{String.valueOf(clicker.fingerPrice), default=10}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/autoclicker_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/finger_price"
+                    android:layout_alignStart="@+id/finger_price"
+                    android:layout_below="@+id/finger_price"
+                    android:text="@{String.valueOf(clicker.autoclickerPrice), default=50}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:visibility="@{!cookieplayer.autoclickerLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+
+                <TextView
+                    android:id="@+id/autoclicker_price_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/finger_price"
+                    android:layout_alignStart="@+id/finger_price"
+                    android:layout_below="@+id/finger_price"
+                    android:text="@string/MAX"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:visibility="@{cookieplayer.autoclickerLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+
+                <TextView
+                    android:id="@+id/parents_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/autoclicker_price"
+                    android:layout_alignStart="@+id/autoclicker_price"
+                    android:layout_below="@+id/autoclicker_price"
+                    android:text="@{String.valueOf(clicker.parentsPrice), default=200}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:visibility="@{!cookieplayer.parentLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+
+                <TextView
+                    android:id="@+id/parents_price_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/autoclicker_price"
+                    android:layout_alignStart="@+id/autoclicker_price"
+                    android:layout_below="@+id/autoclicker_price"
+                    android:text="@string/MAX"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:visibility="@{cookieplayer.parentLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+
+
+                <TextView
+                    android:id="@+id/finger_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount"
+                    android:layout_centerHorizontal="true"
+                    android:text="@{String.valueOf(cookieplayer.fingers)}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/autoclicker_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/finger_amount"
+                    android:layout_centerHorizontal="true"
+                    android:text="@{String.valueOf(cookieplayer.autoclickers)}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/parents_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/autoclicker_amount"
+                    android:layout_centerHorizontal="true"
+                    android:text="@{String.valueOf(cookieplayer.parents)}"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+                <ImageButton
+                    android:id="@+id/buy_finger"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_above="@+id/autoclicker_price"
+                    android:layout_alignEnd="@+id/helpButton"
+                    android:layout_alignRight="@+id/helpButton"
+                    android:background="@drawable/buy_button"
+                    android:visibility="@{cookieplayer.points >= clicker.fingerPrice ? View.VISIBLE : View.INVISIBLE}" />
+
+                <ImageButton
+                    android:id="@+id/buy_autoclicker"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_above="@+id/parents_price"
+                    android:layout_alignLeft="@+id/buy_finger"
+                    android:layout_alignStart="@+id/buy_finger"
+                    android:background="@drawable/buy_button"
+                    android:visibility="@{(cookieplayer.points >= clicker.autoclickerPrice) &amp;&amp; !cookieplayer.autoclickerLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+
+                <ImageButton
+                    android:id="@+id/buy_parents"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_above="@+id/helpButton"
+                    android:layout_alignEnd="@+id/helpButton"
+                    android:layout_alignRight="@+id/helpButton"
+                    android:background="@drawable/buy_button"
+                    android:visibility="@{(cookieplayer.points >= clicker.parentsPrice) &amp;&amp; !cookieplayer.parentLimitReached ? View.VISIBLE : View.INVISIBLE}" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
