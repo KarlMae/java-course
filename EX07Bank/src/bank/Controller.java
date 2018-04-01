@@ -63,7 +63,7 @@ public class Controller implements Initializable {
     // Get all cards
     public ObservableList<Card> getCard() {
         ObservableList<Card> cards = FXCollections.observableArrayList();
-        cards.add(new Card("Karl Mae", "Credit card", "420", "Unlimited"));
+        cards.add(new Card("Karl Maee", "Credit card", "420", "Unlimited"));
         return cards;
     }
 

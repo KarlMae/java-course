@@ -35,7 +35,7 @@
                 <ChoiceBox fx:id="typeBox" layoutX="7.0" layoutY="256.0" prefWidth="150.0">
                     <items>
                         <FXCollections fx:factory="observableArrayList">
-                            <String fx:value="Debit card"/>
+                            <String fx:value="bank card"/>
                             <String fx:value="Credit card"/>
                         </FXCollections>
                     </items>
