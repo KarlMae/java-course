@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Shelter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KT2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KT2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
@@ -145,14 +136,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Room.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
-                <element signature="e#116#117#0" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PR07HelloFX/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Test/Person.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Test/TableViewWithAddButtonExample.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Card.java" />
@@ -287,6 +280,7 @@
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java" />
       </list>
     </option>
   </component>
@@ -727,14 +721,7 @@
       <workItem from="1522582261150" duration="469000" />
       <workItem from="1522583053254" duration="3673000" />
       <workItem from="1523011494068" duration="52000" />
-      <workItem from="1523011566645" duration="7636000" />
-    </task>
-    <task id="LOCAL-00233" summary="Exercise">
-      <created>1520240849387</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1520240849387</updated>
+      <workItem from="1523011566645" duration="7787000" />
     </task>
     <task id="LOCAL-00234" summary="Exercise">
       <created>1520241333529</created>
@@ -1072,7 +1059,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523017111310</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="Test">
+      <created>1523019292789</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1523019292789</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1108,7 +1102,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425549000" />
+    <option name="totallyTimeSpent" value="425700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1666,23 +1660,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
           </folding>
         </state>
       </provider>
