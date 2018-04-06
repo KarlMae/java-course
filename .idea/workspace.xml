@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Shelter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +29,115 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PetOwner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shelter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Shelter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Human.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1341#1342#0" expanded="true" />
+                <element signature="e#1373#1374#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="KT2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="354">
+              <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,33 +158,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
+      <file leaf-file-name="Parrot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Human.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,53 +183,8 @@
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parrot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="43" />
-              <folding>
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,10 +194,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -179,16 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/main/Main.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java" />
-        <option value="$PROJECT_DIR$/EX06Coffee/src/test/AutomaticCoffeeMakerTest.java" />
-        <option value="$PROJECT_DIR$/PR07HelloFX/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/PR07HelloFX/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/sample.fxml" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/Controller.java" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/Main.java" />
         <option value="$PROJECT_DIR$/PR07HelloFX/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Test/Person.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Test/TableViewWithAddButtonExample.java" />
@@ -227,7 +274,17 @@
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/animals/Cat.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/university/University.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/Human.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/petOwner.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/exceptions/CannotAdoptException.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner2.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Shelter.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
       </list>
@@ -308,14 +365,6 @@
               <item name="KT2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kt2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
-              <item name="KT2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="kt2" type="462c0819:PsiDirectoryNode" />
-              <item name="shelter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
@@ -678,14 +727,7 @@
       <workItem from="1522582261150" duration="469000" />
       <workItem from="1522583053254" duration="3673000" />
       <workItem from="1523011494068" duration="52000" />
-      <workItem from="1523011566645" duration="5478000" />
-    </task>
-    <task id="LOCAL-00232" summary="Exercise">
-      <created>1520240391999</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1520240391999</updated>
+      <workItem from="1523011566645" duration="7636000" />
     </task>
     <task id="LOCAL-00233" summary="Exercise">
       <created>1520240849387</created>
@@ -1023,7 +1065,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523017031357</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="Test">
+      <created>1523017111310</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1523017111310</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1059,7 +1108,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423391000" />
+    <option name="totallyTimeSpent" value="425549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1080,6 +1129,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1092,7 +1142,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1204,47 +1253,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/EditingCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1439#1440#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="70" column="68" lean-forward="false" selection-start-line="69" selection-start-column="3" selection-end-line="70" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX08Cookie/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1523,28 +1531,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/exceptions/CannotAdoptException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="391">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
             <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Shelter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/PetOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/location/Human.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1341#1342#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1560,59 +1677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        <state relative-caret-position="354">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

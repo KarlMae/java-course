@@ -13,14 +13,15 @@ public class University {
     }
 
     public Optional<Room> createRoom(String name){
-        if (name.equals("")) {
-            return Optional.empty();
-        } else {
+
+        Optional<Room> roomOptional = Optional.empty();
+        if (!name.equals("")) {
             Room room = new Room(name);
             universityRooms.add(room);
-            Optional<Room> roomOptional = Optional.of(room);
-            return roomOptional;
+            roomOptional = Optional.of(room);
         }
+
+        return roomOptional;
     }
 
 

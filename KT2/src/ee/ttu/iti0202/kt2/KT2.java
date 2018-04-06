@@ -47,6 +47,31 @@ public class KT2 {
         KT2 kt2 = new KT2();
         System.out.println(kt2.zipZap("zopXzop"));
 
+        University university = new University();
+        Optional<Room> room0 = university.createRoom("");
+        System.out.println(room0); // Optional.empty
+        Room room1 = university.createRoom("ICT-121").get();
+        Room room2 = university.createRoom("ICT-122").get();
+        System.out.println(room1); // ICT-121
+        System.out.println(university.getFreeRooms(1)); // [ICT-121, ICT-122]
+        System.out.println(university.bookARoom(room1, 1)); // true
+        System.out.println(university.bookARoom(room1, 1)); // false, already booked
+        System.out.println(university.getFreeRooms(1)); // [ICT-122]
+        System.out.println(university.bookARoom(room2, 1)); // true
+        System.out.println(university.getFreeRooms(1)); // []
+        System.out.println(university.getFreeRooms(99)); // [ICT-121, ICT-122]
+        System.out.println(university.bookARoom(room2, 99)); // true
+        System.out.println(university.getFreeRooms(99)); // [ICT-121]
+
+        Room room3 = new Room("Presidential suite");
+        System.out.println(university.bookARoom(room3, 2)); // false, no such room in university
+        System.out.println(university.getFreeRooms(2)); // [ICT-121, ICT-122]
+        System.out.println(university.getRooms()); // [ICT-121, ICT-122]
+        university.addRoom(room3);
+        System.out.println(university.getRooms()); // [ICT-121, ICT-122, Presidential suite]
+        university.addRoom(room3);
+        System.out.println(university.getRooms()); // [ICT-121, ICT-122, Presidential suite]
+
 
     }
 }

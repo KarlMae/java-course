@@ -1,18 +1,37 @@
 package ee.ttu.iti0202.kt2.shelter.animals;
 
+import ee.ttu.iti0202.kt2.shelter.location.PetOwner;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Dog extends Animal {
 
-    private String location;
+    private PetOwner location;
     private int monthlycost;
 
-    public Dog(String location, int cost) {
+    public Dog(PetOwner location, int cost) {
     }
 
-    public String getLocation() {
+    public PetOwner getLocation() {
         return location;
+    }
+
+    public void setLocation(PetOwner location) {
+        this.location = location;
     }
 
     public int getMonthlyCost() {
         return monthlycost;
+    }
+
+    public String getDislikes() {
+        return "Cat";
+    }
+
+
+    @Override
+    public String toString() {
+        return "Dog";
     }
 }
