@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/Human.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/Human.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/animals/Animal.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/animals/Cat.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Cat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/animals/Dog.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Dog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/animals/Parrot.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/university/Room.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/Room.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/university/University.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
     </list>
@@ -31,8 +23,8 @@
       <file leaf-file-name="KT2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="558">
+              <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +48,8 @@
       <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="340">
+              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
@@ -670,14 +662,7 @@
       <workItem from="1522582261150" duration="469000" />
       <workItem from="1522583053254" duration="3673000" />
       <workItem from="1523011494068" duration="52000" />
-      <workItem from="1523011566645" duration="5271000" />
-    </task>
-    <task id="LOCAL-00230" summary="Exercise">
-      <created>1520238863587</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1520238863587</updated>
+      <workItem from="1523011566645" duration="5401000" />
     </task>
     <task id="LOCAL-00231" summary="Exercise">
       <created>1520239872612</created>
@@ -1015,7 +1000,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523016648247</updated>
     </task>
-    <option name="localTasksCounter" value="279" />
+    <task id="LOCAL-00279" summary="Test">
+      <created>1523016900669</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1523016900669</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1051,7 +1043,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423184000" />
+    <option name="totallyTimeSpent" value="423314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1552,24 +1544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Parrot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1601,10 +1575,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

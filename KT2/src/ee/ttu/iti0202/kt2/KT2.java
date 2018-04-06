@@ -9,7 +9,6 @@ import java.util.Optional;
 public class KT2 {
 
     public int centeredAverage(List<Integer> nums) {
-
         int sum = 0;
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
