@@ -1,6 +1,4 @@
-package kt2;
-
-import java.util.Arrays;
+package ee.ttu.iti0202.kt2;
 import java.util.List;
 
 public class KT2 {
@@ -22,17 +20,25 @@ public class KT2 {
     }
 
     public String zipZap(String str) {
+        String outputString = "";
 
-        for (int i = 0; i < 0; i++) {
+        for (int i = 0; i < str.length(); i++) {
+            if (i == str.length() - 2) break;
 
+            if (str.charAt(i) == 'z' && str.charAt(i + 2) == 'p'){
+                outputString = outputString.concat("zp");
+                i = i + 2;
+            } else {
+                outputString = outputString.concat(str.substring(i, i));
+            }
         }
-
-        return "";
+        return outputString;
     }
 
 
 
     public static void main(String[] args) {
-        System.out.println(centeredAverage(Arrays.asList(2, 3, 4, 5)));
+        System.out.println("tere");
+
     }
 }
