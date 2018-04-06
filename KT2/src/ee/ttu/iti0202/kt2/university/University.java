@@ -1,6 +1,5 @@
-package ee.ttu.iti0202.university;
+package ee.ttu.iti0202.kt2.university;
 
-import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -19,9 +18,7 @@ public class University {
         } else {
             Room room = new Room(name);
             universityRooms.add(room);
-
             Optional<Room> roomOptional = Optional.of(room);
-
             return roomOptional;
         }
     }

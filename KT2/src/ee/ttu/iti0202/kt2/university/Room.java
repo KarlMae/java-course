@@ -1,4 +1,4 @@
-package ee.ttu.iti0202.university;
+package ee.ttu.iti0202.kt2.university;
 
 public class Room {
 

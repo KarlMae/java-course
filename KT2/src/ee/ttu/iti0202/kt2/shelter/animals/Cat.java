@@ -1,13 +1,11 @@
-package ee.ttu.iti0202.shelter.animals;
+package ee.ttu.iti0202.kt2.shelter.animals;
 
-public class Parrot extends Animal {
+public class Cat extends Animal{
 
     private String location;
     private int monthlycost;
 
-    public Parrot(String location, int cost) {
-        this.location = location;
-        this.monthlycost = cost;
+    public Cat(String location, int cost) {
     }
 
     public String getLocation() {

@@ -1,4 +1,4 @@
-package ee.ttu.iti0202.shelter.animals;
+package ee.ttu.iti0202.kt2.shelter.animals;
 
 public abstract class Animal {
 
