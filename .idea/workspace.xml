@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" afterPath="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,18 +48,18 @@
       <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="357">
+              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/drink/Latte.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/coffeemaker/CoffeeMaker.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/ee/ttu/iti0202/coffee/main/Main.java" />
         <option value="$PROJECT_DIR$/EX06Coffee/src/test/WaterContainerTest.java" />
@@ -230,6 +229,7 @@
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/shelter/Human.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/shelter/animals/Animal.java" />
         <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/KT2.java" />
+        <option value="$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java" />
       </list>
     </option>
   </component>
@@ -308,6 +308,22 @@
               <item name="KT2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kt2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="KT2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kt2" type="462c0819:PsiDirectoryNode" />
+              <item name="shelter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="KT2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kt2" type="462c0819:PsiDirectoryNode" />
+              <item name="university" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
@@ -662,14 +678,7 @@
       <workItem from="1522582261150" duration="469000" />
       <workItem from="1522583053254" duration="3673000" />
       <workItem from="1523011494068" duration="52000" />
-      <workItem from="1523011566645" duration="5401000" />
-    </task>
-    <task id="LOCAL-00231" summary="Exercise">
-      <created>1520239872612</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1520239872612</updated>
+      <workItem from="1523011566645" duration="5478000" />
     </task>
     <task id="LOCAL-00232" summary="Exercise">
       <created>1520240391999</created>
@@ -1007,7 +1016,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523016900669</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="Test">
+      <created>1523017031357</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1523017031357</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1043,7 +1059,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423314000" />
+    <option name="totallyTimeSpent" value="423391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1577,18 +1593,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KT2/src/ee/ttu/iti0202/kt2/university/University.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="357">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
           </folding>
         </state>
       </provider>

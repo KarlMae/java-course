@@ -12,7 +12,7 @@ public class University {
 
     }
 
-    public Optional createRoom(String name){
+    public Optional<Room> createRoom(String name){
         if (name.equals("")) {
             return Optional.empty();
         } else {
