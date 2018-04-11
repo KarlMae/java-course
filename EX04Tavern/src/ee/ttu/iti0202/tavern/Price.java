@@ -49,6 +49,7 @@ public class Price {
             for (Currency currency : Currency.getCurrencies()) {
 
                 if (priceInBaseValue == 0) {
+                    if (optimalPayment.size() <= 0) return null;
                     return optimalPayment;
                 }
 
