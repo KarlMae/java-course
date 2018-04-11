@@ -153,15 +153,16 @@ public class GameActivity extends Activity {
                     Mine mine = new Mine(GameActivity.this);
 
                     ImageView mineImage = new ImageView(getApplicationContext());
-                    mineImage.setLayoutParams
-                            (new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                    mineImage.setLayoutParams(
+                            new ViewGroup.LayoutParams(
+                                    ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                     mineImage.setY(mine.getyCoordinate());
                     mineImage.setX(mine.getxCoordinate());
                     mineImage.setImageResource(R.drawable.mine);
-                    mineImage.getLayoutParams().height = PixelSizeConverter.dpToPx
-                            (mine.getMineHeight(), GameActivity.this);
-                    mineImage.getLayoutParams().width = PixelSizeConverter.dpToPx
-                            (mine.getMineWidth(), GameActivity.this);
+                    mineImage.getLayoutParams().height = PixelSizeConverter.dpToPx(
+                            mine.getMineHeight(), GameActivity.this);
+                    mineImage.getLayoutParams().width = PixelSizeConverter.dpToPx(
+                            mine.getMineWidth(), GameActivity.this);
 
                     gameLayout.addView(mineImage);
                     mine.setMineImage(mineImage);
