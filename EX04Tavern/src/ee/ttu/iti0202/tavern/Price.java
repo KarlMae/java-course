@@ -37,7 +37,7 @@ public class Price {
         int priceInBaseValue = this.priceInBaseValue;
 
 
-        //Sort currencies by value
+        //Sort currencies by value.
         for (Currency currency : Currency.getCurrencies()) {
             values.add(Currency.getRate(currency));
         }
