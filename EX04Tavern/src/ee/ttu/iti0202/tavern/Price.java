@@ -37,7 +37,7 @@ public class Price {
         int priceInBaseValue = this.priceInBaseValue;
 
 
-        //Sort currencies by value.
+        //Sort currencies by value
         for (Currency currency : Currency.getCurrencies()) {
             values.add(Currency.getRate(currency));
         }
@@ -49,7 +49,6 @@ public class Price {
             for (Currency currency : Currency.getCurrencies()) {
 
                 if (priceInBaseValue == 0) {
-                    if (optimalPayment.size() <= 0) return null;
                     return optimalPayment;
                 }
 

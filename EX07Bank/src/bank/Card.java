@@ -2,7 +2,7 @@ package bank;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class Card {
+class Card {
     private final SimpleStringProperty ownerName = new SimpleStringProperty("");
     private final SimpleStringProperty cardType = new SimpleStringProperty("");
     private final SimpleStringProperty cardNumber = new SimpleStringProperty("");
