@@ -2,63 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="Goat homework">
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/.idea/gradle.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/.idea/runConfigurations.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/proguard-rules.pro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/androidTest/java/io/github/karlmae/minegoat/ExampleInstrumentedTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/AndroidManifest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/activities/GameActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/activities/MainActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/entities/Explosion.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/entities/Goat.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/entities/Mine.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/java/io/github/karlmae/minegoat/helpers/PixelSizeConverter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/anim/move.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable/goat.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable/ic_launcher_background.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable/mine.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/drawable/plosion.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/activity_main.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/values/colors.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/values/strings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/values/styles.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/app/src/test/java/io/github/karlmae/minegoat/ExampleUnitTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/gradle.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/gradle/wrapper/gradle-wrapper.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/gradlew" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/gradlew.bat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/EX09Goat/settings.gradle" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Main.java" />
       <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" />
       <change beforePath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" afterPath="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
       <change beforePath="$PROJECT_DIR$/EX07Bank/src/bank/Card.java" afterPath="$PROJECT_DIR$/EX07Bank/src/bank/Card.java" />
+      <change beforePath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml" afterPath="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml" />
       <change beforePath="$PROJECT_DIR$/Game/.idea/compiler.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Game/.idea/description.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Game/.idea/encodings.xml" afterPath="" />
@@ -94,36 +46,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="KitchenTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX06Coffee/src/test/KitchenTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchenlog.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX06Coffee/kitchenlog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kitchenlog.txt.2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX06Coffee/kitchenlog.txt.2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EditingCell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/EditingCell.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,57 +83,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="336">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Card.java">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
-                <element signature="e#1330#1331#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1502#1503#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="423">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="button_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="button_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-249">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -264,10 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Table.java" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/Bank/sample.fxml" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/Bank/MyTable.java" />
-        <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Main.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/Bank/Controller.java" />
         <option value="$PROJECT_DIR$/PR05Bank/src/ee/ttu/iti0202/bank/Bank.java" />
         <option value="$PROJECT_DIR$/PR08Stopper/src/stopper/Main.java" />
@@ -315,6 +248,10 @@
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Price.java" />
         <option value="$PROJECT_DIR$/EX04Tavern/src/ee/ttu/iti0202/tavern/Purse.java" />
         <option value="$PROJECT_DIR$/EX07Bank/src/bank/Card.java" />
+        <option value="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml" />
+        <option value="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml" />
+        <option value="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml" />
+        <option value="$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml" />
       </list>
     </option>
   </component>
@@ -376,6 +313,56 @@
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="iti0202" type="462c0819:PsiDirectoryNode" />
               <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iti0202" type="462c0819:PsiDirectoryNode" />
+              <item name="EX09Goat" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout-land" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -726,13 +713,6 @@
       <workItem from="1523011494068" duration="52000" />
       <workItem from="1523011566645" duration="7787000" />
     </task>
-    <task id="LOCAL-00235" summary="Exercise">
-      <created>1520241486141</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1520241486141</updated>
-    </task>
     <task id="LOCAL-00236" summary="Exercise">
       <created>1520241892246</created>
       <option name="number" value="00236" />
@@ -1069,7 +1049,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523456592297</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="Goat homework">
+      <created>1523472435559</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1523472435559</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1105,7 +1092,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428883000" />
+    <option name="totallyTimeSpent" value="428959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1274,32 +1261,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/EditingCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/EX08Cookie/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/EX08Cookie/src/main/Main.java" />
     <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1634,8 +1595,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX07Bank/src/bank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="336">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/button_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout/game_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/game_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/button_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX09Goat/app/src/main/res/layout-land/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
