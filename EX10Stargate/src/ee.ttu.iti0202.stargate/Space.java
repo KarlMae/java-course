@@ -7,16 +7,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Space {
 
-    public List<Planet> csvDataToPlanets(String filePath){
+    public List<Planet> csvDataToPlanets(String filePath) {
 
         List<Planet> planets = new ArrayList<>();
 
@@ -25,14 +25,23 @@ public class Space {
 
         try {
             br = new BufferedReader(new FileReader(filePath));
+            br.readLine();
             while ((line = br.readLine()) != null) {
 
                 String[] planet = line.split(",");
 
+
                 planets.add(new PlanetBuilder(planet[0], Long.valueOf(planet[1]),
                         Boolean.valueOf(planet[2]),
                         Boolean.valueOf(planet[3]),
-                        Arrays.stream(planet[4].split(";")).collect(Collectors.toList())).build());
+                        List.of(planet[4]
+                                .replace("[", "")
+                                .replace("]", "")
+                                .replace(" ", "")
+                                .split(";")).stream()
+                                .filter(s -> !s.equals(""))
+                                .collect(Collectors.toList()))
+                        .build());
 
             }
 
@@ -60,46 +69,50 @@ public class Space {
     }
 
     public Set<Planet> needToVisit(List<Planet> planets) {
-        return planets.stream().filter(
-                planet -> planet.getTeamVisited().size() == 0)
+        return planets.stream()
+                .filter(planet -> planet.getTeamVisited().isEmpty())
                 .filter(Planet::isDhdhAvailable)
                 .filter(Planet::isStargateAvailable)
                 .collect(Collectors.toSet());
     }
 
+
     public OptionalDouble getAvgInhabitantsOnPlanetsWithStargate(List<Planet> planets) {
         return planets.stream()
                 .filter(Planet::isStargateAvailable)
-                .map(Planet::getInhabitants)
-                .collect(Collectors.averagingDouble(Planet::getInhabitants));
-
+                .mapToDouble(planet -> (double) planet.getInhabitants())
+                .average();
     }
 
     public List<String> getTeamsWhoHaveVisitedSmallNotDeadPlanets(List<Planet> planets) {
-        List<String> teams;
-
         return planets.stream()
                 .filter(planet -> planet.getInhabitants() != 0)
                 .filter(planet -> planet.getInhabitants() < 2500)
                 .map(Planet::getTeamVisited)
                 .flatMap(Collection::stream)
+                .filter(s -> !s.equals(""))
                 .distinct()
-                .sorted()
+                .sorted(Comparator.comparing(o -> Integer.valueOf(o.split("-")[1])))
                 .collect(Collectors.toList());
 
     }
 
+
+    // Küsi miks siin substring 0-3 annab kolm esimest tähte
     public Map<String, Long> getCodeNameClassifierFrequency(List<Planet> planets) {
         return planets.stream()
                 .map(Planet::getName)
-                .map(name -> name.substring(0, 2))
+                .filter(s -> s.matches("P..-..."))
+                .map(name -> name.substring(0, 3))
+                .sorted()
                 .collect(Collectors.toMap(s -> s, s -> (long) 1, Long::sum));
     }
 
     public static void main(String[] args) throws IOException {
 
         Space space = new Space();
-        String filePath = "EX10Stargate/src/ee/ttu/iti0202/stargate/space/planets_data.csv";
+        String filePath = "C:\\Users\\karl_\\Desktop\\VõrkSpeiss\\Java\\Tund\\iti0202\\EX10Stargate\\src\\ee.ttu" +
+                ".iti0202.stargate\\space\\planets_data.csv";
         List<Planet> planets = space.csvDataToPlanets(filePath);
 
         System.out.println(space.getDeadPlanets(planets).size());  // 70

@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -24,7 +25,7 @@ public class StreamPr {
     }
 
     public int smallestPositiveNumber(List<Integer> numbers) {
-        return numbers.stream().min(Integer::compare).orElse(0);
+        return numbers.stream().filter(i -> i >= 0).min(Integer::compare).orElse(0);
     }
 
     public long countValidNames(List<String> names) {
@@ -32,7 +33,7 @@ public class StreamPr {
     }
 
     public OptionalInt longestName(List<String> names) {
-        return names.stream().mapToInt(String::length).min();
+        return names.stream().mapToInt(String::length).max();
     }
 
     public long serialCountPrimes(int end) {
@@ -48,7 +49,7 @@ public class StreamPr {
     }
 
     public List<String> uniqueCharacters(List<String> names) {
-        return names.stream().filter(n -> n.equals("")).map(String -> String.toLowerCase().split("")).flatMap(Arrays::stream).sorted().distinct().collect(Collectors.toList());
+        return names.stream().filter(n -> !n.equals("")).map(String -> String.toLowerCase().split("")).flatMap(Arrays::stream).sorted().distinct().collect(Collectors.toList());
     }
 
     public Map<String, Integer> getAllFirstNameAmounts(List<String> children){
