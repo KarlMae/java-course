@@ -100,8 +100,6 @@ public class Space {
 
     }
 
-
-    // Küsi miks siin substring 0-3 annab kolm esimest t2hte
     public Map<String, Long> getCodeNameClassifierFrequency(List<Planet> planets) {
         return planets.stream()
                 .map(Planet::getName)
