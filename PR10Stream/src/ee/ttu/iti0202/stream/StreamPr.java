@@ -1,22 +1,16 @@
 package ee.ttu.iti0202.stream;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.counting;
 
 public class StreamPr {
-    public List<Integer> numbersList(int start, int end){
+    public List<Integer> numbersList(int start, int end) {
         return IntStream.rangeClosed(start, end).boxed().collect(Collectors.toList());
     }
 
@@ -49,16 +43,18 @@ public class StreamPr {
     }
 
     public List<String> uniqueCharacters(List<String> names) {
-        return names.stream().filter(n -> !n.equals("")).map(String -> String.toLowerCase().split("")).flatMap(Arrays::stream).sorted().distinct().collect(Collectors.toList());
+        return names.stream().filter(n -> !n.equals("")).map(String -> String.toLowerCase().split("")).flatMap
+                (Arrays::stream).sorted().distinct().collect(Collectors.toList());
     }
 
-    public Map<String, Integer> getAllFirstNameAmounts(List<String> children){
+    public Map<String, Integer> getAllFirstNameAmounts(List<String> children) {
         return children.stream().map(s -> s.split(" ")[0]).collect(Collectors.toMap(s -> s, s -> 1, Integer::sum));
     }
 
-    public int getChildrenWithFirstName(List<String> children, String name){
-        return (int)children.stream().filter(s -> s.split(" ")[0].equals(name)).count();
+    public int getChildrenWithFirstName(List<String> children, String name) {
+        return (int) children.stream().filter(s -> s.split(" ")[0].equals(name)).count();
     }
+
     public long getMatchingLastNameAmount(List<String> children) {
         Set<String> allItems = new HashSet<>();
         return children.stream().map(s -> s.split(" ")[1]).filter(allItems::add).count();
