@@ -1,4 +1,4 @@
-package ee.ttu.iti0202.stargate;
+package ee.ttu.iti0202.stargate.planet;
 
 import java.util.List;
 

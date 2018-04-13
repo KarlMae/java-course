@@ -1,11 +1,13 @@
-package ee.ttu.iti0202.stargate;
+package ee.ttu.iti0202.stargate.space;
+
+import ee.ttu.iti0202.stargate.planet.Planet;
+import ee.ttu.iti0202.stargate.planet.PlanetBuilder;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;

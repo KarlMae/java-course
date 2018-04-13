@@ -1,4 +1,4 @@
-package ee.ttu.iti0202;
+package ee.ttu.iti0202.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
