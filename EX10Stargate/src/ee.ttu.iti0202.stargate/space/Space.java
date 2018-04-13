@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 public class Space {
 
-    //Convert csv file to data
+    //Convert csv file to data.
     public List<Planet> csvDataToPlanets(String filePath) {
 
         List<Planet> planets = new ArrayList<>();
