@@ -111,29 +111,7 @@ public class Space {
                 .collect(Collectors.toMap(s -> s, s -> (long) 1, Long::sum));
     }
 
-    public static void main(String[] args) throws IOException {
-
-        Space space = new Space();
-        String filePath = "C:\\Users\\karl_\\Desktop\\VõrkSpeiss\\Java\\Tund\\iti0202\\EX10Stargate\\src\\ee.ttu" +
-                ".iti0202.stargate\\space\\planets_data.csv";
-        List<Planet> planets = space.csvDataToPlanets(filePath);
-
-        System.out.println(space.getDeadPlanets(planets).size());  // 70
-
-        OptionalDouble avg = space.getAvgInhabitantsOnPlanetsWithStargate(planets);
-        if (avg.isPresent()) {
-            System.out.printf("Avg: %.0f\n", avg.getAsDouble());  // Avg: 186978984
-        }
-
-        System.out.println(space.needToVisit(planets));
-    /*
-    [Dakara, Earth, Gadmeer homeworld, Latona, M6R-867, Orin's planet, P3A-194,
-     P3K-447, P3L-997, P3X-584, P4M-399, P4X-636, P8X-412, Retalia, Sartorus, Sudaria]
-    */
-
-        System.out.println(space.getCodeNameClassifierFrequency(planets).size());  // 39
-
-        System.out.println(space.getTeamsWhoHaveVisitedSmallNotDeadPlanets(planets));  // [sg-1, sg-4, sg-9, sg-15]
+    public static void main(String[] args){
     }
 
 }
