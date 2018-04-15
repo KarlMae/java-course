@@ -52,7 +52,7 @@ public class Space {
 
     private Function<String, Planet> mapToItem = (line) -> {
 
-        String[] p = line.split(",");// a CSV has comma separated lines
+        String[] p = line.split(",");// a CSV has comma separated lines.
 
         PlanetBuilder planet = new PlanetBuilder();
 

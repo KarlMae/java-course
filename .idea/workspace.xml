@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fcec68b-5e9e-43f7-969e-1252e1c3a490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java" afterPath="$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +45,8 @@
       <file leaf-file-name="Space.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="56" column="51" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="51" />
+            <state relative-caret-position="63">
+              <caret line="54" column="72" lean-forward="false" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -690,14 +691,7 @@
       <workItem from="1523620722615" duration="726000" />
       <workItem from="1523645442125" duration="4751000" />
       <workItem from="1523792224341" duration="4186000" />
-      <workItem from="1523819463443" duration="6224000" />
-    </task>
-    <task id="LOCAL-00264" summary="Exercise">
-      <created>1521842645647</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
-      <option name="project" value="LOCAL" />
-      <updated>1521842645647</updated>
+      <workItem from="1523819463443" duration="6297000" />
     </task>
     <task id="LOCAL-00265" summary="Exercise">
       <created>1521842783036</created>
@@ -1035,7 +1029,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523825625503</updated>
     </task>
-    <option name="localTasksCounter" value="313" />
+    <task id="LOCAL-00313" summary="Goat homework">
+      <created>1523826094671</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
+      <option name="project" value="LOCAL" />
+      <updated>1523826094672</updated>
+    </task>
+    <option name="localTasksCounter" value="314" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1071,7 +1072,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="477443000" />
+    <option name="totallyTimeSpent" value="477516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1592,8 +1593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="56" column="51" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="51" />
+        <state relative-caret-position="63">
+          <caret line="54" column="72" lean-forward="false" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
