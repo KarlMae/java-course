@@ -109,6 +109,7 @@ public class Space {
         return planets.stream()
                 .map(Planet::getName)
                 .filter(s -> s.matches("P..-..."))
+                .filter(s -> s.length() == 7)
                 .map(name -> name.substring(0, 3))
                 .sorted()
                 .collect(Collectors.toMap(s -> s, s -> (long) 1, Long::sum));
