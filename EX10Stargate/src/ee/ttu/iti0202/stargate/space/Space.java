@@ -108,8 +108,7 @@ public class Space {
     public Map<String, Long> getCodeNameClassifierFrequency(List<Planet> planets) {
         return planets.stream()
                 .map(Planet::getName)
-                .filter(s -> s.matches("P..-.+"))
-                .filter(s -> s.length() == 7)
+                .filter(s -> s.matches("P..-[0-9]+"))
                 .map(name -> name.substring(0, 3))
                 .sorted()
                 .collect(Collectors.toMap(s -> s, s -> (long) 1, Long::sum));
