@@ -10,7 +10,11 @@ public class Planet {
     private boolean dhdhAvailable;
     private List<String> teamVisited;
 
-    public Planet(String name, long inhabitants, boolean stargateAvailable, boolean dhdAvailable, List<String> teamsVisited) {
+    public Planet(String name, long inhabitants,
+                  boolean stargateAvailable,
+                  boolean dhdAvailable,
+                  List<String> teamsVisited) {
+
         this.name = name;
         this.inhabitants = inhabitants;
         this.stargateAvailable = stargateAvailable;

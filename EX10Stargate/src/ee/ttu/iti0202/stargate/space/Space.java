@@ -23,6 +23,8 @@ import java.util.stream.Collectors;
 
 public class Space {
 
+    final int value = 2500;
+
     //Convert csv file to data.
     public List<Planet> csvDataToPlanets(String filePath) {
 
@@ -52,7 +54,7 @@ public class Space {
 
     private Function<String, Planet> mapToItem = (line) -> {
 
-        String[] p = line.split(",");// a CSV has comma separated lines.
+        String[] p = line.split(","); // a CSV has comma separated lines.
 
         PlanetBuilder planet = new PlanetBuilder();
 
@@ -97,7 +99,8 @@ public class Space {
     public List<String> getTeamsWhoHaveVisitedSmallNotDeadPlanets(List<Planet> planets) {
         return planets.stream()
                 .filter(planet -> planet.getInhabitants() != 0)
-                .filter(planet -> planet.getInhabitants() < 2500).map(Planet::getTeamsVisited).flatMap(Collection::stream)
+                .filter(planet -> planet.getInhabitants() < value)
+                .map(Planet::getTeamsVisited).flatMap(Collection::stream)
                 .filter(s -> !s.equals(""))
                 .distinct()
                 .sorted(Comparator.comparing(o -> Integer.valueOf(o.split("-")[1])))
