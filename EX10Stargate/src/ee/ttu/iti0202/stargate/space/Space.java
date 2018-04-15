@@ -55,8 +55,7 @@ public class Space {
 
         return new PlanetBuilder(p[0], Long.valueOf(p[1]),
                 Boolean.valueOf(p[2]),
-                Boolean.valueOf(p[3]),
-                List.of(p[4]
+                Boolean.valueOf(p[3]), List.of(p[4]
                         .replace("[", "")
                         .replace("]", "")
                         .replace(" ", "")
