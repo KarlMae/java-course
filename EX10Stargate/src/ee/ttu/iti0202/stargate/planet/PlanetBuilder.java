@@ -9,14 +9,6 @@ public class PlanetBuilder {
     private boolean dhdAvailable;
     private List<String> teamsVisited;
 
-    public PlanetBuilder(String name, long inhabitants, boolean stargateAvailable, boolean dhdAvailable, List<String> teamsVisited) {
-        this.name = name;
-        this.inhabitants = inhabitants;
-        this.stargateAvailable = stargateAvailable;
-        this.dhdAvailable = dhdAvailable;
-        this.teamsVisited = teamsVisited;
-    }
-
     public PlanetBuilder name(String name) {
         this.name = name;
         return this;
@@ -42,7 +34,7 @@ public class PlanetBuilder {
         return this;
     }
 
-    public Planet build() {
+    public Planet createPlanet() {
         return new Planet(name, inhabitants, stargateAvailable, dhdAvailable, teamsVisited);
     }
 }

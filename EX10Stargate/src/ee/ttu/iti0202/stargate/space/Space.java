@@ -54,15 +54,22 @@ public class Space {
 
         String[] p = line.split(",");// a CSV has comma separated lines
 
-        Planet planet = new PlanetBuilder(p[0], Long.valueOf(p[1]), Boolean.valueOf(p[2]), Boolean.valueOf(p[3]),
-                Arrays.stream(p[4].replace("[", "")
-                        .replace("]", "")
-                        .replace(" ", "")
-                        .split(";"))
-                        .filter(s -> !s.equals(""))
-                        .collect(Collectors.toList())).build();
+        PlanetBuilder planet = new PlanetBuilder();
 
-        return planet;
+        planet.name(p[0]);
+        planet.inhabitants(Long.valueOf(p[1]));
+        planet.stargateAvailable(Boolean.valueOf(p[2]));
+        planet.dhdAvailable(Boolean.valueOf(p[3]));
+        planet.inhabitants(Arrays.asList(p[4]
+                .replace("[", "")
+                .replace("]", "")
+                .replace(" ", "")
+                .split(";")).stream()
+                .filter(s -> !s.equals(""))
+                .collect(Collectors.toList()).size());
+
+
+        return planet.createPlanet();
     };
 
     public Set<Planet> getDeadPlanets(List<Planet> planets) {
