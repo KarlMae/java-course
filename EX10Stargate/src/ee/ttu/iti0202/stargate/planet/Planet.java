@@ -30,7 +30,7 @@ public class Planet {
         return stargateAvailable;
     }
 
-    public boolean isDhdhAvailable() {
+    public boolean isDhdAvailable() {
         return dhdhAvailable;
     }
 

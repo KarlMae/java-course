@@ -74,7 +74,7 @@ public class Space {
     public Set<Planet> needToVisit(List<Planet> planets) {
         return planets.stream()
                 .filter(planet -> planet.getTeamVisited().isEmpty())
-                .filter(Planet::isDhdhAvailable)
+                .filter(Planet::isDhdAvailable)
                 .filter(Planet::isStargateAvailable)
                 .collect(Collectors.toSet());
     }
