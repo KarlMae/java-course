@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
@@ -53,7 +54,8 @@ public class Space {
 
         String[] p = line.split(",");// a CSV has comma separated lines
 
-        return new PlanetBuilder(p[0], Long.valueOf(p[1]), Boolean.valueOf(p[2]), Boolean.valueOf(p[3]), List.of(p[4].replace("[", "")
+        return new PlanetBuilder(p[0], Long.valueOf(p[1]), Boolean.valueOf(p[2]), Boolean.valueOf(p[3]),
+                Arrays.asList(p[4].replace("[", "")
                         .replace("]", "")
                         .replace(" ", "")
                         .split(";")).stream()
