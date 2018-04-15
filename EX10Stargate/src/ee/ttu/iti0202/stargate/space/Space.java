@@ -60,13 +60,13 @@ public class Space {
         planet.inhabitants(Long.valueOf(p[1]));
         planet.stargateAvailable(Boolean.valueOf(p[2]));
         planet.dhdAvailable(Boolean.valueOf(p[3]));
-        planet.inhabitants(Arrays.asList(p[4]
+        planet.teamsVisited(Arrays.asList(p[4]
                 .replace("[", "")
                 .replace("]", "")
                 .replace(" ", "")
                 .split(";")).stream()
                 .filter(s -> !s.equals(""))
-                .collect(Collectors.toList()).size());
+                .collect(Collectors.toList()));
 
 
         return planet.createPlanet();
