@@ -55,10 +55,10 @@ public class Space {
         String[] p = line.split(",");// a CSV has comma separated lines
 
         Planet planet = new PlanetBuilder(p[0], Long.valueOf(p[1]), Boolean.valueOf(p[2]), Boolean.valueOf(p[3]),
-                Arrays.asList(p[4].replace("[", "")
+                Arrays.stream(p[4].replace("[", "")
                         .replace("]", "")
                         .replace(" ", "")
-                        .split(";")).stream()
+                        .split(";"))
                         .filter(s -> !s.equals(""))
                         .collect(Collectors.toList())).build();
 

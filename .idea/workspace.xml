@@ -23,8 +23,8 @@
       <file leaf-file-name="Space.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+            <state relative-caret-position="441">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -670,14 +670,7 @@
       <workItem from="1523620722615" duration="726000" />
       <workItem from="1523645442125" duration="4751000" />
       <workItem from="1523792224341" duration="4186000" />
-      <workItem from="1523819463443" duration="3060000" />
-    </task>
-    <task id="LOCAL-00259" summary="Exercise">
-      <created>1521832171739</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
-      <option name="project" value="LOCAL" />
-      <updated>1521832171741</updated>
+      <workItem from="1523819463443" duration="3092000" />
     </task>
     <task id="LOCAL-00260" summary="Exercise">
       <created>1521832323722</created>
@@ -1015,7 +1008,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523822425510</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="Goat homework">
+      <created>1523822531329</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1523822531329</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1051,7 +1051,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474279000" />
+    <option name="totallyTimeSpent" value="474311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1576,8 +1576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="441">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
