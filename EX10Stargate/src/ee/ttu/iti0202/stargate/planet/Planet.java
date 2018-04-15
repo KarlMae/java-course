@@ -34,7 +34,7 @@ public class Planet {
         return dhdhAvailable;
     }
 
-    public List<String> getTeamVisited() {
+    public List<String> getTeamsVisited() {
         return teamVisited;
     }
 

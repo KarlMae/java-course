@@ -80,7 +80,7 @@ public class Space {
 
     public Set<Planet> needToVisit(List<Planet> planets) {
         return planets.stream()
-                .filter(planet -> planet.getTeamVisited().isEmpty())
+                .filter(planet -> planet.getTeamsVisited().isEmpty())
                 .filter(Planet::isDhdAvailable)
                 .filter(Planet::isStargateAvailable)
                 .collect(Collectors.toSet());
@@ -97,7 +97,7 @@ public class Space {
     public List<String> getTeamsWhoHaveVisitedSmallNotDeadPlanets(List<Planet> planets) {
         return planets.stream()
                 .filter(planet -> planet.getInhabitants() != 0)
-                .filter(planet -> planet.getInhabitants() < 2500).map(Planet::getTeamVisited).flatMap(Collection::stream)
+                .filter(planet -> planet.getInhabitants() < 2500).map(Planet::getTeamsVisited).flatMap(Collection::stream)
                 .filter(s -> !s.equals(""))
                 .distinct()
                 .sorted(Comparator.comparing(o -> Integer.valueOf(o.split("-")[1])))
