@@ -53,9 +53,7 @@ public class Space {
 
         String[] p = line.split(",");// a CSV has comma separated lines
 
-        return new PlanetBuilder(p[0], Long.valueOf(p[1]),
-                Boolean.valueOf(p[2]),
-                Boolean.valueOf(p[3]), List.of(p[4]
+        return new PlanetBuilder(p[0], Long.valueOf(p[1]), Boolean.valueOf(p[2]), Boolean.valueOf(p[3]), List.of(p[4]
                         .replace("[", "")
                         .replace("]", "")
                         .replace(" ", "")
@@ -89,8 +87,7 @@ public class Space {
     public List<String> getTeamsWhoHaveVisitedSmallNotDeadPlanets(List<Planet> planets) {
         return planets.stream()
                 .filter(planet -> planet.getInhabitants() != 0)
-                .filter(planet -> planet.getInhabitants() < 2500)
-                .map(Planet::getTeamVisited)
+                .filter(planet -> planet.getInhabitants() < 2500).map(Planet::getTeamVisited)
                 .flatMap(Collection::stream)
                 .filter(s -> !s.equals(""))
                 .distinct()
