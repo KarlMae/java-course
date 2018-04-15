@@ -7,7 +7,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -52,7 +51,7 @@ public class Space {
 
     private Function<String, Planet> mapToItem = (line) -> {
 
-        String[] p = line.split(";");// a CSV has comma separated lines
+        String[] p = line.split(",");// a CSV has comma separated lines
 
         return new PlanetBuilder(p[0], Long.valueOf(p[1]),
                 Boolean.valueOf(p[2]),
@@ -109,6 +108,7 @@ public class Space {
                 .sorted()
                 .collect(Collectors.toMap(s -> s, s -> (long) 1, Long::sum));
     }
+
 
 
     public static void main(String[] args) throws IOException {
