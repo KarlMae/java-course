@@ -16,8 +16,8 @@ public class Rec {
     // Miks siin nullist ei alga indeksid
     public static int maxElement(List<Integer> nums, int max) {
         if (nums.isEmpty()) return max;
-        return nums.get(0) > max ? maxElement(nums.subList(1, nums.size()), nums.get(0)) :
-                maxElement(nums.subList(1, nums.size()), max);
+        return nums.get(0) > max ? maxElement(nums.subList(1, nums.size()), nums.get(0))
+                : maxElement(nums.subList(1, nums.size()), max);
     }
 
     public static int maxGrowth(List<Integer> nums) {
