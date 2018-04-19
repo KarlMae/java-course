@@ -44,10 +44,4 @@ public class Rec {
 
         return checkNumber(numbers, currentNumber, index, currentSequence, longestSequence);
     }
-
-
-    public static void main(String[] args) {
-        System.out.println(maxGrowth(List.of(1, 2, 3, 1, 5, 6)));
-    }
-
 }
