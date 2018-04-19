@@ -1,6 +1,5 @@
 package ee.ttu.iti0202.rec;
 
-import java.lang.reflect.Array;
 import java.util.List;
 
 public class Rec {
@@ -45,10 +44,4 @@ public class Rec {
 
         return checkNumber(numbers, currentNumber, index, currentSequence, longestSequence);
     }
-
-
-    public static void main(String[] args) {
-        System.out.println(maxElement(List.of(-505)));
-    }
-
 }
