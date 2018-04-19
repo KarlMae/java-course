@@ -1,11 +1,12 @@
 package ee.ttu.iti0202.rec;
 
+import java.lang.reflect.Array;
 import java.util.List;
 
 public class Rec {
 
     public static int maxElement(List<Integer> nums) {
-        int maxnum = 0;
+        int maxnum = Integer.MIN_VALUE;
         for (Integer number : nums) {
             if (number > maxnum) maxnum = number;
         }
@@ -44,4 +45,10 @@ public class Rec {
 
         return checkNumber(numbers, currentNumber, index, currentSequence, longestSequence);
     }
+
+
+    public static void main(String[] args) {
+        System.out.println(maxElement(List.of(-505)));
+    }
+
 }
