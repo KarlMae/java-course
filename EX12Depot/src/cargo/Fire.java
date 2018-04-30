@@ -2,7 +2,7 @@ package cargo;
 
 public class Fire extends Cargo {
 
-    private int risk = 6;
+    private final int risk = 6;
 
     private Class[] incompatible = new Class[]{Water.class};
 

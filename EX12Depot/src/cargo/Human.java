@@ -1,10 +1,8 @@
 package cargo;
 
-import java.util.List;
-
 public class Human extends Cargo {
 
-    private int risk = 1;
+    private final int risk = 1;
 
     private Class[] incompatible = new Class[]{Fire.class, Fuel.class};
 

@@ -39,6 +39,9 @@ public abstract class Drink {
                 }
                 returnDrink = new Absinthe(price);
                 break;
+
+            default:
+                break;
         }
 
         availableDrinks.add(returnDrink);

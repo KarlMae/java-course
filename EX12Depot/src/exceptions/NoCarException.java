@@ -1,4 +1,4 @@
 package exceptions;
 
-public class NoCarException {
+public class NoCarException extends Exception{
 }

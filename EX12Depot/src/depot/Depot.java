@@ -1,6 +1,8 @@
 package depot;
 
 import cargo.Cargo;
+import exceptions.NoEnginesException;
+import exceptions.UnfittingCargoException;
 import train.Car;
 import train.Engine;
 import train.Train;
@@ -48,10 +50,10 @@ public class Depot {
         return false;
     }
 
-    public Train createTrain(Cargo... cargo) {
+    public Train createTrain(Cargo... cargo) throws Exception{
 
-        if (engines.isEmpty()) return null;
-        if (incompatibleCargo(cargo)) return null;
+        if (engines.isEmpty()) throw new NoEnginesException();
+        if (incompatibleCargo(cargo)) throw new UnfittingCargoException();
 
         Train newTrain = new Train(engines.remove(0));
 

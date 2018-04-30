@@ -16,22 +16,21 @@ public class Pub {
 
     }
 
-    private static void makePizza() {
-        pizzas.add(new PizzaBuilder().setDiameter(20).setName("Grass").setSlices(2).addComponent(Pizza
+    private static void makePizza(int diameter) {
+        pizzas.add(new PizzaBuilder().setDiameter(diameter).setName("Grass").setSlices(2).addComponent(Pizza
                 .PizzaComponent.ANANAS).createPizza());
     }
 
-    private static void makeDrink() {
-        drinks.add(Drink.makeDrink(20, Drink.Drinks.VODKA));
+    private static void makeDrink(int price) {
+        drinks.add(Drink.makeDrink(price, Drink.Drinks.VODKA));
     }
 
 
     public static void main(String[] args) {
-        makeDrink();
-        makeDrink();
-        makePizza();
+        makeDrink(20);
+        makeDrink(20);
+        makePizza(20);
         System.out.println(pizzas);
         System.out.println(drinks);
     }
-
 }
