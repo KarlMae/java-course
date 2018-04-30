@@ -3,19 +3,19 @@ package train;
 public class Engine {
 
     private int allowedRisk;
-    public enum conflictCargo { FIRE, FUEL, HUMAN, WATER, WOOD}
-    private conflictCargo conflictCargo;
+    public enum ConflictCargo { FIRE, FUEL, HUMAN, WATER, WOOD }
+    private ConflictCargo conflictCargo;
 
     public Engine(int allowedRisk) {
         this.allowedRisk = allowedRisk;
     }
 
 
-    public void setConflictCargo(Engine.conflictCargo conflictCargo) {
+    public void setConflictCargo(ConflictCargo conflictCargo) {
         this.conflictCargo = conflictCargo;
     }
 
-    public Engine.conflictCargo getConflictCargo() {
+    public ConflictCargo getConflictCargo() {
         return conflictCargo;
     }
 

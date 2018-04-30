@@ -50,7 +50,7 @@ public class Depot {
         return false;
     }
 
-    public Train createTrain(Cargo... cargo) throws Exception{
+    public Train createTrain(Cargo... cargo) throws Exception {
 
         if (engines.isEmpty()) throw new NoEnginesException();
         if (incompatibleCargo(cargo)) throw new UnfittingCargoException();
