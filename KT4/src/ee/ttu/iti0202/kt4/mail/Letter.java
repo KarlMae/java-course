@@ -31,11 +31,16 @@ public class Letter {
 
         Letter letter = (Letter) o;
 
-        return title != null ? title.equals(letter.title) : letter.title == null;
+        if (mailBoxID != letter.mailBoxID) return false;
+        if (title != null ? !title.equals(letter.title) : letter.title != null) return false;
+        return content != null ? content.equals(letter.content) : letter.content == null;
     }
 
     @Override
     public int hashCode() {
-        return title != null ? title.hashCode() : 0;
+        int result = mailBoxID;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (content != null ? content.hashCode() : 0);
+        return result;
     }
 }
