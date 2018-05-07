@@ -27,4 +27,9 @@ public class Stop {
     public DeparturesFromStop getDepartures() {
         return departures;
     }
+
+    @Override
+    public String toString() {
+        return "Stop name: " + name + ", location=" + location;
+    }
 }

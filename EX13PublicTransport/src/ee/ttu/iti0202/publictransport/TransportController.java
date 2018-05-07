@@ -7,7 +7,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.net.URL;
-import java.util.*;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Optional;
+import java.util.Set;
+
 
 public class TransportController {
 
@@ -21,9 +25,9 @@ public class TransportController {
             StringBuffer buffer = new StringBuffer();
             int read;
             char[] chars = new char[1024];
-            while ((read = reader.read(chars)) != -1)
+            while ((read = reader.read(chars)) != -1) {
                 buffer.append(chars, 0, read);
-
+            }
             return buffer.toString();
         } finally {
             if (reader != null)
@@ -82,9 +86,15 @@ public class TransportController {
     public static void main(String[] args) {
         TransportController transportController = new TransportController();
 
-        System.out.println(transportController.getDeparturesFromStop("tal_03504-1"));
-        System.out.println(transportController.getNextDepartureFromStop("tal_03504-1"));
         System.out.println(transportController.getNearbyStops(new Location(59.3977111, 24.660198)));
-        System.out.println(transportController.getNearestStop(new Location(59.3977111, 24.660198)));
+        Stop stop = (transportController.getNearestStop(new Location(59.3977111, 24.660198))).get();
+
+        for(NearbyStop s : transportController.getNearbyStops(new Location(59.3977111, 24.660198))) {
+            System.out.println("Stop: " + (s.getName()) + " is " + s.getDistance() + " meters away!");
+        }
+
+        System.out.println("The nearest stop is " + ((NearbyStop) stop).getDistance() + " meters away!");
+        System.out.println(stop.getName());
+
     }
 }

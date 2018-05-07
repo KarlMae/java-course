@@ -26,8 +26,8 @@ public class Departure {
 
     @Override
     public String toString() {
-        return "Departure{" +
-                "name='" + name + '\'' +
-                ", time='" + time + '\'';
+        return "Departure{"
+                + "name='" + name + '\''
+                + ", time='" + time + '\'';
     }
 }
