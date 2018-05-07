@@ -35,7 +35,7 @@ public class TransportController {
 
     private List<NearbyStop> getNearbyStops(String latitude, String longitude) {
         String json;
-        List<NearbyStop> nearbyStops = new List<>();
+        List<NearbyStop> nearbyStops = new ArrayList<>();
 
         try {
             json = readUrl("https://public-transport-api.herokuapp.com/stops/" + latitude + "/" + longitude);

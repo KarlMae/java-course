@@ -1,13 +1,14 @@
 package ee.ttu.iti0202.publictransport;
 
+import java.util.List;
 import java.util.Set;
 
 public class NearbyStop extends Stop{
 
-    private Set<String> transportations;
+    private List<String> transportations;
     private int distance;
 
-    public Set<String> getTransportations() {
+    public List<String> getTransportations() {
         return transportations;
     }
 
