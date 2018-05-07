@@ -1,8 +1,6 @@
 package ee.ttu.iti0202.json;
 
 import com.google.gson.Gson;
-import ee.ttu.iti0202.json.Item;
-import ee.ttu.iti0202.json.Order;
 
 public class OrderProcessor {
 
@@ -35,9 +33,7 @@ public class OrderProcessor {
         }
         if (type == OrderProcessorType.CALCULATE_TOTAL) {
             order.setTotalPrice(order.getItems().stream()
-                    .mapToDouble(item -> item.getPrice() * item.getCount())
-                    .average()
-                    .getAsDouble());
+                    .mapToDouble(item -> item.getPrice() * item.getCount()).sum());
         }
         if (type == OrderProcessorType.REMOVE_FIRST_ITEM) {
             if (order.getItems().size() > 0) order.getItems().remove(0);
@@ -47,6 +43,7 @@ public class OrderProcessor {
 
 
     public static void main(String[] args) {
+
 
     }
 }
