@@ -33,9 +33,9 @@ public class TransportController {
         }
     }
 
-    private Set<NearbyStop> getNearbyStops(String latitude, String longitude) {
+    private List<NearbyStop> getNearbyStops(String latitude, String longitude) {
         String json;
-        Set<NearbyStop> nearbyStops = new HashSet<>();
+        List<NearbyStop> nearbyStops = new List<>();
 
         try {
             json = readUrl("https://public-transport-api.herokuapp.com/stops/" + latitude + "/" + longitude);
@@ -67,7 +67,7 @@ public class TransportController {
         return getNextDepartures(stopId).get();
     }
 
-    public Set<NearbyStop> getNearbyStops(Location location) {
+    public List<NearbyStop> getNearbyStops(Location location) {
         return getNearbyStops(String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
     }
 
