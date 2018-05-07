@@ -30,8 +30,7 @@ public class TransportController {
             }
             return buffer.toString();
         } finally {
-            if (reader != null)
-                reader.close();
+            if (reader != null) reader.close();
         }
     }
 
@@ -84,17 +83,7 @@ public class TransportController {
 
 
     public static void main(String[] args) {
-        TransportController transportController = new TransportController();
 
-        System.out.println(transportController.getNearbyStops(new Location(59.3977111, 24.660198)));
-        Stop stop = (transportController.getNearestStop(new Location(59.3977111, 24.660198))).get();
-
-        for(NearbyStop s : transportController.getNearbyStops(new Location(59.3977111, 24.660198))) {
-            System.out.println("Stop: " + (s.getName()) + " is " + s.getDistance() + " meters away!");
-        }
-
-        System.out.println("The nearest stop is " + ((NearbyStop) stop).getDistance() + " meters away!");
-        System.out.println(stop.getName());
 
     }
 }

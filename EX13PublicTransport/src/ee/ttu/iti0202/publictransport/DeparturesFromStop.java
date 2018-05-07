@@ -1,6 +1,5 @@
 package ee.ttu.iti0202.publictransport;
 
-import java.util.List;
 import java.util.Set;
 
 public class DeparturesFromStop extends Departure {
