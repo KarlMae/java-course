@@ -7,7 +7,7 @@ public class NearbyStop extends Stop{
     private Set<String> transportations;
     private int distance;
 
-    Set<String> getTransportations() {
+    public Set<String> getTransportations() {
         return transportations;
     }
 
