@@ -1,13 +1,16 @@
 package ee.ttu.iti0202.json.order;
 
+import com.google.gson.annotations.SerializedName;
 import ee.ttu.iti0202.json.item.Item;
 
 import java.util.List;
 
 public class Order {
 
-    private int order_number;
-    private double total_price;
+    @SerializedName("order_number")
+    private Integer orderNumber;
+    @SerializedName("total_price")
+    private double totalPrice;
     private String customer;
     private List<Item> items;
 
@@ -16,14 +19,14 @@ public class Order {
     }
 
     public void setTotalPrice(double totalPrice) {
-        this.total_price = totalPrice;
+        this.totalPrice = totalPrice;
     }
 
     @Override
     public String toString() {
         return "Order{" +
-                "number=" + order_number +
-                ", total_price=" + total_price +
+                "number=" + orderNumber +
+                ", total_price=" + totalPrice +
                 ", customer='" + customer + '\'' +
                 ", items=" + items +
                 '}';
