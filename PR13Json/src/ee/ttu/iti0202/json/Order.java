@@ -1,7 +1,7 @@
-package ee.ttu.iti0202.json.order;
+package ee.ttu.iti0202.json;
 
 import com.google.gson.annotations.SerializedName;
-import ee.ttu.iti0202.json.item.Item;
+import ee.ttu.iti0202.json.Item;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ee.ttu.iti0202.json.item;
+package ee.ttu.iti0202.json;
 
 public class Item {
 
