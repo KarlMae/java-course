@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7816947d-0018-402c-ae30-834587ed7445" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,8 +73,8 @@
       <file leaf-file-name="OrderProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="391">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -102,11 +102,8 @@
       <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -189,7 +186,6 @@
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Water.java" />
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Human.java" />
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Wood.java" />
-        <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/item/Item.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/order/Order.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/order/OrderProcessor.java" />
@@ -200,6 +196,7 @@
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/Location.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java" />
+        <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" />
       </list>
     </option>
@@ -471,7 +468,7 @@
       <workItem from="1525084125358" duration="1509000" />
       <workItem from="1525429582377" duration="358000" />
       <workItem from="1525470768012" duration="6811000" />
-      <workItem from="1525697462944" duration="17366000" />
+      <workItem from="1525697462944" duration="17621000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 12">
       <created>1525084782797</created>
@@ -585,11 +582,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525726020002</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Homework 12">
+      <created>1525726261961</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1525726261961</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39951000" />
+    <option name="totallyTimeSpent" value="40206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-609" width="1936" height="1056" extended-state="6" />
@@ -1106,16 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1129,10 +1123,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+        <state relative-caret-position="391">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1154,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
