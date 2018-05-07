@@ -1,7 +1,5 @@
 package ee.ttu.iti0202.publictransport;
 
-import java.util.Set;
-
 public class Stop {
 
     private String id;

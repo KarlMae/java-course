@@ -7,8 +7,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.net.URL;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.*;
 
 public class TransportController {
@@ -33,13 +31,14 @@ public class TransportController {
         }
     }
 
-    private List<NearbyStop> getNearbyStops(String latitude, String longitude) {
+    private Set<NearbyStop> getNearbyStops(String latitude, String longitude) {
         String json;
-        List<NearbyStop> nearbyStops = new ArrayList<>();
+        Set<NearbyStop> nearbyStops = new HashSet<>();
 
         try {
             json = readUrl("https://public-transport-api.herokuapp.com/stops/" + latitude + "/" + longitude);
-            Type nearbyStopSetType = new TypeToken<HashSet<NearbyStop>>(){}.getType();
+            Type nearbyStopSetType = new TypeToken<HashSet<NearbyStop>>() {
+            }.getType();
             nearbyStops = parser.fromJson(json, nearbyStopSetType);
 
         } catch (Exception e) {
@@ -67,7 +66,7 @@ public class TransportController {
         return getNextDepartures(stopId).get();
     }
 
-    public List<NearbyStop> getNearbyStops(Location location) {
+    public Set<NearbyStop> getNearbyStops(Location location) {
         return getNearbyStops(String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
     }
 
