@@ -1,7 +1,6 @@
 package ee.ttu.iti0202.json;
 
 import com.google.gson.annotations.SerializedName;
-import ee.ttu.iti0202.json.Item;
 
 import java.util.List;
 
@@ -24,11 +23,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "number=" + orderNumber +
-                ", total_price=" + totalPrice +
-                ", customer='" + customer + '\'' +
-                ", items=" + items +
-                '}';
+        return "Order{" + "number=" + orderNumber + ", total_price=" + totalPrice + ", customer='" + customer
+                + '\'' + ", items=" + items + '}';
     }
 }

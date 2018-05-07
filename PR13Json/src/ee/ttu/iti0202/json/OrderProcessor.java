@@ -32,7 +32,7 @@ public class OrderProcessor {
             order.getItems().forEach(item -> item.setPrice(item.getPrice() - item.getPrice() / 10));
         }
         if (type == OrderProcessorType.CALCULATE_TOTAL) {
-            order.setTotalPrice(order.getItems().stream()
+            order.setTotalPrice(order.getItems().parallelStream()
                     .mapToDouble(item -> item.getPrice() * item.getCount()).sum());
         }
         if (type == OrderProcessorType.REMOVE_FIRST_ITEM) {
