@@ -29,11 +29,15 @@ public class OrderProcessor {
     public String process(String jsonInput) {
         Order order = getOrderFromJson(jsonInput);
 
-        if (type == OrderProcessorType.DISCOUNT_10) order.getItems()
-                .forEach(item -> item.setPrice(item.getPrice() - item.getPrice() / 10));
-        if (type == OrderProcessorType.CALCULATE_TOTAL) order.setTotalPrice(order.getItems().stream()
-                .mapToDouble(Item::getPrice).average().getAsDouble());
-        if (type == OrderProcessorType.REMOVE_FIRST_ITEM) order.getItems().remove(0);
+        if (type == OrderProcessorType.DISCOUNT_10) {
+            order.getItems().forEach(item -> item.setPrice(item.getPrice() - item.getPrice() / 10));
+        }
+        if (type == OrderProcessorType.CALCULATE_TOTAL) {
+            order.setTotalPrice(order.getItems().stream().mapToDouble(Item::getPrice).average().getAsDouble());
+        }
+        if (type == OrderProcessorType.REMOVE_FIRST_ITEM) {
+            order.getItems().remove(0);
+        }
         return getJsonFromOder(order);
     }
 

@@ -8,5 +8,15 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.4" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library name="com.google.code.gson:gson:2.8.4" type="repository">
+        <properties maven-id="com.google.code.gson:gson:2.8.4" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/gson-2.8.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
