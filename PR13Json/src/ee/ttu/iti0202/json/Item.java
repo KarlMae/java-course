@@ -5,10 +5,14 @@ public class Item {
     private String id;
     private String title;
     private double price;
-    private int count;
+    private int count = 1;
 
     public double getPrice() {
         return price;
+    }
+
+    public int getCount() {
+        return count;
     }
 
     public void setPrice(double price) {

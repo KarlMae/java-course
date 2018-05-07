@@ -34,10 +34,13 @@ public class OrderProcessor {
             order.getItems().forEach(item -> item.setPrice(item.getPrice() - item.getPrice() / 10));
         }
         if (type == OrderProcessorType.CALCULATE_TOTAL) {
-            order.setTotalPrice(order.getItems().stream().mapToDouble(Item::getPrice).average().getAsDouble());
+            order.setTotalPrice(order.getItems().stream()
+                    .mapToDouble(item -> item.getPrice() * item.getCount())
+                    .average()
+                    .getAsDouble());
         }
         if (type == OrderProcessorType.REMOVE_FIRST_ITEM) {
-            order.getItems().remove(0);
+            if (order.getItems().size() > 0) order.getItems().remove(0);
         }
         return getJsonFromOder(order);
     }
