@@ -6,13 +6,13 @@ import java.util.Set;
 public class DeparturesFromStop extends Departure {
 
     private Stop stop;
-    private List<Departure> departures;
+    private Set<Departure> departures;
 
     public Stop getStop() {
         return stop;
     }
 
-    public List<Departure> getDepartures() {
+    public Set<Departure> getDepartures() {
         return departures;
     }
 
