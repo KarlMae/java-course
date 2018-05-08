@@ -26,10 +26,10 @@ public class TransportController {
         String inputLine;
         StringBuilder buffer = new StringBuilder();
 
-        while ((inputLine = in.readLine()) != null){
+        while ((inputLine = in.readLine()) != null) {
             buffer.append(inputLine);
         }
-        
+
         in.close();
         return buffer.toString();
     }
