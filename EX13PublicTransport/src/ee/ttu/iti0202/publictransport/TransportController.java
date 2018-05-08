@@ -18,20 +18,18 @@ public class TransportController {
     private Gson parser = new Gson();
 
     private String readUrl(String urlString) throws Exception {
-        BufferedReader reader = null;
-        try {
-            URL url = new URL(urlString);
-            reader = new BufferedReader(new InputStreamReader(url.openStream()));
-            StringBuffer buffer = new StringBuffer();
-            int read;
-            char[] chars = new char[1024];
-            while ((read = reader.read(chars)) != -1) {
-                buffer.append(chars, 0, read);
-            }
-            return buffer.toString();
-        } finally {
-            if (reader != null) reader.close();
-        }
+
+        URL url = new URL(urlString);
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+
+        String inputLine;
+        StringBuilder buffer = new StringBuilder();
+
+        while ((inputLine = in.readLine()) != null)
+            buffer.append(inputLine);
+        in.close();
+        return buffer.toString();
     }
 
     private Set<NearbyStop> getNearbyStops(String latitude, String longitude) {
@@ -83,7 +81,6 @@ public class TransportController {
 
 
     public static void main(String[] args) {
-
 
     }
 }

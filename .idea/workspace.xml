@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7816947d-0018-402c-ae30-834587ed7445" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,23 +58,14 @@
       <file leaf-file-name="NearbyStop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/NearbyStop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
                 <element signature="e#313#314#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderProcessor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -99,22 +90,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DeparturesFromStop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#192#193#0" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -124,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransportController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TransportController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="323">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2058#2059#0" expanded="true" />
@@ -141,8 +122,8 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
                 <element signature="e#236#237#0" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -190,14 +171,14 @@
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/order/Order.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/order/OrderProcessor.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/NearbyStop.java" />
-        <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/Departure.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/Stop.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/Location.java" />
-        <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" />
-        <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java" />
         <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java" />
+        <option value="$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java" />
+        <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java" />
+        <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" />
       </list>
     </option>
   </component>
@@ -277,6 +258,11 @@
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
               <item name="PR13Json" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PR13Json" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OrderProcessor">
+  <component name="RunManager" selected="Application.TransportController">
     <configuration name="main1" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="main1" />
       <option name="DEPLOY" value="true" />
@@ -446,8 +432,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OrderProcessor" />
         <item itemvalue="Application.TransportController" />
+        <item itemvalue="Application.OrderProcessor" />
         <item itemvalue="JAR Application.gson-2.8.4.jar" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -468,7 +454,7 @@
       <workItem from="1525084125358" duration="1509000" />
       <workItem from="1525429582377" duration="358000" />
       <workItem from="1525470768012" duration="6811000" />
-      <workItem from="1525697462944" duration="17621000" />
+      <workItem from="1525697462944" duration="20160000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 12">
       <created>1525084782797</created>
@@ -589,11 +575,32 @@
       <option name="project" value="LOCAL" />
       <updated>1525726261961</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Homework 12">
+      <created>1525726396131</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1525726396131</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Homework 12">
+      <created>1525726443624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1525726443624</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Homework 12">
+      <created>1525727656361</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1525727656362</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40206000" />
+    <option name="totallyTimeSpent" value="42745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-609" width="1936" height="1056" extended-state="6" />
@@ -609,11 +616,11 @@
       <window_info anchor="right" id="Maven Projects" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.25381264" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.25490198" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.15938166" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.15938166" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
@@ -666,37 +673,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>48</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>47</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>51</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>42</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java</url>
-          <line>77</line>
+          <line>74</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
@@ -1017,20 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/Departure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1085,35 +1072,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/NearbyStop.java">
+    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />
@@ -1123,17 +1092,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/Order.java">
+    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="450">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
+    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/NearbyStop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
