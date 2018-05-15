@@ -17,8 +17,9 @@ public class Candy {
 
     @Override
     public String toString() {
-        return "Candy{" +
-                "candyType=" + candyType +
-                '}';
+        return "Candy{"
+                + "candyType="
+                + candyType
+                + '}';
     }
 }
