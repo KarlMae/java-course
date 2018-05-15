@@ -27,8 +27,8 @@ public class Main {
         });
         Child lisa = new Child(14, new CandyHaterStrategy());
 
-        ChoosingCandyStrategy alwaysFirstStrategy = (candies, age) -> candies.size() == 0 ?
-                Optional.empty() : Optional.of(candies.get(0));
+        ChoosingCandyStrategy alwaysFirstStrategy = (candies, age) -> candies.size() == 0
+                ? Optional.empty() : Optional.of(candies.get(0));
 
         Child anna = new Child(4, alwaysFirstStrategy);
         Child george = new Child(36, (candies, age) -> candies.stream()
