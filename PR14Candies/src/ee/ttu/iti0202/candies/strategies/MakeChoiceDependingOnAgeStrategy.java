@@ -10,8 +10,8 @@ public class MakeChoiceDependingOnAgeStrategy implements ChoosingCandyStrategy {
     @Override
     public Optional<Candy> chooseCandy(List<Candy> candies, int age) {
         return candies.stream()
-                .filter(candy -> age < 5 && candy.getCandyType() == Candy.CandyType.GUM)
-                .filter(candy -> age < 10 && candy.getCandyType() == Candy.CandyType.CHOCOLATE_CANDY)
+                .filter(candy -> !(age < 5 && candy.getCandyType() == Candy.CandyType.GUM))
+                .filter(candy -> !(age < 10 && candy.getCandyType() == Candy.CandyType.CHOCOLATE_CANDY))
                 .findFirst();
     }
 }

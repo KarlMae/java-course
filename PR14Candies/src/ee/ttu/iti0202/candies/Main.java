@@ -27,10 +27,10 @@ public class Main {
         });
         Child lisa = new Child(14, new CandyHaterStrategy());
 
-        ChoosingCandyStrategy alwaysFirstStrategy = (candies, age) -> candies.stream().filter(candy -> candy.getCandyType() == Candy.CandyType.CHOCOLATE_CANDY).findFirst();
+        ChoosingCandyStrategy alwaysFirstStrategy = (candies, age) -> candies.size() == 0 ? Optional.empty() : Optional.of(candies.get(0));
 
         Child anna = new Child(4, alwaysFirstStrategy);
-        Child george = new Child(36, (candies, age) -> Optional.empty()); // TODO: Only chocolate candies
+        Child george = new Child(36, (candies, age) -> candies.stream().filter(candy -> candy.getCandyType() == Candy.CandyType.CHOCOLATE_CANDY).findFirst());
         Child gert = new Child(7, new ChooseOnlySugarFreeCandiesStrategy());
         Child anu = new Child(16, new MakeChoiceDependingOnAgeStrategy());
         Child artur = new Child(4, new MakeChoiceDependingOnAgeStrategy());
