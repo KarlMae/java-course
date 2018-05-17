@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7816947d-0018-402c-ae30-834587ed7445" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PR14Candies/PR14Candies.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/EX14Justice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/archive/Archive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/ArchiveDoesntExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/PersonTooYoungException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Citizen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/CitizenBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Lawyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Court.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Prison.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Acquital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Conviction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Judgement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/JudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/NaiveJudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/PervJudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/ToughJudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Lawsuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Litigation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/Town.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/TownBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX15String3/EX15String3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/MakeChoiceDependingOnAgeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/MakeChoiceDependingOnAgeStrategy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,48 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OrderProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR13Json/src/ee/ttu/iti0202/json/OrderProcessor.java">
+      <file leaf-file-name="Litigation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Litigation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Child.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/child/Child.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Candy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/candy/Candy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-              <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChoosingCandyStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChoosingCandyStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            <state relative-caret-position="334">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DummyStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/DummyStrategy.java">
+      <file leaf-file-name="Town.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/Town.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="215">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,49 +63,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CandyHaterStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/CandyHaterStrategy.java">
+      <file leaf-file-name="TownBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/TownBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChooseOnlySugarFreeCandiesStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChooseOnlySugarFreeCandiesStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MakeChoiceDependingOnAgeStrategy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/MakeChoiceDependingOnAgeStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-40">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="415">
+              <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,9 +84,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PR14Candies.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PR14Candies/PR14Candies.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="String3.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Station.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Archive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/archive/Archive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Judge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Judge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Citizen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Citizen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CitizenBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/CitizenBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -139,9 +161,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Archi</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,20 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EX12Depot/src/train/Car.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/train/Train.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/Main.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/exceptions/NoEnginesException.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/exceptions/NoCarException.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/exceptions/TooRiskyException.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/exceptions/UnfittingCargoException.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/train/Engine.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/depot/Depot.java" />
-        <option value="$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/drink/Drink.java" />
-        <option value="$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/food/PizzaBuilder.java" />
-        <option value="$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/pub/Pub.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Cargo.java" />
-        <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Fire.java" />
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Fuel.java" />
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Water.java" />
         <option value="$PROJECT_DIR$/EX12Depot/src/cargo/Human.java" />
@@ -180,14 +194,40 @@
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/DeparturesFromStop.java" />
         <option value="$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java" />
         <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Child.java" />
-        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChoosingCandyStrategy.java" />
-        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/DummyStrategy.java" />
         <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/CandyHaterStrategy.java" />
-        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/child/Child.java" />
-        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/candy/Candy.java" />
         <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChooseOnlySugarFreeCandiesStrategy.java" />
-        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java" />
         <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/MakeChoiceDependingOnAgeStrategy.java" />
+        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/candy/Candy.java" />
+        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/child/Child.java" />
+        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/DummyStrategy.java" />
+        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChoosingCandyStrategy.java" />
+        <option value="$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Acquital.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/BigBrother.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/PersonTooYoungException.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/names.txt" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/ArchiveDoesntExistException.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/archive/Archive.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Judgement.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/JudgeStrategy.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Conviction.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/NaiveJudgeStrategy.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/ToughJudgeStrategy.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/EasyJudgeStrategy.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/PervJudgeStrategy.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Court.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/TownBuilder.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/Town.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Prison.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Lawsuit.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Litigation.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Lawyer.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Judge.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Citizen.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/CitizenBuilder.java" />
+        <option value="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/Main.java" />
+        <option value="$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java" />
       </list>
     </option>
   </component>
@@ -219,43 +259,18 @@
           <expand>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR13Json" type="462c0819:PsiDirectoryNode" />
+              <item name="EX15String3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
+              <item name="EX15String3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
+              <item name="EX15String3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="candies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="candies" type="462c0819:PsiDirectoryNode" />
-              <item name="candy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="candies" type="462c0819:PsiDirectoryNode" />
-              <item name="child" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iti0202" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PR14Candies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="candies" type="462c0819:PsiDirectoryNode" />
-              <item name="strategies" type="462c0819:PsiDirectoryNode" />
+              <item name="cb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,12 +287,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/Gson" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PR14Candies" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EX15String3" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karl_\IdeaProjects\iti0202\EX14Justice\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karl_\IdeaProjects\iti0202\EX13PublicTransport\lib" />
     </key>
@@ -294,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.String3">
     <configuration name="main1" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="main1" />
       <option name="DEPLOY" value="true" />
@@ -316,6 +334,17 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ttu.iti0202.justice.Main" />
+      <module name="EX14Justice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ee.ttu.iti0202.justice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ee.ttu.iti0202.gomoku.Main" />
@@ -339,13 +368,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="OrderProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ee.ttu.iti0202.json.OrderProcessor" />
-      <module name="PR13Json" />
+    <configuration name="String3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ee.ttu.iti0202.cb.String3" />
+      <module name="EX15String3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ee.ttu.iti0202.json.*" />
+          <option name="PATTERN" value="ee.ttu.iti0202.cb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,9 +408,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="gson-2.8.4.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/EX13PublicTransport/lib/gson-2.8.4.jar" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="androidTest" />
@@ -417,19 +443,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.main1" />
-      <item itemvalue="Application.OrderProcessor" />
-      <item itemvalue="JAR Application.gson-2.8.4.jar" />
       <item itemvalue="Application.TransportController" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.String3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.String3" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.TransportController" />
-        <item itemvalue="Application.OrderProcessor" />
-        <item itemvalue="JAR Application.gson-2.8.4.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -452,7 +478,7 @@
       <workItem from="1525779512976" duration="400000" />
       <workItem from="1525887534851" duration="711000" />
       <workItem from="1526382870268" duration="77000" />
-      <workItem from="1526383062603" duration="1647000" />
+      <workItem from="1526383062603" duration="33218000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 12">
       <created>1525084782797</created>
@@ -622,15 +648,42 @@
       <option name="project" value="LOCAL" />
       <updated>1526384524843</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Candy">
+      <created>1526384724716</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1526384724716</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Candy">
+      <created>1526384818613</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1526384818613</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Candy">
+      <created>1526384865726</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1526384865726</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Candy">
+      <created>1526384898638</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1526384898638</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46144000" />
+    <option name="totallyTimeSpent" value="77715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -642,23 +695,23 @@
       <window_info anchor="right" id="Maven Projects" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.25490198" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.19389978" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="0" />
       <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1673774" />
       <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32897604" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" visible="true" weight="0.19829424" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39869282" />
+      <window_info active="true" anchor="bottom" id="Debug" order="10" visible="true" weight="0.24836601" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info id="Captures" order="5" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="2" />
@@ -728,220 +781,51 @@
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Wood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Water.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Fuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Cargo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/train/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/depot/Depot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/train/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/train/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/exceptions/NoEnginesException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/exceptions/NoCarException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/exceptions/TooRiskyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/exceptions/UnfittingCargoException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/train/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/food/PizzaBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Cargo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Fire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Fuel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Water.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Wood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/cargo/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX12Depot/src/depot/Depot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/food/Pizza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/drink/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR12Pub/src/ee/ttu/iti0202/pub/Pub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EX11Rec/src/ee/ttu/iti0202/rec/Rec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR08Timeline/src/stopper/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.xml.crypto/org/jcp/xml/dsig/internal/dom/XMLDSigRI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1016,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EX13PublicTransport/src/ee/ttu/iti0202/publictransport/TransportController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1043,42 +920,10 @@
     <entry file="file://$PROJECT_DIR$/PR14Candies/PR14Candies.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChoosingCandyStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/DummyStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/child/Child.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/CandyHaterStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="65" />
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#289#290#0" expanded="true" />
@@ -1090,21 +935,9 @@
     <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChooseOnlySugarFreeCandiesStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/candy/Candy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1116,10 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java">
+    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/DummyStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1129,10 +962,326 @@
     <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/MakeChoiceDependingOnAgeStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/planet/PlanetBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/planet/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Advocate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/candy/Candy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="61" lean-forward="true" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/BigBrother.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/PersonTooYoungException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/strategies/ChoosingCandyStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/names.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX10Stargate/src/ee/ttu/iti0202/stargate/space/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="74" column="6" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="74" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/child/Child.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PR14Candies/src/ee/ttu/iti0202/candies/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="53" lean-forward="true" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/exceptions/ArchiveDoesntExistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Court.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Acquital.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Conviction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgements/Judgement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/JudgeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="98" lean-forward="true" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/NaiveJudgeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/PervJudgeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/judgestrategies/ToughJudgeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Prison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Lawsuit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Lawyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Judge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/Citizen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/Town.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/lawsuits/Litigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/institutions/Station.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/archive/Archive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/crime/Crime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/humans/CitizenBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/TownBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1338,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>PR14Candies</last-edited>
+          <last-edited>EX15String3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
