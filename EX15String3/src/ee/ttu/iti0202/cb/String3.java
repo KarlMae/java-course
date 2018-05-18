@@ -157,12 +157,36 @@ public class String3 {
         return sum;
     }
 
-    public String notReplace(String str) {
-        str = " " + str + " ";
-        str = str.replaceAll("\\Wis\\W", " is not ");
-        return str.substring(1, str.length() - 1);
-    }
 
+    public String notReplace(String str) {
+        if (str.length() == 0) return str;
+        String returnString = "";
+
+        str = " " + str + " ";
+
+        for (int i = 1; i < str.length(); i++) {
+            if (!Character.isLetter(str.charAt(i - 1))
+                    && str.charAt(i) == 'i'
+                    && str.charAt(i + 1) == 's'
+                    && !Character.isLetter(str.charAt(i + 2))) {
+                returnString = returnString.concat("is not");
+                i++;
+            } else {
+                returnString = returnString.concat(str.substring(i, i+1));
+            }
+        }
+
+        // Remove added spaces
+        if (returnString.charAt(0) == ' ') {
+            returnString = returnString.substring(1);
+        }
+
+        if (returnString.charAt(returnString.length() - 1) == ' ') {
+            returnString = returnString.substring(0, returnString.length() - 1);
+        }
+
+        return returnString;
+    }
 
     public static void main(String[] args) {
         String3 string3 = new String3();
