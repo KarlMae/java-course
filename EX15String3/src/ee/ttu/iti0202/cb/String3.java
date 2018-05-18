@@ -172,7 +172,7 @@ public class String3 {
                 returnString = returnString.concat("is not");
                 i++;
             } else {
-                returnString = returnString.concat(str.substring(i, i+1));
+                returnString = returnString.concat(str.substring(i, i + 1));
             }
         }
 

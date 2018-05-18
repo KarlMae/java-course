@@ -26,8 +26,7 @@
       <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/Town.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EX14Justice/src/ee.ttu.iti0202.justice/town/TownBuilder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/EX15String3/EX15String3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java" beforeDir="false" afterPath="$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,8 +86,8 @@
       <file leaf-file-name="String3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+            <state relative-caret-position="291">
+              <caret line="189" column="5" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="189" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -241,10 +240,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -478,7 +477,7 @@
       <workItem from="1525779512976" duration="400000" />
       <workItem from="1525887534851" duration="711000" />
       <workItem from="1526382870268" duration="77000" />
-      <workItem from="1526383062603" duration="33218000" />
+      <workItem from="1526383062603" duration="35068000" />
     </task>
     <task id="LOCAL-00001" summary="Homework 12">
       <created>1525084782797</created>
@@ -676,14 +675,22 @@
       <option name="project" value="LOCAL" />
       <updated>1526384898638</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Candy">
+      <created>1526595397961</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1526595397961</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77715000" />
+    <option name="totallyTimeSpent" value="79565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -695,19 +702,19 @@
       <window_info anchor="right" id="Maven Projects" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.19389978" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.19373219" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21073826" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32897604" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" visible="true" weight="0.19829424" />
+      <window_info anchor="right" id="Ant Build" order="8" visible="true" weight="0.24966443" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="10" visible="true" weight="0.24836601" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.32478634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info id="Captures" order="5" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -817,8 +824,14 @@
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="60" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1280,8 +1293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EX15String3/src/ee/ttu/iti0202/cb/String3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+        <state relative-caret-position="291">
+          <caret line="189" column="5" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="189" selection-end-column="5" />
         </state>
       </provider>
     </entry>
