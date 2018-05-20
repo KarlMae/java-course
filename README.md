@@ -1,7 +1,7 @@
 ﻿Java course
 ============
 
-This repo isa representation of my learnings in java during the 2018/1 semester.
+This repo is a representation of my learnings in java during the 2018/1 semester.
 
 
 I had previous knowledge of Java from 11th grade, where I created a game as the research work/practial project. Also a semster of
